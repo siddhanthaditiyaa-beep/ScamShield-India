@@ -123,6 +123,14 @@ It only replies with check results, never repeats your message, shows links with
 
 - Visitor feedback is optional and unverified. Anyone can send it, so labels can be wrong or junk. On Render's free tier the disk is wiped on every restart or deploy, so saved feedback can disappear. Feedback rows are `user_feedback`: they can tune the rules, never the test set, and nothing from them counts as measured accuracy.
 
+## What I learned
+
+- **Tuned scores flatter you.** Every rule I fixed made the numbers on that data look better. The honest signals were the first checks on messages the rules had never seen: 0 of 24 public-page scams reached "Likely scam", and two later examples scored only 20 and 15 after earlier fixes. Fixing one wording rarely fixed the next.
+- **False alarms matter as much as misses.** A scam checker that flags genuine bank alerts, promotions or "send me the wifi password" gets ignored. Checking against thousands of normal messages found real problems, and fixing them has trade-offs: the promotion cap now also lowers a scam that is dressed as a promotion.
+- **Negation is hard.** "Never share your OTP" is a warning and "Never delay, share your OTP" is a scam. Cancelling a rule for the whole sentence missed the second, so a negation now only cancels its own part of the sentence.
+- **Do not trust collected data without opening the sources.** One data file came with source links that did not support its messages, so none of it was used. Unverified data is kept out of the test set.
+- **Privacy is part of the design.** Screenshots are read in the browser, feedback is saved only after a button press and an optional tick, and personal details are removed before anything is stored.
+
 ## Roadmap
 
 - [ ] Collect real Hindi, Marathi, Malayalam and Hinglish messages (with permission, personal details removed) for a real test set
