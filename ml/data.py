@@ -9,8 +9,8 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA_PATH = ROOT / "data" / "messages.csv"
 COLUMNS = ["id", "text", "label", "lang", "source", "category", "group", "split"]
 LANGS = {"en", "hinglish", "hi", "mr", "ml"}
-SOURCES = {"real_consented", "public_dataset", "self_written", "synthetic_ai"}
-NEVER_TEST = {"synthetic_ai", "self_written"}  # made-up messages can tune the tool but never grade it
+SOURCES = {"real_consented", "public_dataset", "public_web", "self_written", "synthetic_ai"}
+NEVER_TEST = {"synthetic_ai", "self_written", "public_web"}  # made-up or unverified messages can tune the tool but never grade it
 SPLITS = {"dev", "test"}
 
 

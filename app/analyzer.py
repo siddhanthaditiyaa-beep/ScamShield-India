@@ -52,6 +52,12 @@ def analyze(message: str) -> dict:
         signals.append(rules.Signal("prize_plus_contact", "Prize plus 'contact us to claim'", 20,
                                     "A surprise prize that you must claim by calling or messaging a number is the standard lottery scam."))
 
+    threat = {"ml_bill", "bill_disconnect", "ml_account_threat", "kyc_threat", "ml_kyc", "ml_authority", "ml_parcel"}
+    call = {"callback_number", "ml_callback"}
+    if ids & threat and ids & call:
+        signals.append(rules.Signal("threat_plus_call", "Threat plus 'call this number'", 15,
+                                    "A scare message that tells you to call a number is how scammers get you on the phone to pay or share details."))
+
     rule_score = min(100, sum(s.weight for s in signals))
     ml_prob = ml.scam_probability(text)
     ml_score = round(ml_prob * 100) if ml_prob is not None else None

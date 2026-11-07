@@ -80,6 +80,7 @@ No result here is real accuracy yet. This is everything measured so far, and wha
 | 12 freshly written genuine messages | 12 of 12 passed | Small and made up. |
 | 4,827 normal English messages (UCI SMS Spam Collection) | 1 flagged (0.02%, 95% range 0.0 to 0.1%) | False-alarm check on casual chat, not on bank alerts. |
 | Screenshot reading, smoke test: 4 made-up scam messages (English, Hindi, Marathi, Malayalam) drawn by a computer as clean images and uploaded through the real page in headless Chrome | Text matched the original 100%, 100%, 100% and 93% (character similarity). The Malayalam score stayed the same after a normalisation fix. | **Not accuracy.** Clean, computer-drawn text only. Real phone screenshots (chat bubbles, dark mode, compression, handwriting-style fonts) are untested. |
+| 24 scam messages in Hindi, Marathi, Malayalam and English, quoted on public web pages (bank, news and police pages), checked once with the rules **before** any change | **0 of 24 reached "Likely scam" (60+). 7 of 24 reached "Suspicious" (30+).** | First check on messages the rules had never seen. n is small, 6 of the 24 are the same electricity-bill scam, and the pages mostly show them as examples, not as messages someone really received. The rules were then fixed using these messages, so a later score on them (about 87% recall on the 23 public_web scams in dev) is **not accuracy**. This check is now used up. |
 | Held-out test set (210 public messages: 66 scam, 144 genuine) | **Not run yet** | Kept unseen on purpose. It is English and mostly UK-style, so even a good result would say nothing about Hindi, Marathi or Malayalam. |
 
 The Hindi, Marathi, Malayalam and Hinglish rules have only been checked on made-up messages. No real
@@ -88,7 +89,7 @@ tool performs in real life. Made-up messages are never used for testing. Details
 
 ## Limitations
 
-- **No real-data accuracy for Indian languages yet.** The regional numbers come from made-up messages, and the real messages measured so far are English and mostly UK-style.
+- **No real-data accuracy for Indian languages yet.** The first check on real public examples was weak (see the table). Messages from public pages are labelled `public_web`, can tune the rules, and are never used in the test set. The regional numbers come from made-up messages, and the real messages measured so far are English and mostly UK-style.
 - **Screenshot reading has had one real-world check.** A dark-mode iPhone screenshot of an English lottery SMS was read correctly, except that ₹ became % and the status bar and sender number were picked up as extra text. Three further made-up Hindi, Marathi and Malayalam screenshots (placeholder phone numbers) were also tried and used to improve the rules, so their scores are tuning examples, not accuracy. Expect more mistakes in Malayalam and in low-resolution pictures. Cropping to the message helps. The first use downloads a few MB of language data.
 - Scammers disguise words (W0N, K.Y.C). The rules now undo the most common tricks, but new tricks will get through.
 - Rules are keyword lists. They miss spelling variants and wording they do not list. A first quick check
