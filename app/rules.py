@@ -69,7 +69,8 @@ TEXT_RULES = [
       r"\bcomplete\b.{0,15}\btasks?\b"], False),
     ("chat_move", "Pushes you to Telegram or WhatsApp", 10,
      "Scammers move you to chat apps where there is no record and no protection.",
-     [r"\b(telegram|whatsapp)\b.{0,40}\b(join|group|contact|apply|message us)\b", r"\bt\.me/"], False),
+     [r"\b(telegram|whatsapp)\b.{0,40}\b(join|group|contact|apply|message us)\b",
+      r"\b(contact|message|join|apply|reach)\b.{0,50}\b(telegram|whatsapp)\b", r"\bt\.me/"], False),
     ("parcel_customs", "Fake parcel or customs fee", 20,
      "Courier and customs scams ask for a small 'release fee' to steal card or UPI details.",
      [r"\b(parcel|courier|package|shipment|consignment)\b.{0,60}\b(held|seized|customs|fee|charges|undelivered|illegal|stuck)\b",
@@ -112,7 +113,7 @@ TEXT_RULES = [
     ("callback_number", "Tells you to call a number to cancel or fix something", 15,
      "Scam messages often include a phone number so a fake agent can talk you into paying.",
      [r"\bif (this|it) (was|is) not you\b.{0,40}\bcall\b",
-      r"\b(call|contact|whatsapp)\b.{0,30}\b(\+?91[-\s]?)?[6-9]\d{9}\b",
+      r"\b(call|contact|whatsapp)\b.{0,30}?(?<!\d)(?:\+?91[-\s]?)?[6-9]\d{4}[-\s]?\d{5}(?!\d)",
       r"\b(call|contact)\b.{0,25}\bcustomer (care|service)\b"], False),
     ("send_bank_details", "Asks you to send your account or card details", 30,
      "No genuine bank, courier or shop asks you to message your account number, card number or bank details.",
@@ -279,8 +280,34 @@ def normalize(text: str) -> str:
     return re.sub(r"(?<=[A-Za-z])[01](?=[A-Za-z])", lambda m: "o" if m.group() == "0" else "i", text)
 
 
+_CONNECTOR_END = re.compile(r"\b(your|the|a|an|to|of|on|in|for|and|or|with|our|this|that|is|are|will|be|by|at|from|as|if|you)\s*$", re.I)
+_SENTENCE_END = re.compile(r"[.!?\u0964\u0965]\s*$")  # . ! ? and the Hindi danda
+
+
+def unwrap(text: str) -> str:
+    """Join lines that were only wrapped by a narrow screen, so a sentence is not cut in half.
+
+    Screenshots read by OCR break a sentence wherever the phone wrapped it. A new line is kept when the
+    line before it ends a sentence; it is joined when the next line starts in lower case, the line before
+    ends with a comma or a small connecting word, or both lines are in an Indian script.
+    """
+    out: list[str] = []
+    for line in text.split("\n"):
+        prev = out[-1] if out else ""
+        if prev.strip() and line.strip() and not _SENTENCE_END.search(prev) and (
+            re.match(r"\s*[a-z]", line)
+            or re.search(r"[,;:\-]\s*$", prev)
+            or _CONNECTOR_END.search(prev)
+            or (re.search(r"[\u0900-\u0d7f]\s*$", prev) and re.match(r"\s*[\u0900-\u0d7f]", line))
+        ):
+            out[-1] = prev.rstrip() + " " + line.lstrip()
+        else:
+            out.append(line)
+    return "\n".join(out)
+
+
 def text_signals(text: str) -> list[Signal]:
-    text = normalize(text)
+    text = unwrap(normalize(text))
     sentences = [s for s in _SENT_SPLIT.split(text) if s.strip()]
     found: list[Signal] = []
     for sid, label, weight, why, patterns, sentence_level in _COMPILED:

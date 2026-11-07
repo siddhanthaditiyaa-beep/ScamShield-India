@@ -45,3 +45,23 @@ def test_malayalam_spelling_variants_score_the_same():
     assert score(plain) >= 60
     assert score(old_chillu) == score(plain)
     assert score(with_zwnj) == score(plain)
+
+
+def test_lottery_screenshot_text_is_flagged_as_likely_scam():
+    """Text as read from a phone screenshot: wrapped lines and a phone number written with a space."""
+    text = (
+        "Congratulations!\nYou have won a Lottery of\nRs 25,00,000 (Twenty Five Lakhs Only)\n"
+        "from the Government Lucky Draw 2026.\n\nTo claim your prize, contact our officer\n"
+        "immediately on WhatsApp:\n+9198765 43210\nClaim your reward within 24 hours,\n"
+        "otherwise it will be cancelled."
+    )
+    assert score(text) >= 60
+
+
+def test_sentence_wrapped_by_the_screen_is_still_one_sentence():
+    assert score("Hello, please share your\nOTP with our agent to get your refund.") >= 30
+
+
+def test_support_number_with_a_space_alone_is_not_flagged():
+    assert score("Your order has shipped. Contact us on WhatsApp +91 98765 43210 if you need help.") < 30
+    assert score("For support call 98765 43210 between 10 am and 6 pm.") < 30
