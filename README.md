@@ -8,6 +8,9 @@ Hindi, Marathi and Malayalam.
 > **Status: early prototype.** The tool runs and has tests, but it has **not yet been measured on real
 > scam messages**. See [What has been measured](#what-has-been-measured). It is a helper, not a guarantee.
 
+**Live demo:** https://scamshield-india-wvyl.onrender.com  
+*Free hosting: the demo sleeps when nobody uses it, so the first load can take about a minute.*
+
 ![ScamShield India screenshot](docs/screenshot.png)
 *Made-up example message.*
 
@@ -91,6 +94,7 @@ tool performs in real life. Made-up messages are never used for testing. Details
   containing one can slip through.
 - Scam wording changes constantly, so the rules need regular updates.
 - The brand allow-list in `app/rules.py` has not been verified.
+- The public demo has no rate limit yet.
 
 ## Roadmap
 
@@ -100,7 +104,8 @@ tool performs in real life. Made-up messages are never used for testing. Details
 - [ ] Train and evaluate the ML layer on real data
 - [ ] Handle screenshots (OCR) so people can upload a picture of the message
 - [ ] Telegram bot
-- [ ] Deploy a live demo
+- [x] Deploy a live demo (Render free tier)
+- [ ] Add a rate limit to the public demo
 
 ## Project structure
 
