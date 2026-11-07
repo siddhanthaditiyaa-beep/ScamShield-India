@@ -46,6 +46,12 @@ def analyze(message: str) -> dict:
         signals.append(rules.Signal("link_plus_pressure", "Pressure plus a link", 10,
                                     "A link combined with pressure to act fast is the core pattern of phishing."))
 
+    prize = {"prize_lottery", "ml_lottery"}
+    contact = {"callback_number", "ml_callback", "chat_move", "ml_chat_move"}
+    if ids & prize and ids & contact:
+        signals.append(rules.Signal("prize_plus_contact", "Prize plus 'contact us to claim'", 20,
+                                    "A surprise prize that you must claim by calling or messaging a number is the standard lottery scam."))
+
     rule_score = min(100, sum(s.weight for s in signals))
     ml_prob = ml.scam_probability(text)
     ml_score = round(ml_prob * 100) if ml_prob is not None else None
