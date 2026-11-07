@@ -43,7 +43,10 @@ Helpline) if money was lost, and report at cybercrime.gov.in.
 2. **Optional ML layer** (`app/ml.py`, `ml/train.py`): TF-IDF text features and logistic regression. It can
    only **raise** a score, and only when it is very confident, so it can never hide a scam the rules found.
    It is not trained yet, because there is not enough real data.
-3. **Result** (`app/analyzer.py`): a 0 to 100 score, the reasons, the links found, and advice.
+3. **Screenshot upload**: the page can read text from a screenshot (Tesseract OCR, English, Hindi, Marathi and
+   Malayalam). It runs **inside the visitor's browser**, so the picture is never uploaded. The text is placed in
+   the box so the user can fix mistakes before checking.
+4. **Result** (`app/analyzer.py`): a 0 to 100 score, the reasons, the links found, and advice.
    60 and above = likely scam, 30 to 59 = suspicious, below 30 = "no strong signals" (never "safe").
 
 Messages are analysed in memory and are never stored.
@@ -76,6 +79,7 @@ No result here is real accuracy yet. This is everything measured so far, and wha
 | 18 freshly written scams, before the regional rules were extended | 7 of 18 flagged (39%) | Showed the first regional rules depended on exact wording and spelling. Fixed afterwards, so this check is now used up. |
 | 12 freshly written genuine messages | 12 of 12 passed | Small and made up. |
 | 4,827 normal English messages (UCI SMS Spam Collection) | 1 flagged (0.02%, 95% range 0.0 to 0.1%) | False-alarm check on casual chat, not on bank alerts. |
+| Screenshot reading, smoke test: 4 made-up scam messages (English, Hindi, Marathi, Malayalam) drawn by a computer as clean images and uploaded through the real page in headless Chrome | Text matched the original 100%, 100%, 100% and 93% (character similarity). The Malayalam score stayed the same after a normalisation fix. | **Not accuracy.** Clean, computer-drawn text only. Real phone screenshots (chat bubbles, dark mode, compression, handwriting-style fonts) are untested. |
 | Held-out test set (210 public messages: 66 scam, 144 genuine) | **Not run yet** | Kept unseen on purpose. It is English and mostly UK-style, so even a good result would say nothing about Hindi, Marathi or Malayalam. |
 
 The Hindi, Marathi, Malayalam and Hinglish rules have only been checked on made-up messages. No real
@@ -85,6 +89,7 @@ tool performs in real life. Made-up messages are never used for testing. Details
 ## Limitations
 
 - **No real-data accuracy for Indian languages yet.** The regional numbers come from made-up messages, and the real messages measured so far are English and mostly UK-style.
+- **Screenshot reading is untested on real screenshots.** Expect mistakes, especially in Malayalam and in dark-mode or low-resolution pictures. The first use downloads a few MB of language data.
 - Scammers disguise words (W0N, K.Y.C). The rules now undo the most common tricks, but new tricks will get through.
 - Rules are keyword lists. They miss spelling variants and wording they do not list. A first quick check
   showed this clearly for Hindi, Marathi and Malayalam.
@@ -102,7 +107,7 @@ tool performs in real life. Made-up messages are never used for testing. Details
 - [ ] Measure precision and recall on that test set and report the numbers here
 - [ ] Review and extend the Hindi, Marathi and Malayalam rules with real examples
 - [ ] Train and evaluate the ML layer on real data
-- [ ] Handle screenshots (OCR) so people can upload a picture of the message
+- [x] Handle screenshots (OCR) so people can upload a picture of the message (browser-side, needs testing on real screenshots)
 - [ ] Telegram bot
 - [x] Deploy a live demo (Render free tier)
 - [ ] Add a rate limit to the public demo
@@ -111,7 +116,7 @@ tool performs in real life. Made-up messages are never used for testing. Details
 
 ```
 app/        FastAPI app, rule engine, ML layer, analyzer
-static/     Web interface
+static/     Web interface (static/vendor/ocr holds the screenshot-reading files, see its README.txt)
 data/       Dataset (messages.csv) and the collection plan
 ml/         Training, dev/test split, evaluation and stress-test scripts
 tools/      Personal-detail scrubber and dataset helper
@@ -120,6 +125,7 @@ tests/      Unit and data tests
 
 ## Data and privacy
 
+- Screenshots are read in the browser and never sent to the server.
 - Personal details (names, phone numbers, account numbers, OTPs) are removed before a message is saved.
 - Only messages given with permission, or public datasets with a suitable licence, are used.
 - Made-up messages (`self_written`, `synthetic_ai`) are labelled and never used for testing.
