@@ -89,7 +89,7 @@ tool performs in real life. Made-up messages are never used for testing. Details
 ## Limitations
 
 - **No real-data accuracy for Indian languages yet.** The regional numbers come from made-up messages, and the real messages measured so far are English and mostly UK-style.
-- **Screenshot reading has had one real-world check.** A dark-mode iPhone screenshot of an English lottery SMS was read correctly, except that ₹ became % and the status bar and sender number were picked up as extra text. Expect more mistakes in Malayalam and in low-resolution pictures. Cropping to the message helps. The first use downloads a few MB of language data.
+- **Screenshot reading has had one real-world check.** A dark-mode iPhone screenshot of an English lottery SMS was read correctly, except that ₹ became % and the status bar and sender number were picked up as extra text. Three further made-up Hindi, Marathi and Malayalam screenshots (placeholder phone numbers) were also tried and used to improve the rules, so their scores are tuning examples, not accuracy. Expect more mistakes in Malayalam and in low-resolution pictures. Cropping to the message helps. The first use downloads a few MB of language data.
 - Scammers disguise words (W0N, K.Y.C). The rules now undo the most common tricks, but new tricks will get through.
 - Rules are keyword lists. They miss spelling variants and wording they do not list. A first quick check
   showed this clearly for Hindi, Marathi and Malayalam.
@@ -99,7 +99,7 @@ tool performs in real life. Made-up messages are never used for testing. Details
   containing one can slip through.
 - Scam wording changes constantly, so the rules need regular updates.
 - The brand allow-list in `app/rules.py` has not been verified.
-- The public demo has no rate limit yet.
+- The public demo has a simple in-memory rate limit (20 checks per minute per visitor, 300 overall). It resets when the server restarts and the visitor address can be faked, so it protects a free demo from accidents, not from a determined attacker. It has only been tested in code, not under real load.
 
 ## Roadmap
 
@@ -110,7 +110,7 @@ tool performs in real life. Made-up messages are never used for testing. Details
 - [x] Handle screenshots (OCR) so people can upload a picture of the message (browser-side, needs testing on real screenshots)
 - [ ] Telegram bot
 - [x] Deploy a live demo (Render free tier)
-- [ ] Add a rate limit to the public demo
+- [x] Add a rate limit to the public demo
 
 ## Project structure
 
