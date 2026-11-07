@@ -89,7 +89,7 @@ tool performs in real life. Made-up messages are never used for testing. Details
 ## Limitations
 
 - **No real-data accuracy for Indian languages yet.** The regional numbers come from made-up messages, and the real messages measured so far are English and mostly UK-style.
-- **Screenshot reading is untested on real screenshots.** Expect mistakes, especially in Malayalam and in dark-mode or low-resolution pictures. The first use downloads a few MB of language data.
+- **Screenshot reading has had one real-world check.** A dark-mode iPhone screenshot of an English lottery SMS was read correctly, except that ₹ became % and the status bar and sender number were picked up as extra text. Expect more mistakes in Malayalam and in low-resolution pictures. Cropping to the message helps. The first use downloads a few MB of language data.
 - Scammers disguise words (W0N, K.Y.C). The rules now undo the most common tricks, but new tricks will get through.
 - Rules are keyword lists. They miss spelling variants and wording they do not list. A first quick check
   showed this clearly for Hindi, Marathi and Malayalam.
