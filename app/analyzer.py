@@ -1,6 +1,7 @@
 """Combines the rule engine and the optional ML model into one explainable result."""
 from __future__ import annotations
 
+import re
 from dataclasses import asdict
 
 from . import ml, rules
@@ -35,6 +36,13 @@ def _label(score: int) -> str:
     return "no_strong_signals"
 
 
+PROMO_CAP = 25
+WEAK_ONLY = {"urgency", "short_link", "link_plus_pressure", "refund_details"}
+PROMO_WORDS = re.compile(
+    r"\b(t\s?&\s?cs?\s+apply|tncs?\s+apply|t&c|terms (and|&) conditions|use code|promo code|coupon|"
+    r"\d+\s?%\s?off|rs\.?\s?\d+\s?off|buy \d+ get \d+|b\d+g\d+|stop to \d+|unsubscribe|opt[- ]?out)\b", re.I)
+
+
 def analyze(message: str) -> dict:
     text = message.strip()
     urls = rules.extract_urls(text)
@@ -59,6 +67,17 @@ def analyze(message: str) -> dict:
                                     "A scare message that tells you to call a number is how scammers get you on the phone to pay or share details."))
 
     rule_score = min(100, sum(s.weight for s in signals))
+
+    # Ordinary store and telecom promotions often have a short link and words like "hurry".
+    # If the only things we saw are those weak signals, and the text has clear promotion wording,
+    # keep it below the "suspicious" line. Any stronger signal (prize, OTP, KYC, look-alike link,
+    # phone number, ...) switches this off. Honest limit: a scam dressed as a promotion with only
+    # a short link and "hurry" would also stay low.
+    ids = {s.id for s in signals}
+    if PROMO_WORDS.search(text) and not (ids - WEAK_ONLY) and rule_score > PROMO_CAP:
+        rule_score = PROMO_CAP
+        signals.append(rules.Signal("promo_like", "Looks like a store or telecom promotion", 0,
+                                    "Ordinary offers use short links and words like 'hurry'. Score was kept low because nothing else looked risky. Still check the sender."))
     ml_prob = ml.scam_probability(text)
     ml_score = round(ml_prob * 100) if ml_prob is not None else None
     score = max(rule_score, ml_score) if ml_prob is not None and ml_prob >= ML_TRUST else rule_score

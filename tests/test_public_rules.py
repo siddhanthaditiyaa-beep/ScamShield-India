@@ -78,3 +78,15 @@ def test_brand_own_promo_links_are_not_lookalikes():
 
 def test_job_with_deposit_is_flagged():
     assert analyze("TCS is hiring freshers for online data entry job, earn Rs 25,000 monthly, deposit Rs 999 for training kit.")["score"] >= 30
+
+
+def test_ordinary_promotions_with_short_links_stay_below_suspicious():
+    for t in ["Dunzo Daily is now live! Get groceries in 35 mins. Hurry, last 3 hours, use code DUNZO10 for 10% OFF. Click http://bit.ly/DunzoNow T&C apply",
+              "Get 40% cashback on recharge from ViApp. Click bit.ly/ViCash T&C apply. Hurry, offer ends today."]:
+        assert analyze(t)["score"] < 30, t
+
+
+def test_scam_dressed_as_promotion_with_strong_signals_stays_high():
+    for t in ["Use code SAVE50 for 50% OFF. Your account is blocked, share the OTP to unblock it immediately.",
+              "Congratulations! You won Rs 25,00,000 in the lucky draw. T&C apply. Call 9000000000 now to claim your prize."]:
+        assert analyze(t)["score"] >= 60, t
