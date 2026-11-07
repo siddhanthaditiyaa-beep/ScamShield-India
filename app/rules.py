@@ -270,6 +270,12 @@ def normalize(text: str) -> str:
     0 or 1 that sits between two letters, so real numbers and links are left alone.
     """
     text = re.sub(r"\b([A-Za-z])\.([A-Za-z])\.([A-Za-z])\b", r"\1\2\3", text)  # K.Y.C -> KYC
+    # Malayalam can be typed two ways: old style (consonant + virama + ZWJ) or one 'chillu' letter.
+    # Turn the old style into the one-letter form, then drop invisible joiners, so one word = one spelling.
+    text = re.sub("([\u0d23\u0d28\u0d30\u0d32\u0d33])\u0d4d\u200d",
+                  lambda m: {"\u0d23": "\u0d7a", "\u0d28": "\u0d7b", "\u0d30": "\u0d7c",
+                             "\u0d32": "\u0d7d", "\u0d33": "\u0d7e"}[m.group(1)], text)
+    text = text.replace("\u200c", "").replace("\u200d", "")
     return re.sub(r"(?<=[A-Za-z])[01](?=[A-Za-z])", lambda m: "o" if m.group() == "0" else "i", text)
 
 

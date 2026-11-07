@@ -35,3 +35,13 @@ def test_scam_wordings_are_flagged(text):
 ])
 def test_ordinary_messages_stay_below_the_flag_line(text):
     assert score(text) < 30, text
+
+
+def test_malayalam_spelling_variants_score_the_same():
+    """OCR and some keyboards write the same Malayalam word with invisible joiners or old-style chillus."""
+    plain = "നിങ്ങളുടെ ബാങ്ക് അക്കൗണ്ട് ഇന്ന് ബ്ലോക്ക് ചെയ്യും. ഉടൻ കെവൈസി പുതുക്കുക."
+    old_chillu = plain.replace("ഉടൻ", "ഉടന്\u200d")  # na + virama + ZWJ
+    with_zwnj = plain.replace("ബ്ലോക്ക്", "ബ്ലോക്ക്\u200c")
+    assert score(plain) >= 60
+    assert score(old_chillu) == score(plain)
+    assert score(with_zwnj) == score(plain)

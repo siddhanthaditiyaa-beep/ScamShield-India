@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>ScamShield India</title>
+<link rel="icon" href="data:,">
 <style>
 :root{--bg:#F6F7FB;--card:#fff;--ink:#14161C;--muted:#5A6073;--line:#DDE1EC;--acc:#0A5BD3;--red:#D6343B;--amber:#C27A00;--green:#0E8F63}
 @media (prefers-color-scheme:dark){:root{--bg:#0E1117;--card:#161B24;--ink:#EDEFF5;--muted:#9AA3B8;--line:#273042;--acc:#5BB5FF;--red:#FF6B70;--amber:#F2B94B;--green:#3DD6A0}}
@@ -43,6 +44,18 @@ code{background:var(--bg);padding:1px 6px;border-radius:6px;word-break:break-all
       <button class="ex" data-t="Your OTP for login is 482913. Do not share it with anyone.">Try: genuine OTP</button>
       <button class="ex" data-t="Sir aapka KYC pending hai, account band ho jayega. Turant link par click karein: bit.ly/kyc-now">Try: Hinglish</button>
     </div>
+    <div class="row">
+      <button class="ex" id="shotbtn" type="button">Upload a screenshot</button>
+      <label for="shotlang" class="note" style="margin:0">Language in the picture:</label>
+      <select id="shotlang" aria-label="Language in the screenshot">
+        <option value="eng">English / Hinglish</option>
+        <option value="hin+eng">Hindi</option>
+        <option value="mar+eng">Marathi</option>
+        <option value="mal+eng">Malayalam</option>
+      </select>
+      <input type="file" id="shot" accept="image/*" hidden>
+    </div>
+    <p class="note" id="ocrnote">Screenshots are read inside your browser and are never uploaded. Check the text it finds, fix any mistakes, then press Check message.</p>
     <p class="note">Your message is analysed in memory and not stored. This is a helper, not a guarantee.</p>
   </div>
   <div id="out" class="card" hidden aria-live="polite"></div>
@@ -70,6 +83,51 @@ async function run() {
     $("#out").hidden = false; $("#out").textContent = "Something went wrong: " + e.message;
   } finally { $("#go").disabled = false; }
 }
+// ---- Screenshot reading (OCR). Runs in the browser with files served from /static/vendor/ocr.
+const OCR = "/static/vendor/ocr/";
+let ocrWorker = null, ocrLang = null;
+const setNote = t => { $("#ocrnote").textContent = t; };
+function loadScript(src) {
+  return new Promise((ok, bad) => {
+    const s = document.createElement("script");
+    s.src = src; s.onload = ok; s.onerror = () => bad(new Error("Could not load the text reader"));
+    document.head.appendChild(s);
+  });
+}
+async function readScreenshot(file) {
+  if (!window.Tesseract) await loadScript(OCR + "tesseract.min.js");
+  const lang = $("#shotlang").value;
+  if (ocrWorker && ocrLang !== lang) { await ocrWorker.terminate(); ocrWorker = null; }
+  if (!ocrWorker) {
+    setNote("Loading the text reader (first time only, a few MB)...");
+    ocrWorker = await Tesseract.createWorker(lang, 1, {
+      workerPath: OCR + "worker.min.js", corePath: OCR + "core/", langPath: OCR + "lang/",
+      logger: m => { if (m.status === "recognizing text") setNote("Reading the picture... " + Math.round(m.progress * 100) + "%"); }
+    });
+    ocrLang = lang;
+  }
+  setNote("Reading the picture...");
+  const { data } = await ocrWorker.recognize(file);
+  return data.text;
+}
+$("#shotbtn").onclick = () => $("#shot").click();
+$("#shot").onchange = async e => {
+  const file = e.target.files[0];
+  e.target.value = "";
+  if (!file) return;
+  if (file.size > 10 * 1024 * 1024) { setNote("That picture is too large. Please use one under 10 MB."); return; }
+  $("#shotbtn").disabled = true;
+  try {
+    const text = (await readScreenshot(file)).trim();
+    if (!text) { setNote("No text found. Try a clearer or larger screenshot, or another language."); return; }
+    $("#msg").value = text.slice(0, 2000);
+    setNote("Text read from the picture. Check it and fix any mistakes, then press Check message." +
+            (text.length > 2000 ? " Only the first 2000 characters were kept." : ""));
+  } catch (err) {
+    setNote("Could not read the picture: " + err.message);
+  } finally { $("#shotbtn").disabled = false; }
+};
+
 function show(r) {
   const [text, color] = LABEL[r.label];
   const sigs = r.signals.length
