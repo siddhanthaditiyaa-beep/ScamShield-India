@@ -68,17 +68,21 @@ No result here is real accuracy yet. This is everything measured so far, and wha
 
 | Check | Result | What it means |
 |---|---|---|
-| Dev set (131 messages: 41 hand-written seed messages + 90 drafted by an AI) | 100% precision and recall | **Not accuracy.** The rules were tuned on these messages. |
+| Dev set, hand-written seed messages (41) and AI-drafted messages (90) | 100% precision and recall | **Not accuracy.** The rules were tuned on these messages. |
+| Dev set, public SMS phishing data (483 messages: 165 scam, 318 genuine, all English) | Scam recall **25%** (95% range 19 to 33%, n=165). Precision 100% (92 to 100%, n=42). 0 false alarms on 386 genuine dev messages. | First run was 10% recall. Most misses are UK-style scams (premium-rate numbers, pound prizes) that this India-focused tool is not built for. The rules were then fixed for the Indian-style misses, so these numbers are **optimistic**. |
 | 18 freshly written scams, before the regional rules were extended | 7 of 18 flagged (39%) | Showed the first regional rules depended on exact wording and spelling. Fixed afterwards, so this check is now used up. |
 | 12 freshly written genuine messages | 12 of 12 passed | Small and made up. |
-| 4,827 normal English messages (UCI SMS Spam Collection) | 4 flagged (0.1%, 95% range 0.0 to 0.2%) | False-alarm check on casual chat, not on bank alerts. |
+| 4,827 normal English messages (UCI SMS Spam Collection) | 1 flagged (0.02%, 95% range 0.0 to 0.1%) | False-alarm check on casual chat, not on bank alerts. |
+| Held-out test set (210 public messages: 66 scam, 144 genuine) | **Not run yet** | Kept unseen on purpose. It is English and mostly UK-style, so even a good result would say nothing about Hindi, Marathi or Malayalam. |
 
-The test set for real messages is empty, because no real scam messages have been collected yet.
-Made-up messages are never used for testing. Details are in `data/COLLECTION_PLAN.md`.
+The Hindi, Marathi, Malayalam and Hinglish rules have only been checked on made-up messages. No real
+messages in those languages have been collected yet, so their results above are **not evidence** of how the
+tool performs in real life. Made-up messages are never used for testing. Details are in `data/COLLECTION_PLAN.md`.
 
 ## Limitations
 
-- **No real-data accuracy yet.** The numbers above come from made-up or non-Indian data.
+- **No real-data accuracy for Indian languages yet.** The regional numbers come from made-up messages, and the real messages measured so far are English and mostly UK-style.
+- Scammers disguise words (W0N, K.Y.C). The rules now undo the most common tricks, but new tricks will get through.
 - Rules are keyword lists. They miss spelling variants and wording they do not list. A first quick check
   showed this clearly for Hindi, Marathi and Malayalam.
 - Genuine bank, electricity and KYC reminders can look like scams. They score close to the "suspicious"
@@ -90,7 +94,7 @@ Made-up messages are never used for testing. Details are in `data/COLLECTION_PLA
 
 ## Roadmap
 
-- [ ] Collect and label real messages (with permission, personal details removed) and keep a real test set
+- [ ] Collect real Hindi, Marathi, Malayalam and Hinglish messages (with permission, personal details removed) for a real test set
 - [ ] Measure precision and recall on that test set and report the numbers here
 - [ ] Review and extend the Hindi, Marathi and Malayalam rules with real examples
 - [ ] Train and evaluate the ML layer on real data
@@ -114,6 +118,7 @@ tests/      Unit and data tests
 - Personal details (names, phone numbers, account numbers, OTPs) are removed before a message is saved.
 - Only messages given with permission, or public datasets with a suitable licence, are used.
 - Made-up messages (`self_written`, `synthetic_ai`) are labelled and never used for testing.
+- Public SMS phishing messages come from the Mendeley Data set "SMS Phishing Dataset for Machine Learning and Pattern Recognition" (CC BY 4.0, authors listed at https://data.mendeley.com/datasets/f45bkkt8pr/1). Personal details are removed, and 'spam' (promotion) rows are not used. Cleaned copies are in `data/messages.csv`.
 - Stress tests use the UCI SMS Spam Collection (Almeida, Gomez Hidalgo and Yamakami, 2011; CC BY 4.0).
   It is English, mostly UK and Singapore messages, and is not included in this repository.
 
