@@ -96,6 +96,18 @@ The Hindi, Marathi, Malayalam and Hinglish rules have only been checked on made-
 messages in those languages have been collected yet, so their results above are **not evidence** of how the
 tool performs in real life. Made-up messages are never used for testing. Details are in `data/COLLECTION_PLAN.md`.
 
+## Telegram bot
+
+Send or forward a message to the bot and it replies with the same score, reasons and advice as the website.
+Create a bot with `@BotFather` on Telegram, then in PowerShell inside the project folder:
+
+```
+$env:TELEGRAM_BOT_TOKEN = "paste-your-token-here"
+python -m bot.telegram_bot
+```
+
+It only replies with check results, never repeats your message, shows links with `hxxp` and `[.]` so they cannot be tapped, ignores group chats, and does not store or log message text. The token is a password: keep it out of git. It runs only while your computer runs the command, and screenshots are not supported in the bot yet.
+
 ## Limitations
 
 - **No real-data accuracy for Indian languages yet.** The first check on real public examples was weak (see the table). Messages from public pages are labelled `public_web`, can tune the rules, and are never used in the test set. The regional numbers come from made-up messages, and the real messages measured so far are English and mostly UK-style.
@@ -122,7 +134,7 @@ tool performs in real life. Made-up messages are never used for testing. Details
 - [ ] Train and evaluate the ML layer on real data
 - [x] Handle screenshots (OCR) so people can upload a picture of the message (browser-side, needs testing on real screenshots)
 - [x] Optional "Was this right?" feedback button (text saved only with a tick; see Data and privacy)
-- [ ] Telegram bot
+- [x] Telegram bot (runs on your own computer; tested only against a fake Telegram so far)
 - [x] Deploy a live demo (Render free tier)
 - [x] Add a rate limit to the public demo
 
@@ -130,6 +142,7 @@ tool performs in real life. Made-up messages are never used for testing. Details
 
 ```
 app/        FastAPI app, rule engine, ML layer, analyzer
+bot/        Telegram bot (uses the same analyzer)
 static/     Web interface (static/vendor/ocr holds the screenshot-reading files, see its README.txt)
 data/       Dataset (messages.csv) and the collection plan
 ml/         Training, dev/test split, evaluation and stress-test scripts
