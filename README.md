@@ -104,6 +104,8 @@ tool performs in real life. Made-up messages are never used for testing. Details
 - The brand allow-list in `app/rules.py` has not been verified.
 - The public demo has a simple in-memory rate limit (20 checks per minute per visitor, 300 overall). It resets when the server restarts and the visitor address can be faked, so it protects a free demo from accidents, not from a determined attacker. It was confirmed on the live site on 7 Nov 2026 (the limit message appeared after rapid clicks), but it has not been tested under real load.
 
+- Visitor feedback is optional and unverified. Anyone can send it, so labels can be wrong or junk. On Render's free tier the disk is wiped on every restart or deploy, so saved feedback can disappear. Feedback rows are `user_feedback`: they can tune the rules, never the test set, and nothing from them counts as measured accuracy.
+
 ## Roadmap
 
 - [ ] Collect real Hindi, Marathi, Malayalam and Hinglish messages (with permission, personal details removed) for a real test set
@@ -111,6 +113,7 @@ tool performs in real life. Made-up messages are never used for testing. Details
 - [ ] Review and extend the Hindi, Marathi and Malayalam rules with real examples
 - [ ] Train and evaluate the ML layer on real data
 - [x] Handle screenshots (OCR) so people can upload a picture of the message (browser-side, needs testing on real screenshots)
+- [x] Optional "Was this right?" feedback button (text saved only with a tick; see Data and privacy)
 - [ ] Telegram bot
 - [x] Deploy a live demo (Render free tier)
 - [x] Add a rate limit to the public demo
@@ -129,6 +132,7 @@ tests/      Unit and data tests
 ## Data and privacy
 
 - Screenshots are read in the browser and never sent to the server.
+- Feedback buttons: nothing is saved unless a visitor presses one. Only the score shown, the verdict shown, the answer and the date are kept. The message text is kept only if the visitor ticks the box. It is cleaned first (phone, account, card, Aadhaar, PAN, email, UPI id, OTP) and dropped if personal details are still visible. Names are not reliably removed, so the page tells visitors to edit them out. No IP address is stored. The owner can download the file at `/api/feedback/export?token=...` only if the `FEEDBACK_TOKEN` environment variable is set; otherwise that address does not exist. `tools/import_feedback.py` loads an export as `user_feedback`, after which you should read every row yourself.
 - Personal details (names, phone numbers, account numbers, OTPs) are removed before a message is saved.
 - Only messages given with permission, or public datasets with a suitable licence, are used.
 - Made-up messages (`self_written`, `synthetic_ai`) are labelled and never used for testing.

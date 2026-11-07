@@ -21,6 +21,7 @@ button{font:inherit;border:0;border-radius:10px;padding:10px 16px;cursor:pointer
 .go{background:var(--acc);color:#fff;font-weight:600}
 .ex{background:transparent;border:1px solid var(--line);color:var(--muted);padding:6px 10px;font-size:13px}
 .note{color:var(--muted);font-size:13px;margin-top:10px}
+.fbrow{display:flex;gap:8px;flex-wrap:wrap;margin-top:6px}
 #out{margin-top:16px}
 .verdict{font-size:20px;font-weight:700;margin:0 0 8px}
 .bar{height:10px;border-radius:99px;background:var(--line);overflow:hidden}
@@ -62,6 +63,7 @@ code{background:var(--bg);padding:1px 6px;border-radius:6px;word-break:break-all
 </main>
 <script>
 const $ = s => document.querySelector(s);
+let last = null;
 const LABEL = {
   likely_scam: ["Likely a scam", "var(--red)"],
   suspicious: ["Suspicious, be careful", "var(--amber)"],
@@ -78,7 +80,9 @@ async function run() {
     const res = await fetch("/api/analyze", {method: "POST", headers: {"Content-Type": "application/json"}, body: JSON.stringify({message})});
     if (res.status === 429) throw new Error("Too many checks too quickly. Please wait a minute and try again.");
     if (!res.ok) throw new Error("Server error " + res.status);
-    show(await res.json());
+    const data = await res.json();
+    last = {message, score: data.score, label: data.label};
+    show(data);
   } catch (e) {
     $("#out").hidden = false; $("#out").textContent = (e.message.startsWith("Too many") ? "" : "Something went wrong: ") + e.message;
   } finally { $("#go").disabled = false; }
@@ -139,7 +143,34 @@ function show(r) {
     <div class="bar"><i style="background:${color};width:${r.score}%"></i></div>
     <h3>Why</h3>${sigs}
     ${r.urls.length ? `<h3>Links found</h3><ul>${r.urls.map(u => `<li><code>${esc(u)}</code></li>`).join("")}</ul>` : ""}
-    <h3>What to do</h3><ul>${r.advice.map(a => `<li>${esc(a)}</li>`).join("")}</ul>`;
+    <h3>What to do</h3><ul>${r.advice.map(a => `<li>${esc(a)}</li>`).join("")}</ul>
+    <h3>Was this right?</h3>
+    <p class="note">Optional. Nothing is saved unless you press one of these buttons.</p>
+    <div class="fbrow">
+      <button class="ex" data-fb="scam">It is a scam</button>
+      <button class="ex" data-fb="genuine">It is genuine</button>
+      <button class="ex" data-fb="unsure">Not sure</button>
+    </div>
+    <label class="note"><input type="checkbox" id="fbconsent"> You may also save this message to help improve ScamShield. Phone, account and card numbers are removed automatically, but names are not, so edit them out of the box above first and check again.</label>
+    <p class="note" id="fbmsg"></p>`;
+  document.querySelectorAll("[data-fb]").forEach(b => b.onclick = () => sendFeedback(b.dataset.fb));
+}
+async function sendFeedback(userLabel) {
+  if (!last) return;
+  const consent = $("#fbconsent").checked;
+  try {
+    const res = await fetch("/api/feedback", {method: "POST", headers: {"Content-Type": "application/json"},
+      body: JSON.stringify({score: last.score, label: last.label, user_label: userLabel,
+                            message: consent ? last.message : null, consent})});
+    if (res.status === 429) throw new Error("Too many requests, please wait a minute.");
+    if (!res.ok) throw new Error("Server error " + res.status);
+    const out = await res.json();
+    $("#fbmsg").textContent = !out.saved ? "Feedback is full right now. Thank you anyway."
+      : out.kept_text ? "Thank you. Your answer and the message (personal numbers removed) were saved."
+      : consent ? "Thank you. Your answer was saved. The message was not saved because personal details were still visible in it."
+      : "Thank you. Only your answer was saved, not the message.";
+    document.querySelectorAll("[data-fb]").forEach(b => b.disabled = true);
+  } catch (e) { $("#fbmsg").textContent = e.message; }
 }
 </script>
 </body>

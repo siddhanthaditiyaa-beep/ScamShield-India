@@ -12,3 +12,6 @@ data/inbox/*
 # outside datasets (licences differ, never commit them)
 data/external/*
 !data/external/.gitkeep
+
+# visitor feedback may contain messages: never commit
+data/feedback*.jsonl
