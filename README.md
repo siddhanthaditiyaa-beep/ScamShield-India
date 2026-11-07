@@ -20,6 +20,14 @@ Most people who fall for these scams are not technical, and most scam checkers o
 and give a verdict without a reason. ScamShield explains each warning sign, so people learn to spot the
 next scam themselves.
 
+## Demo
+
+![Short demo: pasting a made-up bank KYC scam message and getting a risk score with reasons](docs/demo.gif)
+
+![Result screen for the made-up example below](docs/screenshot.png)
+
+The message in the demo is made up, not a real person's message.
+
 ## Example
 
 Made-up message: `Dear customer, your SBI account will be blocked today. Update KYC now: http://sbi-kyc-update.xyz/login`
@@ -127,6 +135,7 @@ data/       Dataset (messages.csv) and the collection plan
 ml/         Training, dev/test split, evaluation and stress-test scripts
 tools/      Personal-detail scrubber and dataset helper
 tests/      Unit and data tests
+docs/       Screenshot and demo GIF used in this README
 ```
 
 ## Data and privacy
