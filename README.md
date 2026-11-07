@@ -5,14 +5,11 @@ Built for the scams that hit India hardest: fake KYC alerts, UPI PIN tricks, dig
 fake parcel and customs fees, fake loans, job offers and fake refunds. Works with English, Hinglish,
 Hindi, Marathi and Malayalam.
 
-> **Status: early prototype.** The tool runs and has tests, but it has **not yet been measured on real
+> **Status: early prototype (116 automated tests pass).** The tool runs and has tests, but it has **not yet been measured on real
 > scam messages**. See [What has been measured](#what-has-been-measured). It is a helper, not a guarantee.
 
 **Live demo:** https://scamshield-india-wvyl.onrender.com  
 *Free hosting: the demo sleeps when nobody uses it, so the first load can take about a minute.*
-
-![ScamShield India screenshot](docs/screenshot.png)
-*Made-up example message.*
 
 ## Why this exists
 
@@ -57,7 +54,7 @@ Helpline) if money was lost, and report at cybercrime.gov.in.
 4. **Result** (`app/analyzer.py`): a 0 to 100 score, the reasons, the links found, and advice.
    60 and above = likely scam, 30 to 59 = suspicious, below 30 = "no strong signals" (never "safe").
 
-Messages are analysed in memory and are never stored.
+Messages are analysed in memory and are not stored. The only exception is the optional feedback button, which saves nothing unless the visitor presses it (see Data and privacy).
 
 ## Run it
 
@@ -82,14 +79,15 @@ No result here is real accuracy yet. This is everything measured so far, and wha
 
 | Check | Result | What it means |
 |---|---|---|
+| Whole dev set (643 messages: 253 scam, 390 genuine), rules only, latest run | Precision 100% (97 to 100%, n=126). Recall **50%** (44 to 56%, n=253). English-only recall is **36%** (n=194); Hindi 95%, Marathi 93%, Malayalam 92%, Hinglish 100% (n=21, 15, 12, 11). 0 false alarms on 390 genuine. | **Optimistic, not accuracy.** The rules were tuned on this data. The English recall is low mainly because of UK-style public scams. The regional recall comes mostly from made-up and public-page messages. |
 | Dev set, hand-written seed messages (41) and AI-drafted messages (90) | 100% precision and recall | **Not accuracy.** The rules were tuned on these messages. |
-| Dev set, public SMS phishing data (483 messages: 165 scam, 318 genuine, all English) | Scam recall **25%** (95% range 19 to 33%, n=165). Precision 100% (92 to 100%, n=42). 0 false alarms on 386 genuine dev messages. | First run was 10% recall. Most misses are UK-style scams (premium-rate numbers, pound prizes) that this India-focused tool is not built for. The rules were then fixed for the Indian-style misses, so these numbers are **optimistic**. |
+| Dev set, public SMS phishing data (483 messages: 165 scam, 318 genuine, all English) | Scam recall **25%** (95% range 19 to 33%, n=165). Precision 100% (91 to 100%, n=41). 0 false alarms on the 318 genuine messages in this part of dev. | First run was 10% recall. Most misses are UK-style scams (premium-rate numbers, pound prizes) that this India-focused tool is not built for. The rules were then fixed for the Indian-style misses, so these numbers are **optimistic**. |
 | 18 freshly written scams, before the regional rules were extended | 7 of 18 flagged (39%) | Showed the first regional rules depended on exact wording and spelling. Fixed afterwards, so this check is now used up. |
 | 12 freshly written genuine messages | 12 of 12 passed | Small and made up. |
 | 4,827 normal English messages (UCI SMS Spam Collection) | 1 flagged (0.02%, 95% range 0.0 to 0.1%) | False-alarm check on casual chat, not on bank alerts. |
 | Screenshot reading, smoke test: 4 made-up scam messages (English, Hindi, Marathi, Malayalam) drawn by a computer as clean images and uploaded through the real page in headless Chrome | Text matched the original 100%, 100%, 100% and 93% (character similarity). The Malayalam score stayed the same after a normalisation fix. | **Not accuracy.** Clean, computer-drawn text only. Real phone screenshots (chat bubbles, dark mode, compression, handwriting-style fonts) are untested. |
-| 1,366 normal messages (casual chat) from a public Hugging Face dataset, `anmolshrivastav/scam-ham-india` (Apache-2.0) | Before fixes: **1 of 1,366 flagged** ("send me the wifi password" was read as an OTP request). After the fix: 0 of 1,376 flagged (0 to 0.3%). | False-alarm check on casual English chat only, not on bank alerts. The dataset card says it mixes real and synthetic messages, so this is not a test set. Its 895 "spam" rows are mostly promotions, with some scams mixed in. Genuine promos with short links used to score 35 to 40 ("Suspicious"), and genuine Airtel Xstream promo links were wrongly called brand look-alikes (fixed). A promotion cap was then added (see Limitations). Of 521 brand-looking messages in the "spam" rows, 17 still score 30 or more; about 10 of those look like genuine promotions (cashback or "coupon credited" with a short link) and the rest look like real scams (UPI PIN refund, share OTP, lottery). Judged by eye, not a labelled measurement. |
-| 24 scam messages in Hindi, Marathi, Malayalam and English, quoted on public web pages (bank, news and police pages), checked once with the rules **before** any change | **0 of 24 reached "Likely scam" (60+). 7 of 24 reached "Suspicious" (30+).** | First check on messages the rules had never seen. n is small, 6 of the 24 are the same electricity-bill scam, and the pages mostly show them as examples, not as messages someone really received. The rules were then fixed using these messages, so a later score on them (about 87% recall on the 23 public_web scams in dev) is **not accuracy**. This check is now used up. Two more public examples found later (a Marathi "government Diwali gift" message and a Malayalam "reply NO" message) were checked against the already-improved rules and scored only 20 and 15, so the earlier fixes did not carry over to new wording. Both were then added as rules. |
+| 1,376 normal messages (casual chat) from a public Hugging Face dataset, `anmolshrivastav/scam-ham-india` (Apache-2.0) | Before fixes: **1 of 1,376 flagged** ("send me the wifi password" was read as an OTP request). After the fix: 0 of 1,376 flagged (0 to 0.3%). | False-alarm check on casual English chat only, not on bank alerts. The dataset card says it mixes real and synthetic messages, so this is not a test set. Its 895 "spam" rows are mostly promotions, with some scams mixed in. Genuine promos with short links used to score 35 to 40 ("Suspicious"), and genuine Airtel Xstream promo links were wrongly called brand look-alikes (fixed). A promotion cap was then added (see Limitations). On the latest run, 107 of the 895 "spam" rows (12.0%) score 30 or more. That is not a false-alarm or recall figure, because that set mixes promotions with real scams and is not labelled by us. |
+| 24 scam messages in Hindi, Marathi, Malayalam and English, quoted on public web pages (bank, news and police pages), checked once with the rules **before** any change | **0 of 24 reached "Likely scam" (60+). 7 of 24 reached "Suspicious" (30+).** | First check on messages the rules had never seen. n is small, 6 of the 24 are the same electricity-bill scam, and the pages mostly show them as examples, not as messages someone really received. The rules were then fixed using these messages, so a later score on them (about 88% recall on the 25 public_web scams in dev) is **not accuracy**. This check is now used up. Two more public examples found later (a Marathi "government Diwali gift" message and a Malayalam "reply NO" message) were checked against the already-improved rules and scored only 20 and 15, so the earlier fixes did not carry over to new wording. Both were then added as rules. |
 | Held-out test set (210 public messages: 66 scam, 144 genuine) | **Not run yet** | Kept unseen on purpose. It is English and mostly UK-style, so even a good result would say nothing about Hindi, Marathi or Malayalam. |
 
 The Hindi, Marathi, Malayalam and Hinglish rules have only been checked on made-up messages. No real
@@ -133,7 +131,7 @@ It only replies with check results, never repeats your message, shows links with
 - [ ] Train and evaluate the ML layer on real data
 - [x] Handle screenshots (OCR) so people can upload a picture of the message (browser-side, needs testing on real screenshots)
 - [x] Optional "Was this right?" feedback button (text saved only with a tick; see Data and privacy)
-- [x] Telegram bot (runs on your own computer; tested only against a fake Telegram so far)
+- [x] Telegram bot (runs on your own computer, text only; tried on real Telegram by the author)
 - [x] Deploy a live demo (Render free tier)
 - [x] Add a rate limit to the public demo
 
@@ -156,7 +154,7 @@ docs/       Screenshot and demo GIF used in this README
 - Feedback buttons: nothing is saved unless a visitor presses one. Only the score shown, the verdict shown, the answer and the date are kept. The message text is kept only if the visitor ticks the box. It is cleaned first (phone, account, card, Aadhaar, PAN, email, UPI id, OTP) and dropped if personal details are still visible. Names are not reliably removed, so the page tells visitors to edit them out. No IP address is stored. The owner can download the file at `/api/feedback/export?token=...` only if the `FEEDBACK_TOKEN` environment variable is set; otherwise that address does not exist. `tools/import_feedback.py` loads an export as `user_feedback`, after which you should read every row yourself.
 - Personal details (names, phone numbers, account numbers, OTPs) are removed before a message is saved.
 - Only messages given with permission, or public datasets with a suitable licence, are used.
-- Made-up messages (`self_written`, `synthetic_ai`) are labelled and never used for testing.
+- Made-up or unverified messages (`self_written`, `synthetic_ai`, `public_web`, `user_feedback`) are labelled, may tune the rules, and are never used for testing.
 - Public SMS phishing messages come from the Mendeley Data set "SMS Phishing Dataset for Machine Learning and Pattern Recognition" (CC BY 4.0, authors listed at https://data.mendeley.com/datasets/f45bkkt8pr/1). Personal details are removed, and 'spam' (promotion) rows are not used. Cleaned copies are in `data/messages.csv`.
 - Stress tests use the UCI SMS Spam Collection (Almeida, Gomez Hidalgo and Yamakami, 2011; CC BY 4.0).
 - False-alarm check on casual chat: `anmolshrivastav/scam-ham-india` on Hugging Face (Apache-2.0), kept outside the repo in `data/external/`.
