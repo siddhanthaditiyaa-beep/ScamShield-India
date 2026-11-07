@@ -339,14 +339,23 @@ def unwrap(text: str) -> str:
     return "\n".join(out)
 
 
+_CLAUSE_SPLIT = re.compile(r"[,;:]|\bbut\b|\bhowever\b|\u0932\u0947\u0915\u093f\u0928|\u092a\u0930\u0902\u0924\u0941", re.I)
+
+
 def text_signals(text: str) -> list[Signal]:
     text = unwrap(normalize(text))
     sentences = [s for s in _SENT_SPLIT.split(text) if s.strip()]
+    # A negation only cancels the part of the sentence it sits in. "Never delay, share your OTP now"
+    # is two parts: the second is still a request for the OTP.
+    clauses = [c for s in sentences for c in _CLAUSE_SPLIT.split(s) if c.strip()]
     found: list[Signal] = []
     for sid, label, weight, why, patterns, sentence_level in _COMPILED:
         if sentence_level:
+            # Whole sentence (some patterns span a comma) OR a single clause, in either case without a negation.
             hit = any(
-                p.search(s) for s in sentences if not NEGATION.search(s) for p in patterns
+                p.search(part)
+                for parts in (sentences, clauses) for part in parts if not NEGATION.search(part)
+                for p in patterns
             )
         else:
             hit = any(p.search(text) for p in patterns)

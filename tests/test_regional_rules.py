@@ -34,3 +34,17 @@ def test_regional_scams_flagged(text):
 @pytest.mark.parametrize("text", GENUINE)
 def test_regional_genuine_not_flagged(text):
     assert analyze(text)["score"] < 30, text
+
+
+def test_negation_only_cancels_its_own_clause():
+    from app.analyzer import analyze
+    # "Never delay" must not hide the OTP request that follows the comma.
+    assert analyze("Do not ignore: your account is blocked. Never delay, share your OTP with our agent to unblock now.")["score"] >= 60
+
+
+def test_genuine_advisories_still_stay_quiet():
+    from app.analyzer import analyze
+    for t in ["We will never ask you to share OTP, PIN or CVV with anyone.",
+              "Never share your OTP, password or PIN with anyone.",
+              "Bank never asks for OTP, so do not share it, but report fraud."]:
+        assert analyze(t)["score"] < 30, t

@@ -118,8 +118,7 @@ It only replies with check results, never repeats your message, shows links with
 - Store and telecom promotions often have a short link and words like "hurry". If that is all the rules see, and the text has clear promotion wording ("T&C apply", "use code", "% off"), the score is capped at 25. A scam dressed as a promotion with only a short link and "hurry" would also stay low. Any stronger signal (prize, OTP, KYC, look-alike link, phone number) switches the cap off.
 - Genuine bank, electricity and KYC reminders can look like scams. They score close to the "suspicious"
   line (25 to 30 out of 100), and some real promotions with short links score 40.
-- A sentence containing a word like "not" or "never" is skipped by some rules, so a scam sentence
-  containing one can slip through.
+- Some rules skip a sentence part that contains "not", "never" or similar, so that real warnings ("never share your OTP") do not look like scams. A negation now only cancels its own part of the sentence (split at commas, colons, "but"), but a scam part that itself contains one of those words can still slip through.
 - Scam wording changes constantly, so the rules need regular updates.
 - The brand allow-list in `app/rules.py` has not been verified.
 - The public demo has a simple in-memory rate limit (20 checks per minute per visitor, 300 overall). It resets when the server restarts and the visitor address can be faked, so it protects a free demo from accidents, not from a determined attacker. It was confirmed on the live site on 7 Nov 2026 (the limit message appeared after rapid clicks), but it has not been tested under real load.
