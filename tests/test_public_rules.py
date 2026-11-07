@@ -31,6 +31,7 @@ def test_scam_wordings_are_flagged(text):
     "Congratulations on your selection for the interview round. Please report at 10 am.",
     "Win 10 minutes of fame! I won the quiz at college today.",
     "Mom, call me when you reach. I am at gate 1.",
+    "Great. So should I send you my account number for the rent?",
 ])
 def test_ordinary_messages_stay_below_the_flag_line(text):
     assert score(text) < 30, text

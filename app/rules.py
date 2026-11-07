@@ -116,7 +116,7 @@ TEXT_RULES = [
       r"\b(call|contact)\b.{0,25}\bcustomer (care|service)\b"], False),
     ("send_bank_details", "Asks you to send your account or card details", 30,
      "No genuine bank, courier or shop asks you to message your account number, card number or bank details.",
-     [r"\b(send|message|share|give|provide|reply with)\b.{0,40}\b(account number|card number|bank details|debit card|atm pin)\b"], True),
+     [r"\b(send|message|share|give|provide|reply with)\b(?!.{0,30}\b(my|his|her|their|our)\b).{0,40}\b(account number|card number|bank details|debit card|atm pin)\b"], True),
     # Hindi, Hinglish, Marathi, Malayalam. Starter lists, extend these yourself.
     ("ml_pressure", "Pressure words in Hindi, Marathi or Malayalam", 15,
      "Words meaning 'immediately' are used to rush you.",
