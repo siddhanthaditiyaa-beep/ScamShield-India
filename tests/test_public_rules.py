@@ -65,3 +65,16 @@ def test_sentence_wrapped_by_the_screen_is_still_one_sentence():
 def test_support_number_with_a_space_alone_is_not_flagged():
     assert score("Your order has shipped. Contact us on WhatsApp +91 98765 43210 if you need help.") < 30
     assert score("For support call 98765 43210 between 10 am and 6 pm.") < 30
+
+
+def test_wifi_password_chat_is_not_an_otp_request():
+    assert analyze("Can you send me the wifi password again, I forgot it.")["score"] < 30
+
+
+def test_brand_own_promo_links_are_not_lookalikes():
+    t = "LAST CHANCE to get 18+OTTs free! #GrabTheLoOTT now. Participate with Xstream Entertainment festival https://open.airtelxstream.in/e/XEF-SMS"
+    assert analyze(t)["score"] < 30
+
+
+def test_job_with_deposit_is_flagged():
+    assert analyze("TCS is hiring freshers for online data entry job, earn Rs 25,000 monthly, deposit Rs 999 for training kit.")["score"] >= 30

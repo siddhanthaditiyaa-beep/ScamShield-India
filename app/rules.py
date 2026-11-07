@@ -31,7 +31,7 @@ NEGATION = re.compile(
 TEXT_RULES = [
     ("otp_request", "Asks you to share an OTP, PIN or CVV", 35,
      "Real banks and apps never ask you to send or tell them an OTP, PIN or CVV.",
-     [r"\b(share|send|tell|give|provide|forward|reply with)\b.{0,40}\b(otp|pin|cvv|password|passcode)\b",
+     [r"\b(share|send|tell|give|provide|forward|reply with)\b.{0,40}\b(otp|pin|cvv|(?<!wifi )(?<!wi-fi )(?<!wi fi )password|passcode)\b",
       r"\b(otp|pin|cvv)\b.{0,25}\b(share|send|tell|give|batao|bhejo)\b"], True),
     ("upi_collect", "Tricks you into entering your UPI PIN to 'receive' money", 30,
      "You never need your UPI PIN to receive money. Entering it sends money out.",
@@ -124,6 +124,9 @@ TEXT_RULES = [
     ("shortlisted_fee", "Says you are shortlisted or selected, then asks for a fee", 30,
      "A real employer never asks you to pay a fee to get a job. Fake job messages say you are 'shortlisted' first.",
      [r"\b(shortlisted|selected)\b.{0,200}\b(pay|fee|deposit|subscription)\b"], False),
+    ("job_deposit", "Job offer that asks for a deposit or fee (kit, training, registration)", 30,
+     "A genuine employer does not ask you to deposit money for a kit, training or registration.",
+     [r"\b(job|hiring|recruit\w*|vacancy|vacancies)\b.{0,150}\b(deposit|pay)\b.{0,40}\b(kit|training|registration|security|fee)\b"], True),
     ("pan_update", "Asks you to update your PAN card details", 20,
      "Banks do not ask you to update your PAN through a link in an SMS.",
      [r"\b(update|verify)\b.{0,30}\bpan( card)?\b"], True),
@@ -242,7 +245,9 @@ BRANDS = ["sbi", "hdfc", "icici", "axis", "kotak", "pnb", "paytm", "phonepe", "g
 OFFICIAL = ["sbi.co.in", "onlinesbi.sbi", "hdfcbank.com", "icicibank.com", "axisbank.com", "kotak.com",
             "pnbindia.in", "paytm.com", "phonepe.com", "pay.google.com", "google.com", "amazon.in",
             "amazon.com", "flipkart.com", "irctc.co.in", "uidai.gov.in", "incometax.gov.in",
-            "incometaxindia.gov.in", "epfindia.gov.in", "jio.com", "airtel.in"]
+            "incometaxindia.gov.in", "epfindia.gov.in", "jio.com", "airtel.in",
+            # seen in genuine promo messages of a public dataset; not independently verified
+            "airtelxstream.in", "paytm.me"]
 
 
 def extract_urls(text: str) -> list[str]:

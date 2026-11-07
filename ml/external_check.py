@@ -2,7 +2,8 @@
 
     python -m ml.external_check data\\external\\SMSSpamCollection
 
-File format: one message per line, "ham<TAB>text" or "spam<TAB>text" (the UCI SMS Spam Collection).
+File format: one message per line, "ham<TAB>text" or "spam<TAB>text" (the UCI SMS Spam Collection),
+or a .csv file with columns text,label where label is ham or spam.
 
 What this tells you:
   * ham flagged  = false alarms on normal messages written by other people
@@ -22,11 +23,18 @@ THRESHOLD = 30
 
 def main(path: str) -> None:
     rows = []
-    with open(path, encoding="latin-1") as f:
-        for line in f:
-            label, _, text = line.rstrip("\n").partition("\t")
-            if label in ("ham", "spam") and text:
-                rows.append((label, text))
+    if path.lower().endswith(".csv"):
+        import csv
+        with open(path, encoding="utf-8-sig", newline="") as f:
+            for r in csv.DictReader(f):
+                if r.get("label") in ("ham", "spam") and r.get("text"):
+                    rows.append((r["label"], r["text"]))
+    else:
+        with open(path, encoding="latin-1") as f:
+            for line in f:
+                label, _, text = line.rstrip("\n").partition("\t")
+                if label in ("ham", "spam") and text:
+                    rows.append((label, text))
     scored = [(label, text, analyze(text)["score"]) for label, text in rows]
     for label in ("ham", "spam"):
         group = [s for s in scored if s[0] == label]
