@@ -1,0 +1,3 @@
+text,label,lang,source,category,group
+"EXAMPLE ONLY (fake): Your account is blocked, update KYC at http://bank-kyc.xyz",1,en,self_written,kyc,
+"EXAMPLE ONLY (fake): Rs 500 debited from A/c XX1234 at Swiggy.",0,en,self_written,bank_alert,

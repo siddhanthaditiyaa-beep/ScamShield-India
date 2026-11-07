@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ScamShield India</title>
+<style>
+:root{--bg:#F6F7FB;--card:#fff;--ink:#14161C;--muted:#5A6073;--line:#DDE1EC;--acc:#0A5BD3;--red:#D6343B;--amber:#C27A00;--green:#0E8F63}
+@media (prefers-color-scheme:dark){:root{--bg:#0E1117;--card:#161B24;--ink:#EDEFF5;--muted:#9AA3B8;--line:#273042;--acc:#5BB5FF;--red:#FF6B70;--amber:#F2B94B;--green:#3DD6A0}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:760px;margin:0 auto;padding:32px 16px 64px}
+h1{font-size:28px;margin:0 0 4px;letter-spacing:-.02em}
+.sub{color:var(--muted);margin:0 0 20px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px}
+textarea{width:100%;min-height:130px;resize:vertical;border:1px solid var(--line);border-radius:10px;padding:12px;font:inherit;background:var(--bg);color:var(--ink)}
+textarea:focus{outline:2px solid var(--acc);outline-offset:1px}
+.row{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px;align-items:center}
+button{font:inherit;border:0;border-radius:10px;padding:10px 16px;cursor:pointer}
+.go{background:var(--acc);color:#fff;font-weight:600}
+.ex{background:transparent;border:1px solid var(--line);color:var(--muted);padding:6px 10px;font-size:13px}
+.note{color:var(--muted);font-size:13px;margin-top:10px}
+#out{margin-top:16px}
+.verdict{font-size:20px;font-weight:700;margin:0 0 8px}
+.bar{height:10px;border-radius:99px;background:var(--line);overflow:hidden}
+.bar>i{display:block;height:100%;width:0;transition:width .4s}
+.sig{border-top:1px solid var(--line);padding:10px 0}
+.sig b{display:block}.sig span{color:var(--muted);font-size:14px}
+h3{margin:16px 0 4px;font-size:15px}
+ul{margin:6px 0 0;padding-left:20px}
+code{background:var(--bg);padding:1px 6px;border-radius:6px;word-break:break-all}
+</style>
+</head>
+<body>
+<main>
+  <h1>ScamShield India</h1>
+  <p class="sub">Paste an SMS or WhatsApp message to see if it looks like a scam, and why. Works with English, Hinglish, Hindi, Marathi and Malayalam.</p>
+  <div class="card">
+    <textarea id="msg" maxlength="2000" placeholder="Paste the message here..." aria-label="Message to check"></textarea>
+    <div class="row">
+      <button class="go" id="go">Check message</button>
+      <button class="ex" data-t="Dear customer, your SBI account will be blocked today. Update your KYC immediately: http://sbi-kyc-update.xyz/login">Try: bank KYC</button>
+      <button class="ex" data-t="Your OTP for login is 482913. Do not share it with anyone.">Try: genuine OTP</button>
+      <button class="ex" data-t="Sir aapka KYC pending hai, account band ho jayega. Turant link par click karein: bit.ly/kyc-now">Try: Hinglish</button>
+    </div>
+    <p class="note">Your message is analysed in memory and not stored. This is a helper, not a guarantee.</p>
+  </div>
+  <div id="out" class="card" hidden aria-live="polite"></div>
+</main>
+<script>
+const $ = s => document.querySelector(s);
+const LABEL = {
+  likely_scam: ["Likely a scam", "var(--red)"],
+  suspicious: ["Suspicious, be careful", "var(--amber)"],
+  no_strong_signals: ["No strong scam signals", "var(--green)"]
+};
+const esc = s => String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+document.querySelectorAll(".ex").forEach(b => b.onclick = () => { $("#msg").value = b.dataset.t; run(); });
+$("#go").onclick = run;
+async function run() {
+  const message = $("#msg").value.trim();
+  if (!message) return;
+  $("#go").disabled = true;
+  try {
+    const res = await fetch("/api/analyze", {method: "POST", headers: {"Content-Type": "application/json"}, body: JSON.stringify({message})});
+    if (!res.ok) throw new Error("Server error " + res.status);
+    show(await res.json());
+  } catch (e) {
+    $("#out").hidden = false; $("#out").textContent = "Something went wrong: " + e.message;
+  } finally { $("#go").disabled = false; }
+}
+function show(r) {
+  const [text, color] = LABEL[r.label];
+  const sigs = r.signals.length
+    ? r.signals.map(s => `<div class="sig"><b>${esc(s.label)}</b><span>${esc(s.why)}</span></div>`).join("")
+    : "<p class='note'>No warning signs were found in the text or links.</p>";
+  $("#out").hidden = false;
+  $("#out").innerHTML = `
+    <p class="verdict" style="color:${color}">${text} · risk ${r.score}/100</p>
+    <div class="bar"><i style="background:${color};width:${r.score}%"></i></div>
+    <h3>Why</h3>${sigs}
+    ${r.urls.length ? `<h3>Links found</h3><ul>${r.urls.map(u => `<li><code>${esc(u)}</code></li>`).join("")}</ul>` : ""}
+    <h3>What to do</h3><ul>${r.advice.map(a => `<li>${esc(a)}</li>`).join("")}</ul>`;
+}
+</script>
+</body>
+</html>

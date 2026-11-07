@@ -1,0 +1,14 @@
+__pycache__/
+.venv/
+*.pyc
+.pytest_cache/
+models/*.joblib
+.env
+# raw and half-cleaned messages may contain personal details: never commit them
+data/inbox/*
+!data/inbox/.gitkeep
+!data/inbox/template.csv
+
+# outside datasets (licences differ, never commit them)
+data/external/*
+!data/external/.gitkeep

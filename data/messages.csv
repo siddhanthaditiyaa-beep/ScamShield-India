@@ -1,0 +1,132 @@
+id,text,label,lang,source,category,group,split
+seed001,"Dear customer, your SBI account will be blocked today. Update your KYC immediately: http://sbi-kyc-update.xyz/login",1,en,self_written,kyc,seed001,dev
+seed002,HDFC Bank: Your PAN is not linked. Account will be suspended within 24 hours. Click bit.ly/3xKyc9 to update.,1,en,self_written,kyc,seed002,dev
+seed003,"Congratulations! You have won Rs 25,00,000 in the lucky draw. Claim your prize now: http://claim-reward.top",1,en,self_written,lottery,seed003,dev
+seed004,Work from home! Earn Rs 5000 per day by completing simple tasks. Join our Telegram group now: t.me/earnfast,1,en,self_written,job,seed004,dev
+seed005,Your parcel is held at customs. Pay Rs 49 fee to release it: http://parcel-india-fee.click,1,en,self_written,parcel,seed005,dev
+seed006,"This is CBI. A case of illegal parcel has been registered against your Aadhaar. Stay on video call, do not disconnect or you will be arrested.",1,en,self_written,digital_arrest,seed006,dev
+seed007,Your electricity will be disconnected tonight at 9:30 PM. Call 9000000000 and pay the pending bill immediately.,1,en,self_written,bill,seed007,dev
+seed008,Please install AnyDesk and share the code so we can process your refund.,1,en,self_written,remote_access,seed008,dev
+seed009,"Sir aapka KYC pending hai, aapka account band ho jayega. Turant link par click karke update karein: bit.ly/kyc-now",1,hinglish,self_written,kyc,seed009,dev
+seed010,Paytm KYC expire ho gaya hai. OTP share karo warna account block ho jayega.,1,hinglish,self_written,otp,seed010,dev
+seed011,Money sent to you by mistake. Please enter your UPI PIN to receive the amount.,1,en,self_written,upi,seed011,dev
+seed012,Pre-approved loan of Rs 5 lakh approved. Pay processing fee Rs 999 to get it instantly.,1,en,self_written,loan,seed012,dev
+seed013,आपका बैंक खाता तुरंत ब्लॉक हो जाएगा। केवाईसी अपडेट करें: http://bank-kyc.xyz,1,hi,self_written,kyc,seed013,dev
+seed014,तुमचे खाते ताबडतोब बंद होईल. ओटीपी शेअर करा.,1,mr,self_written,otp,seed014,dev
+seed015,നിങ്ങളുടെ അക്കൗണ്ട് ഉടൻ ബ്ലോക്ക് ആകും. കെവൈസി അപ്ഡേറ്റ് ചെയ്യുക.,1,ml,self_written,kyc,seed015,dev
+seed016,Download our app from this link to claim your cashback: http://cashback-offer.vip/app.apk,1,en,self_written,apk,seed016,dev
+seed017,"Amazon: Your order of iPhone 15 is confirmed for Rs 999. If this was not you, call 9000000000 to cancel.",1,en,self_written,order_alert,seed017,dev
+seed018,Your Aadhaar will be deactivated. Click here to verify now: http://uidai-verify.icu,1,en,self_written,kyc,seed018,dev
+seed019,Last chance! Your SIM will be blocked in 2 hours. Reply YES to continue.,1,en,self_written,other,seed019,dev
+seed020,"Income Tax refund of Rs 15,490 is pending. Verify your bank details at http://incometax-refund.online",1,en,self_written,refund,seed020,dev
+seed021,Your OTP for login to Zomato is 123456. Do not share it with anyone.,0,en,self_written,otp,seed021,dev
+seed022,"Rs 1,200 debited from A/c XX1234 on 05-11-26 at Swiggy. Avl bal Rs 8,450.",0,en,self_written,bank_alert,seed022,dev
+seed023,Your Amazon order #408-1234567 has been shipped and will arrive by Monday.,0,en,self_written,delivery,seed023,dev
+seed024,"Hi, are we meeting at 6 today for the project work?",0,en,self_written,personal,seed024,dev
+seed025,Reminder: your appointment with Dr. Customer is tomorrow at 11:30 AM.,0,en,self_written,other,seed025,dev
+seed026,Your electricity bill of Rs 842 for October is generated. Pay by 15 Nov on the official app.,0,en,self_written,bill,seed026,dev
+seed027,Happy birthday! Let's catch up this weekend.,0,en,self_written,personal,seed027,dev
+seed028,"Your train PNR 0000000000 is confirmed. Coach S4, berth 23.",0,en,self_written,other,seed028,dev
+seed029,Thanks for visiting. Your feedback matters to us.,0,en,self_written,other,seed029,dev
+seed030,Assignment submission deadline is extended to Friday 5 PM.,0,en,self_written,other,seed030,dev
+seed031,"आज शाम की मीटिंग 5 बजे है, कृपया समय पर आएं।",0,hi,self_written,other,seed031,dev
+seed032,उद्या कॉलेजला सुट्टी आहे.,0,mr,self_written,other,seed032,dev
+seed033,"നാളെ ക്ലാസ് ഉണ്ടാകും, സമയത്ത് എത്തണം.",0,ml,self_written,personal,seed033,dev
+seed034,Kal ka match dekhne chalega kya? Main ticket book kar deta hoon.,0,hinglish,self_written,bank_alert,seed034,dev
+seed035,"HDFC Bank: Rs 5,000 credited to your A/c XX4321. Ref no 1234.",0,en,self_written,otp,seed035,dev
+seed036,Your OTP is 123456. It is valid for 10 minutes. Never share it with anyone.,0,en,self_written,delivery,seed036,dev
+seed037,Your Swiggy order is out for delivery. Track it in the app.,0,en,self_written,other,seed037,dev
+seed038,Netflix: Your plan renews on 12 Nov. Manage billing at netflix.com/youraccount,0,en,self_written,personal,seed038,dev
+seed039,Mom: bring milk on the way back.,0,en,self_written,other,seed039,dev
+seed040,"Team, standup moved to 10:30 AM. Join via the usual Google Meet link.",0,en,self_written,otp,seed040,dev
+seed041,आपका ओटीपी 123456 है। इसे किसी से साझा न करें।,0,hi,self_written,other,seed041,dev
+m0042,Your power supply will be disconnected today as last month's bill was not updated. Contact the electricity officer on 9000000000 now.,1,en,synthetic_ai,bill,m0042,dev
+m0043,"Hello, we are hiring for part time work. Rate videos on YouTube and earn Rs 4000 per day. Message HR on WhatsApp: wa.me/9000000000",1,en,synthetic_ai,job,m0043,dev
+m0044,TRAI notice: Your mobile number will be deactivated in 2 hours due to complaints of illegal activity. Press 9 to speak to an officer.,1,en,synthetic_ai,other,m0044,dev
+m0045,"Congratulations! Your number has won Rs 10 lakh in the KBC lottery. To claim, send Rs 5000 processing fee to the UPI id user@bank",1,en,synthetic_ai,lottery,m0045,dev
+m0046,"Dear customer, a refund of Rs 2,340 is pending for your order. Click here to receive it in your account: http://refund-claim-india.top",1,en,synthetic_ai,refund,m0046,dev
+m0047,"Rs 3,450.00 debited from A/c XX7788 on 06-11-26 to VPA user@bank. If not you, call 0000 0000 0000 or visit the branch.",0,en,synthetic_ai,bank_alert,m0047,dev
+m0048,Your Zepto order is arriving in 10 minutes. Your delivery partner is on the way.,0,en,synthetic_ai,delivery,m0048,dev
+m0049,Your Jio plan of Rs 299 expires on 10 Nov. Recharge on the MyJio app to keep enjoying unlimited data.,0,en,synthetic_ai,other,m0049,dev
+m0050,"IRCTC: Booking confirmed. Train 12951, 08-Dec, 2A, Berth 14. Have a safe journey.",0,en,synthetic_ai,other,m0050,dev
+m0051,"Dear Customer, your credit card statement for October is generated. Total due Rs 4,210, due date 20 Nov. View it on the official app.",0,en,synthetic_ai,bill,m0051,dev
+m0052,Reminder: your KYC is due for renewal. Please visit your nearest branch with ID proof. Ignore if already done.,0,en,synthetic_ai,bank_alert,m0052,dev
+m0053,"Hey, are you free for lunch tomorrow? Let me know.",0,en,synthetic_ai,personal,m0053,dev
+m0054,"Aapka Aadhaar link nahi hai, aapka SIM 24 ghante mein band ho jayega. Abhi is number par call karein: 9000000000",1,hinglish,synthetic_ai,kyc,m0054,dev
+m0055,"Sir, aapke naam par ek parcel Mumbai customs ne pakda hai, usme drugs mile hain. Aapko video call par aana hoga, kisi ko batana mat.",1,hinglish,synthetic_ai,digital_arrest,m0055,dev
+m0056,Congrats! Aapko Amazon ki taraf se Rs 5000 cashback mila hai. Paisa lene ke liye apna UPI PIN daalein.,1,hinglish,synthetic_ai,upi,m0056,dev
+m0057,"Ghar baithe kaam karein, roz 3000 kamayein. Telegram par judiye: t.me/earnonline",1,hinglish,synthetic_ai,job,m0057,dev
+m0058,"Aapka 2 lakh ka loan pass ho gaya hai. Bas Rs 1500 file charge bhejiye, paisa turant mil jayega.",1,hinglish,synthetic_ai,loan,m0058,dev
+m0059,Bhai kal ka plan kya hai? College ke baad milte hain.,0,hinglish,synthetic_ai,personal,m0059,dev
+m0060,Aapka Swiggy order 15 minute mein pahunch jayega.,0,hinglish,synthetic_ai,delivery,m0060,dev
+m0061,"Aapke account se Rs 500 kat gaye hain. Balance Rs 2,300 hai.",0,hinglish,synthetic_ai,bank_alert,m0061,dev
+m0062,Reminder: kal 10 baje doctor ka appointment hai.,0,hinglish,synthetic_ai,other,m0062,dev
+m0063,Aapka OTP 123456 hai. Ise kisi ke saath share na karein.,0,hinglish,synthetic_ai,otp,m0063,dev
+m0064,Aapka bijli bill Rs 950 generate ho gaya hai. 15 tarikh tak official app se bhar dein.,0,hinglish,synthetic_ai,bill,m0064,dev
+m0065,Mummy ne kaha ki aaj sabzi le aana.,0,hinglish,synthetic_ai,personal,m0065,dev
+m0066,आपका आधार कार्ड रद्द होने वाला है। तुरंत इस लिंक पर क्लिक करके वेरिफाई करें: http://aadhaar-verify.top,1,hi,synthetic_ai,kyc,m0066,dev
+m0067,बधाई हो! आपने ₹25 लाख की लॉटरी जीती है। इनाम पाने के लिए ₹3000 शुल्क जमा करें।,1,hi,synthetic_ai,lottery,m0067,dev
+m0068,आपके नाम से एक पार्सल कस्टम में रोका गया है। जुर्माना भरें वरना केस दर्ज होगा। संपर्क करें: 9000000000,1,hi,synthetic_ai,parcel,m0068,dev
+m0069,आपका रिफंड तैयार है। अपना UPI पिन डालकर पैसे प्राप्त करें।,1,hi,synthetic_ai,upi,m0069,dev
+m0070,घर बैठे रोज़ ₹4000 कमाएं। अभी व्हाट्सएप पर जुड़ें: wa.me/9000000000,1,hi,synthetic_ai,job,m0070,dev
+m0071,"आपके खाते से ₹1,200 डेबिट हुए हैं। उपलब्ध शेष ₹6,500।",0,hi,synthetic_ai,bank_alert,m0071,dev
+m0072,"आपकी ट्रेन कल सुबह 6 बजे है, समय पर पहुँचें।",0,hi,synthetic_ai,other,m0072,dev
+m0073,आपका ऑर्डर आज शाम तक डिलीवर होगा।,0,hi,synthetic_ai,delivery,m0073,dev
+m0074,"कल कॉलेज में प्रैक्टिकल है, फाइल लेकर आना।",0,hi,synthetic_ai,personal,m0074,dev
+m0075,आपकी बिजली का बिल ₹840 बन गया है। अंतिम तिथि 20 नवंबर।,0,hi,synthetic_ai,bill,m0075,dev
+m0076,आपका ओटीपी 123456 है। इसे किसी के साथ साझा न करें।,0,hi,synthetic_ai,otp,m0076,dev
+m0077,जन्मदिन की बहुत बहुत शुभकामनाएँ! शाम को मिलते हैं।,0,hi,synthetic_ai,personal,m0077,dev
+m0078,तुमचे बँक खाते आज बंद होईल. केवायसी अपडेट करण्यासाठी लिंकवर क्लिक करा: http://bank-kyc-update.xyz,1,mr,synthetic_ai,kyc,m0078,dev
+m0079,अभिनंदन! तुम्ही ₹10 लाखाची लॉटरी जिंकली आहात. बक्षीस मिळवण्यासाठी ₹2000 भरा.,1,mr,synthetic_ai,lottery,m0079,dev
+m0080,तुमचे वीज कनेक्शन आज रात्री कापले जाईल. त्वरित या नंबरवर कॉल करा: 9000000000,1,mr,synthetic_ai,bill,m0080,dev
+m0081,घरबसल्या दररोज ₹3000 कमवा. टेलिग्रामवर जॉइन व्हा: t.me/earnmore,1,mr,synthetic_ai,job,m0081,dev
+m0082,तुमच्या नावावर पार्सल पकडले आहे. पोलीस केस टाळण्यासाठी दंड भरा आणि कोणालाही सांगू नका.,1,mr,synthetic_ai,digital_arrest,m0082,dev
+m0083,"तुमच्या खात्यातून ₹800 वजा झाले आहेत. शिल्लक ₹4,100.",0,mr,synthetic_ai,bank_alert,m0083,dev
+m0084,"उद्या सकाळी ९ वाजता परीक्षा आहे, वेळेवर या.",0,mr,synthetic_ai,personal,m0084,dev
+m0085,तुमची ऑर्डर आज संध्याकाळपर्यंत पोहोचेल.,0,mr,synthetic_ai,delivery,m0085,dev
+m0086,तुमचा ओटीपी 123456 आहे. तो कोणालाही सांगू नका.,0,mr,synthetic_ai,otp,m0086,dev
+m0087,"उद्या वर्गाला सुट्टी आहे, अभ्यास करा.",0,mr,synthetic_ai,personal,m0087,dev
+m0088,तुमचे वीज बिल ₹720 आहे. शेवटची तारीख १५ नोव्हेंबर.,0,mr,synthetic_ai,bill,m0088,dev
+m0089,"आजी उद्या येणार आहेत, स्टेशनवर घ्यायला जा.",0,mr,synthetic_ai,personal,m0089,dev
+m0090,നിങ്ങളുടെ ബാങ്ക് അക്കൗണ്ട് ഇന്ന് ബ്ലോക്ക് ആകും. KYC അപ്ഡേറ്റ് ചെയ്യാൻ ലിങ്ക് ക്ലിക്ക് ചെയ്യുക: http://bank-kyc.top,1,ml,synthetic_ai,kyc,m0090,dev
+m0091,അഭിനന്ദനങ്ങൾ! നിങ്ങൾക്ക് 10 ലക്ഷം രൂപ ലോട്ടറി അടിച്ചു. സമ്മാനം ലഭിക്കാൻ 2000 രൂപ അടയ്ക്കുക.,1,ml,synthetic_ai,lottery,m0091,dev
+m0092,"നിങ്ങളുടെ പേരിൽ ഒരു പാഴ്സൽ കസ്റ്റംസ് പിടിച്ചു. കേസ് ഒഴിവാക്കാൻ പിഴ അടയ്ക്കുക, ആരോടും പറയരുത്.",1,ml,synthetic_ai,digital_arrest,m0092,dev
+m0093,വീട്ടിലിരുന്ന് ദിവസം 3000 രൂപ സമ്പാദിക്കൂ. ടെലിഗ്രാമിൽ ചേരൂ: t.me/earnkerala,1,ml,synthetic_ai,job,m0093,dev
+m0094,നിങ്ങളുടെ കറന്റ് കണക്ഷൻ ഇന്ന് രാത്രി വിച്ഛേദിക്കും. ഉടൻ ഈ നമ്പറിൽ വിളിക്കുക: 9000000000,1,ml,synthetic_ai,bill,m0094,dev
+m0095,"നിങ്ങളുടെ അക്കൗണ്ടിൽ നിന്ന് 600 രൂപ ഡെബിറ്റ് ചെയ്തു. ബാലൻസ് 3,200 രൂപ.",0,ml,synthetic_ai,bank_alert,m0095,dev
+m0096,"നാളെ രാവിലെ 9 മണിക്ക് പരീക്ഷയുണ്ട്, നേരത്തെ എത്തണം.",0,ml,synthetic_ai,personal,m0096,dev
+m0097,നിങ്ങളുടെ ഓർഡർ ഇന്ന് വൈകുന്നേരം എത്തും.,0,ml,synthetic_ai,delivery,m0097,dev
+m0098,നിങ്ങളുടെ ഒടിപി 123456 ആണ്. ഇത് ആരുമായും പങ്കിടരുത്.,0,ml,synthetic_ai,otp,m0098,dev
+m0099,ഓണത്തിന് വീട്ടിൽ വരുന്നുണ്ടോ? അമ്മ ചോദിച്ചു.,0,ml,synthetic_ai,personal,m0099,dev
+m0100,നിങ്ങളുടെ വൈദ്യുതി ബിൽ 780 രൂപയാണ്. അവസാന തീയതി 15 നവംബർ.,0,ml,synthetic_ai,bill,m0100,dev
+m0101,ഇന്ന് വൈകിട്ട് ക്ലാസ് ഇല്ല.,0,ml,synthetic_ai,personal,m0101,dev
+m0102,आपका बिजली कनेक्शन आज रात 9 बजे काट दिया जाएगा। बिल अपडेट के लिए इस नंबर पर संपर्क करें: 9000000000,1,hi,synthetic_ai,bill,m0102,dev
+m0103,"प्रिय ग्राहक, आपका एसबीआई खाता बंद होने वाला है। केवाईसी के लिए http://sbi-update.top पर क्लिक करें।",1,hi,synthetic_ai,kyc,m0103,dev
+m0104,आपको 50 लाख रुपये का इनाम मिला है। इसे पाने के लिए 5000 रुपये प्रोसेसिंग फीस जमा करें।,1,hi,synthetic_ai,lottery,m0104,dev
+m0105,"सीबीआई ऑफिसर बोल रहा हूँ। आपके आधार से मनी लॉन्ड्रिंग हुई है, वीडियो कॉल पर रहिए, किसी को न बताएं।",1,hi,synthetic_ai,digital_arrest,m0105,dev
+m0106,पार्ट टाइम जॉब! वीडियो लाइक करके रोज़ ₹5000 कमाएं। टेलीग्राम पर जुड़ें।,1,hi,synthetic_ai,job,m0106,dev
+m0107,तुमच्या पॅन कार्डची मुदत संपली आहे. आजच केवायसी करा नाहीतर खाते गोठवले जाईल: http://pan-kyc.click,1,mr,synthetic_ai,kyc,m0107,dev
+m0108,तुमचे पार्सल कस्टमने थांबवले आहे. ₹1500 कस्टम ड्युटी भरा.,1,mr,synthetic_ai,parcel,m0108,dev
+m0109,सरकारी योजनेत तुम्हाला ₹50000 मिळाले आहेत. मिळवण्यासाठी तुमचा UPI पिन टाका.,1,mr,synthetic_ai,upi,m0109,dev
+m0110,നിങ്ങളുടെ പാൻ കാർഡ് ബ്ലോക്ക് ചെയ്യപ്പെടും. ഇപ്പോൾ തന്നെ ലിങ്കിൽ ക്ലിക്ക് ചെയ്ത് അപ്ഡേറ്റ് ചെയ്യുക: http://pan-update.xyz,1,ml,synthetic_ai,kyc,m0110,dev
+m0111,നിങ്ങൾക്ക് ഒരു ഐഫോൺ സമ്മാനമായി ലഭിച്ചു. ഡെലിവറി ചാർജ് 999 രൂപ അടയ്ക്കുക.,1,ml,synthetic_ai,lottery,m0111,dev
+m0112,ഓൺലൈൻ പാർട്ട് ടൈം ജോലി. ദിവസം 5000 രൂപ വരെ വരുമാനം. വാട്സ്ആപ്പിൽ ചേരൂ: wa.me/9000000000,1,ml,synthetic_ai,job,m0112,dev
+m0113,Aapke bank account se suspicious transaction hua hai. Account freeze hone se bachane ke liye abhi OTP bhejiye.,1,hinglish,synthetic_ai,otp,m0113,dev
+m0114,"Aapka electricity bill pending hai, aaj raat 9 baje connection kat jayega. Call karein 9000000000",1,hinglish,synthetic_ai,bill,m0114,dev
+m0115,Aapne 1 crore ki lottery jeeti hai! Claim karne ke liye Rs 4000 jama karein.,1,hinglish,synthetic_ai,lottery,m0115,dev
+m0116,"Customs officer bol raha hoon. Aapke parcel mein illegal saman mila hai. Video call par rahiye, kisi ko mat batana.",1,hinglish,synthetic_ai,digital_arrest,m0116,dev
+m0117,"Your Aadhaar is linked to illegal activity. Cyber crime branch will arrest you. Stay on video call and pay Rs 50,000 to close the case.",1,en,synthetic_ai,digital_arrest,m0117,dev
+m0118,"Dear customer your HDFC credit card reward points of Rs 8,950 will expire today. Redeem now: hdfc-rewards-claim.com",1,en,synthetic_ai,refund,m0118,dev
+m0119,Urgent: install the RBI Secure app from this link to avoid account suspension: http://rbi-secure.vip/app.apk,1,en,synthetic_ai,apk,m0119,dev
+m0120,"आपकी ट्रेन टिकट कन्फर्म हो गई है। कोच B2, सीट 34।",0,hi,synthetic_ai,other,m0120,dev
+m0121,आज रात 10 बजे से सुबह 5 बजे तक आपके क्षेत्र में बिजली बंद रहेगी। असुविधा के लिए खेद है।,0,hi,synthetic_ai,other,m0121,dev
+m0122,"आपका लोन EMI ₹4,500 15 तारीख को कटेगा। कृपया खाते में पर्याप्त शेष रखें।",0,hi,synthetic_ai,bank_alert,m0122,dev
+m0123,तुमची बस उद्या सकाळी ७ वाजता सुटेल. वेळेवर या.,0,mr,synthetic_ai,other,m0123,dev
+m0124,आजच्या बैठकीत पोलीस पाटील यांनी सुरक्षेबाबत माहिती दिली.,0,mr,synthetic_ai,other,m0124,dev
+m0125,"നിങ്ങളുടെ ലോൺ EMI 3,200 രൂപ ഈ മാസം 5-ന് ഡെബിറ്റ് ചെയ്യും.",0,ml,synthetic_ai,bank_alert,m0125,dev
+m0126,"നാളെ പവർ കട്ട് ഉണ്ടായിരിക്കും, രാവിലെ 9 മുതൽ 1 വരെ.",0,ml,synthetic_ai,other,m0126,dev
+m0127,Aapka parcel kal subah tak deliver ho jayega. Track karne ke liye app dekhein.,0,hinglish,synthetic_ai,delivery,m0127,dev
+m0128,Aapka Flipkart refund Rs 799 aapke account mein 3 din mein aa jayega.,0,hinglish,synthetic_ai,other,m0128,dev
+m0129,"Your SBI credit card bill of Rs 5,430 is due on 20 Nov. Pay via the YONO app. Ignore if paid.",0,en,synthetic_ai,bill,m0129,dev
+m0130,Your Amazon refund of Rs 799 has been processed to your original payment method.,0,en,synthetic_ai,other,m0130,dev
+m0131,Congratulations on your new job! Let's celebrate this weekend.,0,en,synthetic_ai,personal,m0131,dev
