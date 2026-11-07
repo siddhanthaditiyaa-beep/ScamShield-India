@@ -80,7 +80,7 @@ async function run() {
     if (!res.ok) throw new Error("Server error " + res.status);
     show(await res.json());
   } catch (e) {
-    $("#out").hidden = false; $("#out").textContent = "Something went wrong: " + e.message;
+    $("#out").hidden = false; $("#out").textContent = (e.message.startsWith("Too many") ? "" : "Something went wrong: ") + e.message;
   } finally { $("#go").disabled = false; }
 }
 // ---- Screenshot reading (OCR). Runs in the browser with files served from /static/vendor/ocr.

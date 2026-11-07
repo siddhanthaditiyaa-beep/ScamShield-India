@@ -99,7 +99,7 @@ tool performs in real life. Made-up messages are never used for testing. Details
   containing one can slip through.
 - Scam wording changes constantly, so the rules need regular updates.
 - The brand allow-list in `app/rules.py` has not been verified.
-- The public demo has a simple in-memory rate limit (20 checks per minute per visitor, 300 overall). It resets when the server restarts and the visitor address can be faked, so it protects a free demo from accidents, not from a determined attacker. It has only been tested in code, not under real load.
+- The public demo has a simple in-memory rate limit (20 checks per minute per visitor, 300 overall). It resets when the server restarts and the visitor address can be faked, so it protects a free demo from accidents, not from a determined attacker. It was confirmed on the live site on 7 Nov 2026 (the limit message appeared after rapid clicks), but it has not been tested under real load.
 
 ## Roadmap
 
