@@ -130,3 +130,696 @@ m0128,Aapka Flipkart refund Rs 799 aapke account mein 3 din mein aa jayega.,0,hi
 m0129,"Your SBI credit card bill of Rs 5,430 is due on 20 Nov. Pay via the YONO app. Ignore if paid.",0,en,synthetic_ai,bill,m0129,dev
 m0130,Your Amazon refund of Rs 799 has been processed to your original payment method.,0,en,synthetic_ai,other,m0130,dev
 m0131,Congratulations on your new job! Let's celebrate this weekend.,0,en,synthetic_ai,personal,m0131,dev
+m0132,What's up? Do you want me to come online? If you are free we can talk sometime,0,en,public_dataset,other,pd_a03e3d38,dev
+m0133,Please Stay At Home. To encourage the notion of staying at home. All tax-paying citizens are entitled to 305.96 or more emergency refund. smsg.io/fCVbD,1,en,public_dataset,other,pd_bda25dc1,dev
+m0134,BankOfAmerica Alert 137943. Please follow http://bit.do/cgjK-and re-activate,1,en,public_dataset,bank_alert,pd_d81d921d,dev
+m0135,"House-Maid is the murderer, coz the man was murdered on 26th January..",0,en,public_dataset,other,pd_805a18de,dev
+m0136,UR awarded a City Break and could WIN a £200 Summer Shopping spree every WK. Txt STORE to 88039 . SkilGme. TsCs000000000000,1,en,public_dataset,lottery,pd_c4a5fb4f,dev
+m0137,Ok lorwhats up,0,en,public_dataset,other,pd_75cda911,dev
+m0138,Apple ID: [BUXCX7GBVwWCcOD Final Notification Your Apple 1D is due to expire today. Prevent this by confirming your Apple ID athttp://verifyapple.uk Apple Inc,1,en,public_dataset,bank_alert,pd_becbe603,test
+m0139,Ok..let me knw,0,en,public_dataset,other,pd_7dee6384,dev
+m0140,Meeting u is my work. . . Tel me when shall i do my work tomorrow.That is what matters,0,en,public_dataset,other,pd_0003f84e,dev
+m0141,"Sorry, have urgent work..",0,en,public_dataset,other,pd_e6a583c6,dev
+m0142,Good Morning plz call me sir..I have an urgent work..,0,en,public_dataset,other,pd_4e118789,test
+m0143,My computer just fried the only essential part we don't keep spares of because my idiot roommates looovvve leaving the thing running on full &lt;#&gt; /7,0,en,public_dataset,other,pd_f9e78126,dev
+m0144,You have won a guaranteed £200 award or even £1000 cashto claim UR award call free on 00000000000 (18+) 2 stop getstop on 88333 PHP,1,en,public_dataset,lottery,pd_d9db3613,test
+m0145,Are you this much buzy.I dont think so,0,en,public_dataset,other,pd_795a317c,dev
+m0146,"This is the 2nd time we have tried 2 contact u. U have won the 750 Pound prize. 2 claim is easy, call 00000000000 NOW! Only 10p per min. BT-national-rate",1,en,public_dataset,lottery,pd_6cdfbfff,dev
+m0147,Dear PAYTM customer your Paytm KYC has expired. Contact customer care No-9000000000 immediately. your account will Block within 24 hr. Thank you PAYTM TEAM.,1,en,public_dataset,kyc,pd_5480f019,dev
+m0148,"Jan is fast approaching. So, Wish u a very Happy New Year Happy Sankranti Happy republic day Happy Valentines Day Happy Shivratri Happy Ugadi Happy Fools day Happy May Day Happy Independence Day, Happy Friendship,Mother,Father,Teachers,Childrens Day, &amp; HAPPY BIRTHDAY 4 U. Happy Ganesh festival Happy Dasara Happy Diwali Happy Christmas &lt;#&gt; Good Mornings Afternoons, Evenings Nights. RememberI AM the first to WISHING U ALL THESE...your's Raj",0,en,public_dataset,other,pd_3efad84e,dev
+m0149,Ok..lets find out,0,en,public_dataset,other,pd_e7c8f4b2,dev
+m0150,JUSWOKE UP IN A BED ON A BOATIN THE DOCKS. SLEPT WID 25 YEAR OLD. SPINOUT! GIV U DA GOSSIP L8R. XXX,0,en,public_dataset,other,pd_bdd84303,dev
+m0151,"Actually , just do whatever, do find an excuse to be in tampa at some point before january though",0,en,public_dataset,other,pd_30b1c02d,dev
+m0152,"Dear customer, Due to BVN system upgrade your ATM CARD has been De-activated, to re-activate, kindly call customer care on 00000000000 for help.",1,en,public_dataset,bank_alert,pd_84b8efd8,dev
+m0153,You have 1 new voicemail. Please call 0000000000.,1,en,public_dataset,other,pd_e984332c,dev
+m0154,U R entitled to Update to the latest colour mobiles with camera for Free! Call The Mobile Update Co FREE on 00000000000,1,en,public_dataset,other,pd_6ed30b96,dev
+m0155,Congratulations ur awarded either £500 of CD gift vouchers & Free entry 2 our £100 weekly draw txt MUSIC to 87066 TnCs www.Ldew.com,1,en,public_dataset,lottery,pd_93175325,test
+m0156,"FREE2DAY sexy St George's Day pic of Jordan!Txt PIC to 89080 dont miss out, PocketBabe.co.uk 0000000000000",1,en,public_dataset,other,pd_aed30bde,dev
+m0157,Hahaha..use your brain dear..that will work here,0,en,public_dataset,other,pd_bfc49876,dev
+m0158,"Japanese Proverb: If one Can do it, U too Can do it, If none Can do it,U must do it Indian version: If one Can do it, LET HIM DO it.. If none Can do it,LEAVE it!!",0,en,public_dataset,other,pd_996ce980,dev
+m0159,"I'm in a meeting, call me later at 4",0,en,public_dataset,other,pd_c221ea77,dev
+m0160,My name is Theresa & I have 7.3milion Dollar to transfer to you for charity work to help the poor ones in ur place india. Contact user@example.com,1,en,public_dataset,other,pd_4f66889a,dev
+m0161,Your account has been refilled successfully by INR 100.00; . Your KeralaCircle prepaid account balance is Rs.101.00 ; . Your Transaction ID is KR 3567 .,0,en,public_dataset,other,pd_c6825cf2,dev
+m0162,WINNER!! As a valued network customer you have been selected to receivea £900 prize reward! To claim call 00000000000. Claim code KL345.,1,en,public_dataset,lottery,pd_e1a6f5e9,dev
+m0163,If you r at home then I am coming within 20 mins,0,en,public_dataset,other,pd_1cf192c6,dev
+m0164,"URGENT! Dear FL1PKART Customer, We are trying to contact you. Last weekends draw shows that you w0n a Rs.2,00,000 prize GUARANTEED. Call 9000000000. Claim Code FLIP02. Valid 12hrs only.",1,en,public_dataset,lottery,pd_67202035,dev
+m0165,"Please call our customer service representative on 9000000000 between 10am-9pm as you have W0N a guaranteed cash prize of Rs.8,00,000 FL1PKART TEAM",1,en,public_dataset,lottery,pd_1fd8d7ef,dev
+m0166,"Sure, whenever you show",0,en,public_dataset,other,pd_e9ba8465,dev
+m0167,"New Theory: Argument wins d SITUATION, but loses the PERSON. So dont argue with ur loved ones.",0,en,public_dataset,other,pd_40274dc7,dev
+m0168,YOUR CHANCE TO BE ON A REALITY FANTASY SHOW call now = 00000000000 Just 20p per min NTT Ltd,1,en,public_dataset,other,pd_3afe0839,dev
+m0169,You are a winner U have been specially selected 2 receive £1000 cash speak to a live operator 2 claim 0000000000000,1,en,public_dataset,lottery,pd_84c3ffb0,dev
+m0170,Hurt me... Tease me... Make me cry... But in the end of my life when i die plz keep one rose on my grave and say I miss u,0,en,public_dataset,other,pd_0f3e2fb0,dev
+m0171,Gud ni8 dear..sleep well,0,en,public_dataset,other,pd_89a15477,dev
+m0172,May i call You later Please..I am busy ryt nw,0,en,public_dataset,other,pd_8399e28e,test
+m0173,I cant pick the phone right now. I am busy,0,en,public_dataset,other,pd_8c6cb265,dev
+m0174,You have registered Shijo as Payee. Log in at icicibank.com and enter URN to confirm. Beware of frauds.,0,en,public_dataset,other,pd_28a6c95b,test
+m0175,"URGENT! Dear FL1PKART Customer, We are trying to contact you. Last weekends draw shows that you w0n a Rs.5,00,000 prize GUARANTEED. Call 9000000000. Claim Code FLIP82. Valid 12hrs only.",1,en,public_dataset,lottery,pd_67202035,dev
+m0176,You have been randomly selected for a BestBuy gift. Get your $1000 gift card at www.bestbuy.com.your-a-winner.net/?id-ichrfcycylck,1,en,public_dataset,lottery,pd_b85f1277,dev
+m0177,Just sleeping..and surfing.free time,0,en,public_dataset,other,pd_f672fd13,dev
+m0178,BMO have noticed unusual activites on your online account. You are required to verify your account details.www.97bmo.tk,1,en,public_dataset,bank_alert,pd_9853f286,dev
+m0179,"Your tax refund of 349.14 is ready to be claimed. To access your refund, follow the steps required. http:/bit.do/Claim-Tax",1,en,public_dataset,other,pd_1f97c7d6,test
+m0180,"Hi, Mobile no. 9000000000 has added you in their contact list on www.fullonsms.com It s a great place to send free sms to people For more visit fullonsms.com",0,en,public_dataset,other,pd_923dfd16,test
+m0181,"Dear V0DAF0NE Customer,You are a 5,00,000 winner of Guaranteed Caller Prize, this is our Final attempt to contact you! To Claim Call 9000000000 Now!",1,en,public_dataset,lottery,pd_d6afbbfb,test
+m0182,"Loan for any purpose £500 - £75,000. Homeowners + Tenants welcome. Have you been previously refused? We can still help. Call Free 0800 1956668",1,en,public_dataset,other,pd_7b9279f4,dev
+m0183,URGENT This is our 2nd attempt to contact U. Your £900 prize from YESTERDAY is still awaiting collection. To claim CALL NOW 00000000000,1,en,public_dataset,lottery,pd_1e94f526,test
+m0184,"Your Number has won 365,000 pounds and two mobile phones in the ongoing COCACOLA/UK PROMO. Contact MR. Billy: user@example.com +000000000000",1,en,public_dataset,lottery,pd_1198e0f3,test
+m0185,Okie..nice to hear that..,0,en,public_dataset,other,pd_db77ad66,dev
+m0186,Wat r u doing? Call me,0,en,public_dataset,other,pd_1fd3a191,dev
+m0187,"Yeah there's barely enough room for the two of us, x has too many shoes. Sorry man, see you later",0,en,public_dataset,other,pd_726f8fe9,test
+m0188,Do you want 750 anytime any networt NEW video phone for only five pounds per week call 00000000000 now or reply for delivery Tomorrow,1,en,public_dataset,other,pd_7940748e,dev
+m0189,"Thank you so much. When we skyped wit kz and sura, we didnt get the pleasure of your company. Hope you are good.",0,en,public_dataset,other,pd_5cc0a2d7,test
+m0190,"Pvt Finance arranged on cheque basics 4 Business Peoples, Traders, Stockists, Industries & corporate comp, P.M turn over 20L. Cnt-9000000000",1,en,public_dataset,other,pd_6de937e7,test
+m0191,Todays Vodafone numbers ending with 4865 are selected to a receive a £350 award. If your number matches call 00000000000 to receive your £350 award.,1,en,public_dataset,lottery,pd_2c098e15,dev
+m0192,"Prem Jewellrs Vijaynagar Lucky draw scheme , monthly Rs 300 for 12 month, every month lucky member will be given Rs3600 gold or silver article.Call-9000000000",1,en,public_dataset,lottery,pd_577c0a88,dev
+m0193,"A Boy loved a gal. He propsd bt she didnt mind. He gv lv lttrs, Bt her frnds threw thm. Again d boy decided 2 aproach d gal , dt time a truck was speeding towards d gal. Wn it was about 2 hit d girl,d boy ran like hell n saved her. She asked 'hw cn u run so fast?' D boy replied ""Boost is d secret of my energy"" n instantly d girl shouted ""our energy"" n Thy lived happily 2gthr drinking boost evrydy.",0,en,public_dataset,other,pd_00be93c7,dev
+m0194,LOOK AT THE TIME. WHAT YOU THINK IS UP,0,en,public_dataset,other,pd_577aaa2e,test
+m0195,Easy ah?Then U wll get selected... its good..,0,en,public_dataset,other,pd_a2b2b604,dev
+m0196,Gud mrng dear hav a nice daykeep doing well,0,en,public_dataset,other,pd_c005b542,dev
+m0197,No calls..messages..missed calls..just missing her.,0,en,public_dataset,other,pd_a56f6dc1,dev
+m0198,I'm leaving my house now. Will reach in half an hour,0,en,public_dataset,other,pd_ce4ced52,dev
+m0199,What Today-sunday....so no work..,0,en,public_dataset,other,pd_6a18d5c5,dev
+m0200,"FREE MESSAGE Activate your 500 FREE Text Messages by replying to this message with the word FEE, visit www.00000000000.com",1,en,public_dataset,other,pd_3f78e3d7,test
+m0201,We have identified some unusual activity on your Online Banking. Log in via the secure link http:/95.141.32.7:81/default.aspxto avoid account suspension.,1,en,public_dataset,bank_alert,pd_8d91ab5e,test
+m0202,URGENT! Your Mobile number has been awarded with a £2000 prize GUARANTEED. Call 00000000000 from land line. Claim 3030. Valid 12hrs only 150ppm,1,en,public_dataset,lottery,pd_2840eaaf,dev
+m0203,Me fine..absolutly fine.dont worry!!!,0,en,public_dataset,other,pd_7e6fda64,dev
+m0204,"Please call our customer service representative on 9000000000 between 10am-9pm as you have W0N a guaranteed cash prize of Rs.5,00,000 FL1PKART TEAM",1,en,public_dataset,lottery,pd_1fd8d7ef,dev
+m0205,I am late. I will be there at 12,0,en,public_dataset,other,pd_6bac5a4e,dev
+m0206,URGENT: UKGOV has issued a payment of 458 GBP to all residents as part of its promise to battle COVID 19. TAP here https:/uk-covid-19.webredirect.org/to apply,1,en,public_dataset,other,pd_d9b7f99d,test
+m0207,Hello..Wake up.Sweet morning welcomes You. Enjoy This Day with full of joy.,0,en,public_dataset,other,pd_430ba6f3,dev
+m0208,"Congrats! 1 year special cinema pass for 2 is yours. call 00000000000 now! C Suprman V, Matrix3, StarWars3, etc all 4 FREE! bx420-ip4-5we. 150pm. Dont miss out!",1,en,public_dataset,other,pd_28ca28b9,test
+m0209,"Short But Cute: ""Be a good person, but dont try to prove it..""",0,en,public_dataset,other,pd_3734e95f,test
+m0210,I cant pick the phone right now. Call later,0,en,public_dataset,other,pd_c39f0ff6,test
+m0211,"Sorry, I'll call later..urgent work..",0,en,public_dataset,other,pd_7fcadbc5,dev
+m0212,Love you virat..love u lot..,0,en,public_dataset,other,pd_d7501534,dev
+m0213,Okbeautiful..,0,en,public_dataset,other,pd_68c38169,test
+m0214,"As a valued customer, I am pleased to advise you that following recent draw of your Mobile No. you are awarded with a Rs.2,00,000 Bonus Prize, call 9000000000",1,en,public_dataset,lottery,pd_f5c7d4a7,dev
+m0215,"if anyone calling from a mobile Co. and asks u to type # &lt;#&gt; or # &lt;#&gt; . Do not do so. Disconnect the call,coz it iz an attempt of 'terrorist' to make use of the sim card.",0,en,public_dataset,other,pd_d95f0612,test
+m0216,G wants to know where you are,0,en,public_dataset,other,pd_4647c8f7,test
+m0217,Okcongrats,0,en,public_dataset,other,pd_cc29bb78,test
+m0218,YOU ARE CHOSEN TO RECEIVE A £450 AWARD! Pls call claim number 00000000000 to collect your award which you are selected to receive as a valued mobile customer.,1,en,public_dataset,lottery,pd_7014af1e,dev
+m0219,A transaction of AUD 590.3 was made with your bank account on 08/02/17 11:17:37 if unauthorised follow this link http://gommbanklogin:netbank.com,1,en,public_dataset,bank_alert,pd_b319908e,test
+m0220,I had askd u a question some hours before. Waiting for ur reply,0,en,public_dataset,other,pd_2a7d5d78,dev
+m0221,"Friendship is not a game to play, It is not a word to say, It doesn\'t start on March and ends on May, It is tomorrow, yesterday, today",0,en,public_dataset,other,pd_ef134cc0,dev
+m0222,"ATM BLOCK:Dear customer, Due to our system upgrade your ATM card has just been De-Activated. To Activate call customer care 9000000000 now.",1,en,public_dataset,bank_alert,pd_dc99ce76,test
+m0223,OkI am agreed..,0,en,public_dataset,other,pd_4ba396f9,dev
+m0224,lAMI..where are you dear..ITS TOO TOUGH,0,en,public_dataset,other,pd_2749d2db,test
+m0225,Howz that persons story..hope u find out..,0,en,public_dataset,other,pd_1fa5fdb7,dev
+m0226,Mmmm ... Not fair ! You know my weaknesses ! *grins* *pushes you to your knee's* *exposes my belly and pulls your head to it* Don't forget ... I know yours too *wicked smile*,0,en,public_dataset,other,pd_f2f1187b,dev
+m0227,"IMPORTANT MESSAGE FROM WESTPAC For the safety of our customers due to the recent COVID-19 virus, all customers are required to review and update their personal details. You will be unable to use Westpac services until you have done so. Please go to https:// westpac-mobile.cc/2update or call us on 132 032.",1,en,public_dataset,other,pd_9381dce8,dev
+m0228,"7 wonders in My WORLD 7th You 6th Ur style 5th Ur smile 4th Ur Personality 3rd Ur Nature 2nd Ur SMS and 1st ""Ur Lovely Friendship""Love u dear",0,en,public_dataset,other,pd_9b3ec484,test
+m0229,"Wishing you and your family Merry ""X"" mas and HAPPY NEW Year..",0,en,public_dataset,other,pd_c64c3ef6,dev
+m0230,"YOUR MOBILE NUMBER HAS WON 3.6 CRORE FROM SAMSUNG UK AWARD TO RECEIVE YOUR PRIZE,SEND UR NAME, MOBILE,N0,ADDRES, AGE,SEX, OCCUP user@example.com",1,en,public_dataset,lottery,pd_ed44aa6c,dev
+m0231,"Dear Customer,U've been selected to stay in F1VE STAR hotels - FOR T0DAY'S DRAW! Holiday valued at INR 5,00,000.Dial 9000000000 to claim",1,en,public_dataset,lottery,pd_00de25fe,dev
+m0232,"Rose for red,red for blood,blood for heart,heart for u. But u for me....",0,en,public_dataset,other,pd_1959f1b4,dev
+m0233,"You have won ?2,000 cash or a ?5,000 prize! To claim, call00000000000",1,en,public_dataset,lottery,pd_8f78ce5f,dev
+m0234,"Sorry, busy ryt nw..",0,en,public_dataset,other,pd_246f15d4,dev
+m0235,I've been searching for the right words to express my gratitude my brother. You have been wonderful and a blessing at all times.,0,en,public_dataset,other,pd_f3e93968,dev
+m0236,I had askd u a question some hours before. Answer it first,0,en,public_dataset,other,pd_458b2c98,test
+m0237,Thats cool. i liked your photos.,0,en,public_dataset,other,pd_862cb77a,test
+m0238,"A bit of Ur smile is my hppnss, a drop of Ur tear is my sorrow, a part of Ur heart is my life, a heart like mine wil care for U, forevr as my GOODFRIEND..I love u",0,en,public_dataset,other,pd_9d959328,dev
+m0239,Ok lor vey good..,0,en,public_dataset,other,pd_6f6ec27e,dev
+m0240,"Nationwide has noticed your debit card was recently used on 29-11-2016 15:04:43, at APPLE ONLINE STORE for 1267.00 GBP If not you please urgently call fraud prevention on 00000000000 or Int +000000000000. Do not reply by SMS http://www.Nationwide.co.uk",1,en,public_dataset,bank_alert,pd_5162b45b,dev
+m0241,I will come tomorrow my dear,0,en,public_dataset,other,pd_cc14e3ed,test
+m0242,Argh why there is nobody in town ;_;,0,en,public_dataset,other,pd_dae14687,dev
+m0243,Jay is snickering and tells me that x is totally spoiling up the chords as we speak,0,en,public_dataset,other,pd_3e5a47d8,dev
+m0244,YOU HAVE WON! As a valued Vodafone customer our computer has picked YOU to win a £350 prize. To collect is easy. Just call 00000000000,1,en,public_dataset,lottery,pd_fd33caf9,dev
+m0245,Not heard from U4 a while. Call 4 rude chat private line 00000000000 to cum.,1,en,public_dataset,other,pd_b3c15175,dev
+m0246,"Your Bank of America online account has been suspended, log in to restore http://itdo/bankofamerica-session-user",1,en,public_dataset,bank_alert,pd_6e6340d6,dev
+m0247,Englishvocabulary ululate: to mourn loudly and shrilly AD: Unlimited FREE calls to any mobile try out today http://bit.ly/unlmtdfreecall share wid frnd,1,en,public_dataset,other,pd_f4142e7e,dev
+m0248,"Living is very simple.. Loving is also simple.. Laughing is too simple.. Winning is tooo simple.. But, being 'SIMPLE' is very difficult.. Hope u understand...Gud night...",0,en,public_dataset,other,pd_7e18bf2a,test
+m0249,Did u got that persons story..let mw know..,0,en,public_dataset,other,pd_e9b4fa8b,dev
+m0250,Oktalk to me later,0,en,public_dataset,other,pd_99eeaf11,dev
+m0251,Ok lor. Thats a good news..,0,en,public_dataset,other,pd_adaa29e9,dev
+m0252,"Wen ur lovable bcums angry wid u, dnt take it seriously.. Coz being angry is d most childish n true way of showing deep affection...Have nice day da.",0,en,public_dataset,other,pd_f2408c10,dev
+m0253,Ok. Fine,0,en,public_dataset,other,pd_e74d6ca4,dev
+m0254,RMO.00 R.HB: RM4388.00 Was Charged On Your Card Numer 9577 at AwG-KLIA2 On 24/10/16 1234:29 Reference Code 123456 Call 00000000000 if u did NOT perform this Txn,1,en,public_dataset,bank_alert,pd_02db97d7,test
+m0255,"I'm in a meeting, call me later at night",0,en,public_dataset,other,pd_2556ac59,dev
+m0256,Wife.,0,en,public_dataset,other,pd_bb4694a2,dev
+m0257,Gud mrng dear have a nice day..hope u r fine,0,en,public_dataset,other,pd_a3a82c44,dev
+m0258,"Wen ur lovable bcums angry wid u, dnt take it seriously.. Coz being angry is d most childish n true way of showing deep affection, care n luv!..",0,en,public_dataset,other,pd_f2408c10,dev
+m0259,"So many people seems to be special at first sight, But only very few will remain special to you till your last sight.. Maintain them till life ends.. Virat",0,en,public_dataset,other,pd_f9745220,test
+m0260,What Today-..sunday is holiday..so no work..,0,en,public_dataset,other,pd_2734dd7b,dev
+m0261,"You are guaranteed the latest Nokia Phone, a 40GB iPod MP3 player or a £1000 prize! Txt word: COLLECT to No: 83355!",1,en,public_dataset,lottery,pd_312229bf,dev
+m0262,500 free text msgs. Just text ok to 80488 a or call 00000000000 nd we'll credit your account,1,en,public_dataset,bank_alert,pd_6802b3fe,test
+m0263,"Sorry, I'll go later",0,en,public_dataset,other,pd_f7643632,dev
+m0264,I don't run away frm u... But it kills me that u don't care enough to stop me,0,en,public_dataset,other,pd_88ed66b7,dev
+m0265,Purity of friendship between two is not about smiling after reading the forwarded message..Its about smiling just by seeing the name. Good morning,0,en,public_dataset,other,pd_db3d8d14,test
+m0266,Ok then I will wait for. Then u talk to me.,0,en,public_dataset,other,pd_e1bd33fe,test
+m0267,I dont have your file in my bag..i 'll tell you if i find it in my room.,0,en,public_dataset,other,pd_193fd6f5,test
+m0268,We tried to contact you re your reply to our offer of a Video Phone 750 anytime any network mins Half Price Line Rental Camcord call 00000000000,1,en,public_dataset,other,pd_52b15e00,dev
+m0269,We have recalculated your vehicle tax. You are owed 48.84 due to over payment.Click the secure link http:// 103.208.86.96 to claim your refund.,1,en,public_dataset,other,pd_26f69237,dev
+m0270,"I miss you already, you know ? Can't you let me send you some money towards your net ? I need you ... I want you ... I crave you ...",0,en,public_dataset,other,pd_2fe55550,test
+m0271,"Solve d Case : A Man Was Found Murdered On 16 April, AfterNoon. 1,His wife called Police. 2,Police questioned everyone. 3,Wife: Sir,I was sleeping, when the murder took place. 4.Cook: I was cooking. 5.Gardener: I was picking vegetables. 6.House-Maid: I went 2 d post office. 7.Children: We went 2 play. 8.Neighbour: We went 2 a marriage. Police arrested d murderer..who is it?",0,en,public_dataset,other,pd_a5a68497,dev
+m0272,"Be a good person , but dont try to prove it",0,en,public_dataset,other,pd_cc8b935f,test
+m0273,How are you doing? Hope you've settled in for the new school have a great day,0,en,public_dataset,other,pd_1db99cca,test
+m0274,Bloomberg -Message center +000000000000 Why wait? Apply for your futur,1,en,public_dataset,other,pd_6179a7e8,dev
+m0275,"As a valued customer, I am pleased to advise you that following recent review of your Mob No. you are awarded with a £2000 Bonus Prize, call 00000000000",1,en,public_dataset,lottery,pd_f5c7d4a7,dev
+m0276,Joy's father is John. Then John is the NAME of Joy's father. Sweta,0,en,public_dataset,other,pd_39d17692,test
+m0277,I am going to try for 2 months ha ha only joking,0,en,public_dataset,other,pd_4966ae35,test
+m0278,Our smriti's mother passed away last night. pray for her and family.,0,en,public_dataset,other,pd_436c3cde,dev
+m0279,I cant pick the phone right now. Pls send a message if anything urgent..,0,en,public_dataset,other,pd_e4ef2f39,dev
+m0280,"Sorry, I can help you on this.",0,en,public_dataset,other,pd_953de51c,dev
+m0281,No message..no responce..what happend? Is everything fine?,0,en,public_dataset,other,pd_14cdb95a,test
+m0282,"Sorry, I'll call later afternoon",0,en,public_dataset,other,pd_a1d94a0c,test
+m0283,U have a Secret Admirer who is looking 2 make contact with U-find out who they R*reveal who thinks UR so special-call on 0000000000-stopsms-08,1,en,public_dataset,other,pd_bc318377,dev
+m0284,"ATM BLOCK:Dear customer, Due to our system upgrade your ATM card has just been BL0CKED. To Re-Activate call customer care for help 9000000000 now.",1,en,public_dataset,bank_alert,pd_dc99ce76,test
+m0285,Ok.good,0,en,public_dataset,other,pd_a9bb1aef,dev
+m0286,"Say this slowly.? GOD,I LOVE YOU &amp; I NEED YOU,CLEAN MY HEART WITH YOUR BLOOD.Send this to Ten special people",0,en,public_dataset,other,pd_d8214c05,dev
+m0287,Please call our customer service representative on FREEPHONE 0808 145 4744 between 9am-11pm as you have WON a guaranteed £3000 cash or £7000 prize!,1,en,public_dataset,lottery,pd_1fd8d7ef,dev
+m0288,Ranjith cal drpd,0,en,public_dataset,other,pd_25391511,test
+m0289,Courtsy reminder: payment on your NAB Visa Card is now overdue. Please refer to your statement for payment options or call 1300 2569 28 Thank you,1,en,public_dataset,bank_alert,pd_a1a88e6b,dev
+m0290,"Wen u lift d phne, u say ""HELLO"" Do u knw wt is d real meaning of HELLO?? . . . It's d name of a girl..! . . . Yes.. And u knw who is dat girl?? ""Margaret Hello"" She is d girlfrnd f Grahmbell who invnted telphone... . . . . Moral:One can 4get d name of a person, bt not his girlfrnd... G o o d n i g h t . . .@",0,en,public_dataset,other,pd_d7c7b94c,dev
+m0291,"Found it, ENC 5000 , where you at?",0,en,public_dataset,other,pd_b88e6b4e,test
+m0292,would u believe it they didnt know i had thurs pre booked off so they re cancelled me AGAIN! that needs to b sacked,0,en,public_dataset,other,pd_95f50f3a,dev
+m0293,Last week was my b'day. My Wife did'nt wish me. My Parents forgot n so did my Kids . I went to work. Even my Colleagues did not wish.,0,en,public_dataset,other,pd_819d200f,test
+m0294,"URGENT! Dear FL1PKART Customer, We are trying to contact you. Last weekends draw shows that you w0n a Rs.6,00,000 prize GUARANTEED. Call 9000000000. Claim Code FLIP52. Valid 12hrs only.",1,en,public_dataset,lottery,pd_67202035,dev
+m0295,Yes..he is really great..bhaji told that he is d best cricketer after sachin in world.,0,en,public_dataset,other,pd_067280cf,dev
+m0296,UR Mobile Number Won 2Crores 35Lakh Rupees In Chevrolet Motors Award 2015 For Claim Send Name Phone Number Address Age ToEmail:user@example.com,1,en,public_dataset,lottery,pd_d63b7e6a,test
+m0297,Ok. Wonderful,0,en,public_dataset,other,pd_02aff24a,dev
+m0298,I went to project centre.I spent 3 hours there,0,en,public_dataset,other,pd_5ad21caa,dev
+m0299,Today is ACCEPT DAY..U Accept me as?,0,en,public_dataset,other,pd_a80db296,dev
+m0300,"(Help-Center Canada) You received a Transfer from The Government due to the CoronaVirus pandemic, Click:http://23.254.215.52 to fill out your Application.",1,en,public_dataset,other,pd_b699e3ae,test
+m0301,"Sorry, I'll call later in night",0,en,public_dataset,other,pd_8ed32e37,dev
+m0302,"Sorry, wanted to go somewhere..",0,en,public_dataset,other,pd_0ca98793,dev
+m0303,"URGENT! Your Mobile number has been awarded with a INR.2,00,000 prize GUARANTEED. Call 9000000000 from land line. Claim 3030. Valid 12hrs only",1,en,public_dataset,lottery,pd_2840eaaf,dev
+m0304,Please call our customer service representative on FREEPHONE 0808 145 4743 between 9am-11pm as you have WON a guaranteed £2000 cash or £6000 prize!,1,en,public_dataset,lottery,pd_1fd8d7ef,dev
+m0305,I cant pick the phone right now. Call me sometime back,0,en,public_dataset,other,pd_cb5cf52e,dev
+m0306,We would like to inform you that you have been recorded as leaving your home on 3 occasions yesterday. A fine of 35 has been added to your gov.ukaccount. For further information please visitgov.uk/ coronavirus-penalty-payment racking. Protect the NHS. Save lives,1,en,public_dataset,bank_alert,pd_8a1f0644,dev
+m0307,What happened to you ? How come you never came back?,0,en,public_dataset,other,pd_d13d8b35,dev
+m0308,"You are happy...You skype, you take pictures, you sleep, you want to go out. But you dont mind what I want..",0,en,public_dataset,other,pd_3daf4545,dev
+m0309,URGENT! This is the 2nd attempt to contact U!U have WON £1250 CALL 00000000000 b4 050703 T&CsBCM4235WC1N3XX. callcost 150ppm mobilesvary. max£7. 50,1,en,public_dataset,lottery,pd_ca3d66fa,dev
+m0310,I am late. I will be there by 3,0,en,public_dataset,other,pd_2ec728d8,dev
+m0311,"Dear V0DAF0NE Customer,You are a W1NNER of Rs. 1,00,000 Guaranteed Prize, this is our Final attempt to contact you! To Claim Call 9000000000 Now!",1,en,public_dataset,lottery,pd_1da445be,dev
+m0312,SORRY IM STIL AFTER LAST NITE WENT TOBED AT 430 GOT UP 4 WORK AT 630,0,en,public_dataset,other,pd_aa35c015,dev
+m0313,It's urgent please Contact me for an UNCLAIMED BEQUEST PAYMENT as the Assigned BENEFICIARY VIA EMAIL user@example.com Regards Gordon,1,en,public_dataset,other,pd_99ddd0a6,test
+m0314,Oh okI'm watching here:) I know what to do,0,en,public_dataset,other,pd_cce1a8ac,dev
+m0315,"Congratulations, Your entry into our contest last month made you a WINNER! Goto http://www.apple.com.text.won.comto claim your prize! You have 24 hours to claim",1,en,public_dataset,lottery,pd_387d8254,dev
+m0316,"If you don't, your prize will go to another customer. T&C at www.t-c.biz 18+ 150p/min Polo Ltd",1,en,public_dataset,lottery,pd_f56250f7,dev
+m0317,Friendship poem: Dear O Dear U R Not Near But I Can Hear Dont Get Fear Live With Cheer No More Tear U R Always my Dear. GOOD MORNING,0,en,public_dataset,other,pd_2efe5e1d,test
+m0318,Ok then i will come to ur home after half an hour..is that fine?,0,en,public_dataset,other,pd_4654bc79,dev
+m0319,Don no da:)whats you plan? Let mw know,0,en,public_dataset,other,pd_42e6c885,dev
+m0320,Good night my dear.. Sleepwell and sweet dreams,0,en,public_dataset,other,pd_f70d00fc,dev
+m0321,"Dear customer your PAY2TMKYC has been expired, Its will be bl0cked within 24 hour, please contact customer! Care ph 9000000000 immediately to verify",1,en,public_dataset,kyc,pd_2e080988,test
+m0322,Your work is perfect!,0,en,public_dataset,other,pd_fb6cdbfa,dev
+m0323,Dear (paytm)customer your paytm KYC has been suspended PAY-TM office PH 9000000000 Your Paytm A/C will block within 24hr Thank you.,1,en,public_dataset,kyc,pd_a9809936,dev
+m0324,Prabha..i'm sorry,0,en,public_dataset,other,pd_16436bf6,dev
+m0325,Congratulation! Your Mobile No was selected as a winner of E2000.000.00 on EURO-MEGA DRAW with Draw number EU-0906767 Email user@example.com claims,1,en,public_dataset,lottery,pd_d8aefa51,test
+m0326,Never blame a day in ur life. Good days give u happiness. Bad days give u experience.,0,en,public_dataset,other,pd_dd110f39,dev
+m0327,Okiewonderful!!,0,en,public_dataset,other,pd_47247a25,dev
+m0328,Did u got that persons story..all well?,0,en,public_dataset,other,pd_4556e218,dev
+m0329,"Sir, I am waiting for your callI have an urgent meeting later on..",0,en,public_dataset,other,pd_0bde4d95,dev
+m0330,"Night has ended for another day, morning has come in a special way. May you smile like the sunny rays...Gud mrng",0,en,public_dataset,other,pd_672eb170,test
+m0331,"Please call our customer service representative on 9000000000 between 10am-9pm as you have W0N a guaranteed cash prize of Rs.7,00,000. FL1PKART TEAM",1,en,public_dataset,lottery,pd_1fd8d7ef,dev
+m0332,32 am I think? Should say on syllabus,0,en,public_dataset,other,pd_f901ee42,dev
+m0333,U have a secret admirer. REVEAL who thinks U R So special. Call 00000000000. To opt out Cust care 00000000000,1,en,public_dataset,other,pd_af9d2cf2,dev
+m0334,"Last Chance! Claim ur £350 worth of discount vouchers today! Text SHOP to 85023 now! SavaMob, offers mobile! T Cs SavaMob POBOX84, M263UZ.",1,en,public_dataset,other,pd_2372bb8d,dev
+m0335,Ok thanks..dats wonderful,0,en,public_dataset,other,pd_538ca08c,dev
+m0336,Loa!! Homeowners + Tenants welcome. Have you been previously refused? We can still help. Call Free 0800 1956669 or text back 'help',1,en,public_dataset,other,pd_e13273b8,dev
+m0337,"Turns out my friends are staying for the whole show and won't be back til some time , so feel free to go ahead and smoke that worth worth",0,en,public_dataset,other,pd_f9b59cc8,dev
+m0338,"Local Covid19 Study: Compensation up to $1,220! Qualify Here:1200cash4study1.com/",1,en,public_dataset,other,pd_c085ee97,dev
+m0339,"All the Aeronautics professors wer calld &amp; they wer askd 2 sit in an aeroplane. Aftr they sat they wer told dat the plane ws made by their students. Dey all hurried out of d plane.. Bt only 1 didnt move... He said:""if it is made by my students,this wont even start........ Datz confidence..",0,en,public_dataset,other,pd_5c08c15a,dev
+m0340,"Sorry, I'll call later..have to go somewhere..",0,en,public_dataset,other,pd_5e852e54,dev
+m0341,Welcome to Paytm payment bank your re verification done successful in your wallet get 1205 cashback click in link and login your paytm http://7e4d6417.ngrok.io/paytm,1,en,public_dataset,bank_alert,pd_672065c6,dev
+m0342,"URGENT! Dear FL1PKART Customer, We are trying to contact you. Last weekends draw shows that you w0n a Rs.10,00,000 prize GUARANTEED. Call 9000000000. Claim Code K52. Valid 12hrs only.",1,en,public_dataset,lottery,pd_67202035,dev
+m0343,Yes:)here tv is always available,0,en,public_dataset,other,pd_0064ecd4,test
+m0344,"DUETO THE CENTRAL BANK DIRECTIVE WITH REGARDS TO BVN UPDATE,YOUR ATM CARD HAS BEEN DE-ACTIVATED,TO RE-ACTIVATE CALL CUSTOMER CARE ON 00000000000",1,en,public_dataset,bank_alert,pd_a8f31cf5,dev
+m0345,"Sorry, I'll call later at night",0,en,public_dataset,other,pd_44aa52d9,test
+m0346,"When people see my msgs, They think Iam addicted to msging... They are wrong, Bcoz They dont know that Iam addicted to my sweet Friends..!!",0,en,public_dataset,other,pd_29e2f830,dev
+m0347,NEFT Transaction with reference number 456367 for Rs.9000 has been credited to the beneficiary account on 5th jan at 3.00PM.,0,en,public_dataset,other,pd_b396b931,test
+m0348,"God picked up a flower and dipped it in a DEW, lovingly touched it which turned into YOU, and the he gifted to me and said,THIS IS YOUR LOVE",0,en,public_dataset,other,pd_1e3ce440,test
+m0349,Ok.ok ok..then..whats ur todays plan..can we be together?,0,en,public_dataset,other,pd_35730ef7,dev
+m0350,"As a valued customer, I am pleased to advise you that following recent review of your Mobile No. you are awarded with a Rs.7,00,000 Bonus Prize, call 9000000000",1,en,public_dataset,lottery,pd_f5c7d4a7,dev
+m0351,"Night has ended for another day, morning has come in a special way. GOOD MORNING",0,en,public_dataset,other,pd_672eb170,test
+m0352,"Sorry, I'll call later.message me if urgent",0,en,public_dataset,other,pd_83cde5db,dev
+m0353,Now only i reached home. . . I am very tired now. .will talk to u tomorrow,0,en,public_dataset,other,pd_0e40a415,test
+m0354,U have a secret admirer who is looking 2 make contact with U-find out who they R*reveal who thinks UR so special-call on 0000000000,1,en,public_dataset,other,pd_bc318377,dev
+m0355,I will be gentle baby! Soon you will be taking all ..,0,en,public_dataset,other,pd_30984378,dev
+m0356,"I'm gonna be home soon and i don't want to talk about this stuff anymore tonight, k? It's enough today.",0,en,public_dataset,other,pd_63bcfa70,test
+m0357,"We have received a request from you for purchasing Paytm Payments Bank FASTag. Total amount to be paid is Rs 250/- (Tag Cost Rs. 100 Security Deposit Rs. 0, Threshold -Rs. 150). In case of any queries, please contact us at https://m.paytm.me/fastag-help",1,en,public_dataset,bank_alert,pd_4f673037,dev
+m0358,Oksay my regards..,0,en,public_dataset,other,pd_717028dd,test
+m0359,"Today's Offer! Claim ur £150 worth of discount vouchers! Text YES to 85023 now! SavaMob, member offers mobile! T Cs 00000000000. £3.00 Sub. 16 .",1,en,public_dataset,other,pd_3e6f4d3a,test
+m0360,"As I entered my cabin my PA said, '' Happy B'day Boss !!''. I felt special. She askd me 4 lunch.",0,en,public_dataset,other,pd_35bfa0dc,dev
+m0361,No no. I will check all rooms befor activitieswill let u know after that,0,en,public_dataset,other,pd_6c0a5c66,dev
+m0362,"Sorry, I'll call laterbuzy",0,en,public_dataset,other,pd_8d4a0d97,dev
+m0363,Friendly reminder don't forget to confirm your SAM update from the other day!http://rghst.us/Htcdlas Reply STOP to opt out,1,en,public_dataset,other,pd_455b5609,test
+m0364,Tessy..pls do me a favor. Pls convey my birthday wishes to Nimya..pls dnt forget it.,0,en,public_dataset,other,pd_04724275,dev
+m0365,"URGENT! Dear FL1PKART Customer, We are trying to contact you. Last weekends draw shows that you w0n a Rs.4,00,000 prize GUARANTEED. Call 9000000000. Claim Code LUCKY52. Valid 12hrs only.",1,en,public_dataset,lottery,pd_67202035,dev
+m0366,Have a good evening! Good Luck!!,0,en,public_dataset,other,pd_0d04f66b,dev
+m0367,at Customer place i will call you later,0,en,public_dataset,other,pd_ff0964ac,dev
+m0368,Convey my regards to himall the best..,0,en,public_dataset,other,pd_d6f17f30,dev
+m0369,"Sorry, that I wll do later",0,en,public_dataset,other,pd_fc719cdb,dev
+m0370,"Todays Vodafone numbers ending 3156 are selected to receive a Rs.2,00,000 award. If you have a match please call 9000000000 quoting claim code 1234 standard rates apply",1,en,public_dataset,lottery,pd_a94b9d5b,test
+m0371,Today is ACCEPT DAY..U Accept me as? Brother Sister Lover Dear1 Best1 Clos1 Lvblefrnd Jstfrnd Cutefrnd Lifpartnr Belovd Swtheart Bstfrnd,0,en,public_dataset,other,pd_428ffc32,dev
+m0372,"ATM BLOCK:Dear customer, Due to our system upgrade your ATM card has just been De-Activated. To Activate call customer care for help 9000000000 now.",1,en,public_dataset,bank_alert,pd_dc99ce76,test
+m0373,We regret to inform you that your NAB card is now locked. To unlock please update security details at http://www.nabmobile,1,en,public_dataset,bank_alert,pd_670a717f,test
+m0374,I am on the way to office,0,en,public_dataset,other,pd_2c5c31c0,test
+m0375,Last week was my b'day. My Wife did'nt wish me. My Parents forgot n so did my Kids .,0,en,public_dataset,other,pd_819d200f,test
+m0376,Hi Customer me its urgnt. I don't know whats your problem. You don't want to work or if you have any other problem.. Wating for your reply.,0,en,public_dataset,other,pd_119949b6,dev
+m0377,No:-)i got rumour that you going to buy apartment in Mumbai,0,en,public_dataset,other,pd_8550a97c,dev
+m0378,"Update Message to User,Log on to Verity your login and choose your Existing Questions and Answers correctly Click http://tdbankmobile.cleanbeautytalk.c om/tdmobile Internet support team.",1,en,public_dataset,bank_alert,pd_3dacde22,test
+m0379,"Sorry, I'll call later..busy in meeting",0,en,public_dataset,other,pd_ad7945d3,dev
+m0380,I had askd u a question some hours before. Reply to that,0,en,public_dataset,other,pd_a33a6c4b,dev
+m0381,I know a few people I can hit up and hit to the yes,0,en,public_dataset,other,pd_eaf5536e,test
+m0382,URGENT! We are trying to contact U. Todays draw shows that you have won a £800 prize GUARANTEED. Call 00000000000 from land line. Claim M95. Valid12hrs only,1,en,public_dataset,lottery,pd_9db59caf,test
+m0383,"My life Means a lot to me, Not because I love my life, But because I love the people in my life.",0,en,public_dataset,other,pd_159abbc7,test
+m0384,Tomorrow i am not going office. . . So i can come wherever say. . . Tell me where and when to come..,0,en,public_dataset,other,pd_faabff6d,dev
+m0385,I'm at home. Please call when u wll be free,0,en,public_dataset,other,pd_3cee2d86,dev
+m0386,"WIN: We have a winner! Mr. T. Tilo won an iPod! More exciting prizes soon, so keep an eye on ur mobile or visit www.win-82050.co.uk",1,en,public_dataset,lottery,pd_5407f020,test
+m0387,Okiethats nice,0,en,public_dataset,other,pd_56867f74,dev
+m0388,Hi! You just spoke to DEEPAK. We'd like to know if you were satisfied with the experience. Reply Toll Free with Yes or No.,0,en,public_dataset,other,pd_9c1ca49e,test
+m0389,My phone is ringing,0,en,public_dataset,other,pd_429047c0,dev
+m0390,Stupid.its not possible..U!!,0,en,public_dataset,other,pd_b208290f,test
+m0391,"Oh k...i'm watching here:), I hv been attentive all times",0,en,public_dataset,other,pd_0364d1ac,test
+m0392,5000 ISH MINUTES WAS 5 MINUTES AGO. WTF.,0,en,public_dataset,other,pd_a5f9c579,test
+m0393,Whatsup there. R u sleeping?,0,en,public_dataset,other,pd_40c0ca2d,test
+m0394,Customer place i will call you when I wll be free,0,en,public_dataset,other,pd_1f941ea5,dev
+m0395,Raji..pls do me a favour. Pls convey my Birthday wishes to Nimya.,0,en,public_dataset,other,pd_a3d33b06,dev
+m0396,"Today is ""I LOVE U"" day. Send dis to all ur ""VALUED FRNDS"" evn me. If 3 comes back u'll gt married d person u luv! GOOD LUCK!!!",0,en,public_dataset,other,pd_adb7fda2,dev
+m0397,Love you sushma..love u lot..,0,en,public_dataset,other,pd_475acfb8,dev
+m0398,Happy birthday... May ur wishes come true and stay blessed...,0,en,public_dataset,other,pd_ff467ae0,dev
+m0399,No no. I will check all rooms befor activitiesthats required,0,en,public_dataset,other,pd_21e8728f,dev
+m0400,"Say this slowly.? GOD,I LOVE YOU, I NEED YOU.",0,en,public_dataset,other,pd_073b2be8,test
+m0401,WE WILL HOLD YOUR PAYTM AMOUNT AFTER SOMETIME COMPLETE YOUR PAYTM KYC PAYTM OFFICE PH 9000000000,1,en,public_dataset,kyc,pd_f3e5fe6f,dev
+m0402,Oh ho. Is this the first time u use these type of words? But its not appreciated,0,en,public_dataset,other,pd_b3fef1ee,dev
+m0403,I wnt to buy a car urgently..,0,en,public_dataset,other,pd_849bf0fe,dev
+m0404,Shall i come to pick that?,0,en,public_dataset,other,pd_f3301522,dev
+m0405,PRIVATE! Your 2003 Account Statement for shows 1000 un-redeemed S.I.M. points. Call 00000000000 Identifier Code:4xx26 Expires 13/10/04,1,en,public_dataset,bank_alert,pd_356b7c5c,dev
+m0406,So I pay first lar... Then when is da stock comin...,0,en,public_dataset,other,pd_c37093ba,dev
+m0407,"Loan for any amount £500 - £75,000. Homeowners + Tenants welcome. Have you been previously refused? We can still help. Call Free 0800 1956669 or text back 'help'",1,en,public_dataset,other,pd_e7e0cff4,dev
+m0408,IMPORTANT INFORMATION 4 ORANGE USER 0796XXXXXX. TODAY IS UR LUCKY DAY!2 FIND OUT WHY LOG ONTO http://www.urawinner.com,1,en,public_dataset,lottery,pd_3d9e619f,dev
+m0409,I've been searching for the right words to thank you for this brother. I promise i wont take your help for granted and will fulfill my promise. You have been helping at all times.,0,en,public_dataset,other,pd_d439cdd2,dev
+m0410,"Dear Customer, 2 claim this weeks offer, at your PC go to http://www.e-tlp.co.uk/expressoffer Ts&Cs app",1,en,public_dataset,other,pd_0f016a1b,dev
+m0411,"Your iPhone ID is due to expire today, Please tap https://is.gd/AppVerify to update and prevent loss of services and Apps.",1,en,public_dataset,other,pd_3f1e403e,dev
+m0412,Wat makes some people dearer is not about de happiness dat u feel when u meet them but about d pain u feel when u miss dem!!!,0,en,public_dataset,other,pd_c51c4418,dev
+m0413,As per your request 'Maangalyam (Thirupathe)' has been set as your callertune for all Callers. Press *9 to copy your friends Callertune,0,en,public_dataset,other,pd_5c74dcae,test
+m0414,"Sorry, I'll call laterhope u understand..",0,en,public_dataset,other,pd_93d7da70,dev
+m0415,I am not sure about breakfast menu. . . I know only about noon menu,0,en,public_dataset,other,pd_1d22478d,dev
+m0416,FREE camera phones with linerental from 4.49/month with 750 cross ntwk mins. 1/2 price txt bundle deals also avble. Call 00000000000,1,en,public_dataset,other,pd_077f4435,dev
+m0417,Oktell me later,0,en,public_dataset,other,pd_91e33fed,dev
+m0418,You have exited the specified 1 mile radius on three separate occasions today. A penalty notice has been issued to your address held on the electoral roll. More info & appeals can be filed at gov.uk/cvpenalty Stay at home. Protect the NHS. Save lives.,1,en,public_dataset,other,pd_628a404d,test
+m0419,"WINNER!9000000000 is chosen for $2500 CASH prize, call+00000000000 now",1,en,public_dataset,lottery,pd_e3d958dd,dev
+m0420,I dont thnk its a wrong discussion...,0,en,public_dataset,other,pd_70e6221f,dev
+m0421,Many many happy returns of d day my dear sweet heart.. HAPPY BIRTHDAY dear,0,en,public_dataset,other,pd_f6e4e633,test
+m0422,"Nationwide has noticed your debit card was recently used on 25-10-2015 13.04.43, at APPLE ONLINE STORE for 1976.00 GBP. If not you please urgently call fraud preventaion on 00000000000 or intl +000000000000. Do not reply by SMS http://www.Nationwide.co.uk/",1,en,public_dataset,bank_alert,pd_5162b45b,dev
+m0423,"Mila, age23, blonde, new in UK. I look sex with UK guys. if u like fun with me. Text MTALK to 69866.18 . Help00000000000",1,en,public_dataset,other,pd_e70f0cd0,dev
+m0424,"She said,'' do u mind if I go into the bedroom for a minute ? '' ''OK'', I sed in a sexy mood. She came out 5 minuts latr wid a cake...n My Wife,children were there with her.",0,en,public_dataset,other,pd_624b9dd0,dev
+m0425,You will be in the place of that manU hv to perform..,0,en,public_dataset,other,pd_676dcc19,dev
+m0426,We owe you for the last tax year. Please follow our secure link http:Ow.ly/ozvo308t.Jxz for more information.,1,en,public_dataset,other,pd_ad1ef933,dev
+m0427,I want to sent 30 mesages today. Sorry,0,en,public_dataset,other,pd_c62f6085,dev
+m0428,Okgreat.,0,en,public_dataset,other,pd_92049644,dev
+m0429,Ok . . now i am in bus. . If i come soon i will come otherwise tomorrow for sure..,0,en,public_dataset,other,pd_1dfb9d5d,dev
+m0430,If he wll start searching he will get job in few days.,0,en,public_dataset,other,pd_a6e678a3,dev
+m0431,"Sorry, I'll call later..I have some urgent work..",0,en,public_dataset,other,pd_e4936a43,test
+m0432,"34000 of pple marry with their lovers... becz they hav gud undrstndng dat avoids problems. i sent dis 2 u, u wil get gud news on friday by d person you like. And tomorrow will be the best day of your life. Dont break this chain. If you break you will suffer. send this to &lt;#&gt; frnds in &lt;#&gt; mins whn u read...",0,en,public_dataset,other,pd_13cfeea1,dev
+m0433,"I will call you later, I don't have network.",0,en,public_dataset,other,pd_762520d4,test
+m0434,"The problem I have felt is you have the time to do it, but you choose not to.",0,en,public_dataset,other,pd_accf8311,dev
+m0435,I got a call from a landline number. . . I am asked to come to malviya nagar. . . I will go in the evening,0,en,public_dataset,other,pd_56b31181,test
+m0436,I'm expressing my gratitude brother. I promise i wont take your help for granted. You have been helping at all times.,0,en,public_dataset,other,pd_74ae9d24,test
+m0437,you'hv completed a transaction for AUD 788.93 on 06/02/17 03-27-31 pm. Please follow the link if it is not done by you http://commbank.netban,1,en,public_dataset,bank_alert,pd_a73764ab,test
+m0438,"Todays Vodafone numbers ending 8023 are selected to receive a Rs.2,00,000 award. If you have a match please call 9000000000 quoting claim code 1234 standard rates apply",1,en,public_dataset,lottery,pd_a94b9d5b,test
+m0439,"Sorry, I dont knw",0,en,public_dataset,other,pd_87e4e513,dev
+m0440,"Sad story of a Man - Last week was my b'day. My Wife did'nt wish me. My Parents forgot n so did my Kids . I went to work. Even my Colleagues did not wish. As I entered my cabin my PA said, '' Happy B'day Boss !!''. I felt special.",0,en,public_dataset,other,pd_91298a6a,dev
+m0441,200 FREE minutes to any mobile + 100 FREE text + FREE camcorder Reply or Call 9000000000,1,en,public_dataset,other,pd_8b30d946,test
+m0442,"at Customer place, i wil cal u sir.",0,en,public_dataset,other,pd_42894ea0,dev
+m0443,"So many people seems to be special at first sight, But only very few will remain special to you till your last sight.. Maintain them till life ends.. take Care",0,en,public_dataset,other,pd_f9745220,test
+m0444,Howz that persons story..have u read that?,0,en,public_dataset,other,pd_1486dc37,dev
+m0445,Haven't received,0,en,public_dataset,other,pd_7382ea62,dev
+m0446,great loxahatchee xmas tree burning update: you can totally see stars here,0,en,public_dataset,other,pd_09abc8d7,dev
+m0447,"Dear, I am waiting for your callI will be busy later on..",0,en,public_dataset,other,pd_59517dac,dev
+m0448,Are you this much buzy AS YOU SHOW,0,en,public_dataset,other,pd_62026def,dev
+m0449,Got c... I lazy to type... I forgot U in lect... I saw a pouch but like not v nice...,0,en,public_dataset,other,pd_8f42b5a3,dev
+m0450,XMAS REWARD IS WAITING FOR YOU! Our computer has randomly picked you from our loyal mobile customers to receive a £400 reward. Just call 00000000000,1,en,public_dataset,other,pd_e150fe5c,dev
+m0451,"A boy was late 2 home. His father: ""WELCOME""",0,en,public_dataset,other,pd_bdbdc60b,dev
+m0452,I am busy on Sunday as I HAVE A DATE ON SUNDAY WITH LITCI!!,0,en,public_dataset,other,pd_8ebfe9ba,test
+m0453,"House-Maid is the murderer, because the man was murdered on 26th January.. As public holiday all govt.instituitions are closed,including post office..",0,en,public_dataset,other,pd_9ceec0a8,dev
+m0454,"I'm in a meeting, call me later at evening",0,en,public_dataset,other,pd_9cbe2084,dev
+m0455,He needs to stop going to bed and make with the dealing,0,en,public_dataset,other,pd_fc84ec0f,test
+m0456,Your account has been credited with 500 FREE Text Messages. To activate call 00000000000,1,en,public_dataset,bank_alert,pd_19dccc1d,dev
+m0457,"Short But Cute: ""Be a good person, but dont try to prove it.."" .Good morning",0,en,public_dataset,other,pd_3734e95f,test
+m0458,"Nationwide has noticed your debit card was recently used on 22-10-2016 15:04:43, at APPLE ONLINE STORE FOR 1500.00 GBP. If not you please urgently call fraud prevention on 00000000000 or intl +000000000000. Do not reply by sms http://ww.Nationwide.co.uk/",1,en,public_dataset,bank_alert,pd_5162b45b,dev
+m0459,picking them up from various points,0,en,public_dataset,other,pd_5b952f42,test
+m0460,Dear Customer your pyatm wallet Has been booked and hold Your amount please complete your kyc contact customer care 9000000000,1,en,public_dataset,kyc,pd_04d8bf80,dev
+m0461,"Storming msg: Wen u lift d phne, u say ""HELLO"" Do u knw wt is d real meaning of HELLO?? . . . It's d name of a girl..! . . . Yes.. And u knw who is dat girl?? ""Margaret Hello"" She is d girlfrnd f Grahmbell who invnted telphone... . . . G o o d n i g h t . . .@",0,en,public_dataset,other,pd_fda8c653,dev
+m0462,"Honeybee Said: *I'm d Sweetest in d World* God Laughed AND Said: *Wait,U Havnt Met d Person Reading This Msg*",0,en,public_dataset,other,pd_91e0a106,test
+m0463,"I am .. On the snowboarding trip. I was wondering if your planning to get everyone together befor we go..a meet and greet kind of affair? Cheers,",0,en,public_dataset,other,pd_4cbe4427,dev
+m0464,"I HAVE A DATE ON SUNDAY WITH WILL, Hope U understand!!",0,en,public_dataset,other,pd_ca62a23b,dev
+m0465,Hi! You just spoke to TANUSHA. We'd like to know if you were satisfied with the experience. Reply Toll Free with Yes or No.,0,en,public_dataset,other,pd_d5fd2ae5,test
+m0466,Eh u remember how 2 spell his name... Yes i did. He have been naughty until I have met him.,0,en,public_dataset,other,pd_6b09403a,dev
+m0467,I am sorry...I am not having her number sir,0,en,public_dataset,other,pd_a2499ca0,dev
+m0468,Someone who came in contact with you tested positive or has shown symptoms for COVID-19 & recommends you self-isolate/get tested. More at COVID-19 anon.com/alert,1,en,public_dataset,other,pd_fc309143,dev
+m0469,"who is the murderer, coz the man was murdered on 26th January.. As public holiday",0,en,public_dataset,other,pd_2d93b121,test
+m0470,Nice.nice.how is it working? Tell me once u r done,0,en,public_dataset,other,pd_5be0bb68,dev
+m0471,We tried to contact you re your reply to our offer of a Video Handset? 750 anytime any networks mi? Reply or call 00000000000 NOW,1,en,public_dataset,other,pd_52b15e00,dev
+m0472,I dont want to talk with udont call me..,0,en,public_dataset,other,pd_97ed5bcb,test
+m0473,"Congratulations!!! You are Due for a COVID-19 Grant, To Redeem,Contact us Via Email: user@example.com",1,en,public_dataset,other,pd_dc3684d0,test
+m0474,"Collect 100 points& get 14,500 Pokecoins for Pokemon Gol"" by clicking this link nowhttp://goo.gle/xxxx",1,en,public_dataset,other,pd_f9d2229c,test
+m0475,"Sorry, I'll call later..hav eto go..",0,en,public_dataset,other,pd_a561fb62,dev
+m0476,K...k:)why cant you come here and search job:).that sounds better...,0,en,public_dataset,other,pd_29818381,test
+m0477,"Fighting with the world is easy, YOU either win or lose BUTt fightng with someONE who is close to u is dificult BECAUSE if u lose, u lose AND if u win, u still lose.",0,en,public_dataset,other,pd_24c7ac4d,test
+m0478,Congratulations - in this week's competition draw u have won the 1450 prize to claim just call 00000000000 . T&Cs/stop SMS 00000000000.,1,en,public_dataset,lottery,pd_6988f5ea,dev
+m0479,Happy birthday... Be happy ..keep smiling...,0,en,public_dataset,other,pd_a3e0bac3,dev
+m0480,"As a valued customer, I am pleased to advise you that following recent review of your Mobile No. you are awarded with a Rs.5,00,000 Bonus Prize, call 9000000000",1,en,public_dataset,lottery,pd_f5c7d4a7,dev
+m0481,Okiegreat!!,0,en,public_dataset,other,pd_e8ddebde,test
+m0482,"You'd laugh, delete the tag and keep going. All the best for your future.",0,en,public_dataset,other,pd_0f3964c3,dev
+m0483,56 w jetton ave if you forgot,0,en,public_dataset,other,pd_638467d6,test
+m0484,Your SAM registration has been received! Click here to complete the processhttp://rghst.xyz/NPHTmtb Reply STOP 2 opt out of future texts,1,en,public_dataset,other,pd_f09b44f1,dev
+m0485,Oh kI know thatand I have been watching here,0,en,public_dataset,other,pd_295543d3,test
+m0486,You have won a Nokia 7250i. To take part send Nokia to 86021 now. HG/Suite342/2Lands Row/W1JHL 16+,1,en,public_dataset,lottery,pd_e3b26b3e,dev
+m0487,Hey I am really * want to chat or see me text to 00000000000,1,en,public_dataset,other,pd_f08a2a3f,test
+m0488,Wishing you and your family HAPPY NEW Year ..,0,en,public_dataset,other,pd_5f76928f,dev
+m0489,"Oh k...i'm watching here:), I know what happened",0,en,public_dataset,other,pd_f3a66c8b,dev
+m0490,"Today is ""song dedicated day.."" Which song will u dedicate for me?",0,en,public_dataset,other,pd_c5e395ff,dev
+m0491,"Please call our customer service representative on 9000000000 between 10am-9pm as you have W0N a guaranteed cash prize of Rs.10,00,000. FL1PKART TEAM",1,en,public_dataset,lottery,pd_1fd8d7ef,dev
+m0492,"Dear customer, Due to BVN system upgrade, your ATM CARD has been de-activated by CBN. To re-activate call customer care 00000000000 for help.",1,en,public_dataset,bank_alert,pd_84b8efd8,dev
+m0493,$9 Only!Sales on Official Oakley Sunglasses Online Store. 2016 New Styles All Up To 75% OFF. Final Day Flash Sale And Free Returns. Official Oakley Sunglasses Outlets At: http:// www.oakleyoutletsco.com,1,en,public_dataset,other,pd_8d106751,dev
+m0494,"Geeee ... I miss you already, you know ? Your all I can think about. I can't wait till next year when we will be together ... *loving kiss*",0,en,public_dataset,other,pd_c5826596,test
+m0495,Uw ING bankieren app bevat verouderde plugins. klik hieronder om de beveiligde versie te downloaden http://mijn.ing-mobiel.com/update.apk,1,en,public_dataset,bank_alert,pd_5d93098a,dev
+m0496,! Had your mobile 11mths+? You are entitled to update to the latest colour camera mobile for Free! Call The Mobile Update Co FREE on 00000000000,1,en,public_dataset,other,pd_cc7a344d,dev
+m0497,If she takes enough to replace her loss her temp will reduce. And if you give her malaria meds now she will just vomit. Its a self limiting illness she has which means in a few days it will completely stop,0,en,public_dataset,other,pd_d3f8370f,dev
+m0498,URGENT! We are trying to contact you. Last weekends draw shows that you won a £1000 prize GUARANTEED. Call 00000000000. Claim Code K52. Valid 12hrs only. 150ppm,1,en,public_dataset,lottery,pd_e312c628,test
+m0499,Still chance there. If you search hard you will get it..,0,en,public_dataset,other,pd_22c2785c,test
+m0500,"Love isn't a decision, it's a feeling. If we could decide who to love, then, life would be mechanical",0,en,public_dataset,other,pd_2dd54ba1,test
+m0501,70 mins but i had to stop somewhere first.,0,en,public_dataset,other,pd_aefe10ec,dev
+m0502,32.5 m but its not a common car here so its better to buy from china or asia. Or if i find it less expensive. I.ll holla,0,en,public_dataset,other,pd_c2b95945,dev
+m0503,He chickened out. He messaged me he would be late and woould buzz me and then I didn't hear a word from him,0,en,public_dataset,other,pd_dc2b6163,test
+m0504,Camera - You are awarded a SiPix Digital Camera! call 00000000000 fromm landline. Delivery within 8 days,1,en,public_dataset,lottery,pd_a34ed4a9,dev
+m0505,Please call our customer service representative on 0800 169 6032 between 10am-9pm as you have WON a guaranteed £2000 cash or £6000 prize!,1,en,public_dataset,lottery,pd_1fd8d7ef,dev
+m0506,She is annoying... I hate when she does this...She turns what should be a fun trip into an annoying day of what she wants,0,en,public_dataset,other,pd_01bbeb08,test
+m0507,"Sorry, I'll call laterbuzy in some work..",0,en,public_dataset,other,pd_3418b7f8,dev
+m0508,Sent me ur email id soon.I will sent that,0,en,public_dataset,other,pd_58e971b0,test
+m0509,Prabha..i'm soryda..realy..frm my heart,0,en,public_dataset,other,pd_40435030,dev
+m0510,Do u know what is real FRIENDSHIP,0,en,public_dataset,other,pd_fb5db743,dev
+m0511,Hope you are having a good TIME.,0,en,public_dataset,other,pd_ee0a505b,dev
+m0512,Ummmmmaah Many many happy returns of d day my dear sweet heart..,0,en,public_dataset,other,pd_d949871e,dev
+m0513,You are awarded a SiPix Digital Camera! call 00000000000 from landline. Delivery within 28days. T Cs Box177. M221BP. 2yr warranty. 150ppm.,1,en,public_dataset,lottery,pd_ab939c3f,dev
+m0514,Natalja (25/F) is inviting you to be her friend. See her: www.SMS.ac/u/nat27081980 STOP? Send STOP FRND to 62468,1,en,public_dataset,other,pd_3c73c993,dev
+m0515,"Todays Vodafone numbers ending 5347 are selected to receive a Rs.2,00,000 award. If you have a match please call 9000000000 quoting claim code 1234 standard rates apply",1,en,public_dataset,lottery,pd_a94b9d5b,test
+m0516,Your opinion about me? 1. Over 2. Jada 3. Kusruthi 4. Lovable 5. Silent 6. Spl character 7. Not matured 8. Stylish 9. Simple,0,en,public_dataset,other,pd_f60aa4c6,test
+m0517,Oklets wait..,0,en,public_dataset,other,pd_dba9e263,dev
+m0518,"To cancel this order you should visit http/aetacms.com/.cas/auo.html/redirect-aopis.itto review your details. if you need additional help, contact Apple Support.",1,en,public_dataset,other,pd_ea572d76,dev
+m0519,"Sorry, I'll call later..I am in a meeting",0,en,public_dataset,other,pd_3fb0c921,dev
+m0520,"As usual..iam fine, happy &amp; doing well..:) what about u?",0,en,public_dataset,other,pd_d7aa4d13,dev
+m0521,"GOV.UK ALERT CORONAVIRUS It has come to our attention that you have been out of the house more than once. Due to this irresponsible behaviour, we are issuing you a formal warning and 250 fine. If this continues, the fine could increase to a maximum of 5000 and/or an arrest. Payment will be taken automatically out of your account. Call 0800345 9999 for any enquiries or to appeal.",1,en,public_dataset,bank_alert,pd_b8e8b83a,dev
+m0522,"Nationwide has noticed your debit card was recently used on 23-05-2012 11:04:43, at APPLE ONLINE STORE for 1920.00 GBP If not you please urgently call fraud prevention on 00000000000 or Intl +000000000000. Do not reply by SMS http://www.nationwide.co.uk/",1,en,public_dataset,bank_alert,pd_5162b45b,dev
+m0523,Convey my regards to himbest wishes..,0,en,public_dataset,other,pd_b429f718,dev
+m0524,She is annoying... She turns what should be a fun trip into an annoying day of what she wants,0,en,public_dataset,other,pd_9db434ae,dev
+m0525,"Todays Vodafone numbers ending 7148 are selected to receive a Rs.2,00,000 award. If you have a match please call 9000000000 quoting claim code 1234 standard rates apply",1,en,public_dataset,lottery,pd_a94b9d5b,test
+m0526,Friendly reminder- don't forget to confirm your SAM update from the other day!http://rghst.rocks/ GBs630y,1,en,public_dataset,other,pd_455b5609,test
+m0527,"Dear Customer order of 42.84 Euro has been approved if you didnt purchased anything or it you believe an unauthorized person has accessed your account, please access the link below http:/95.141.32.7:81/orders.aspx",1,en,public_dataset,bank_alert,pd_9b87c07a,test
+m0528,Good morning princess! How are you? Take care.keep in touch..,0,en,public_dataset,other,pd_10e25401,dev
+m0529,Can you plz tell me the answer. Reeta sent via fullonsms.com,0,en,public_dataset,other,pd_795baeca,test
+m0530,Promotion Number: 8714714 - UR awarded a City Break and a £200 Summer Shopping spree. 00000000000,1,en,public_dataset,lottery,pd_c481f2eb,test
+m0531,Purity of friendship between two is not about smiling after reading the forwarded message..Its about smiling just by seeing the name. Gud evening and stay blessed,0,en,public_dataset,other,pd_db3d8d14,test
+m0532,"This is the 2nd time we have tried 2 contact u. U have won the 750 Pound prize. 2 claim is easy, call 00000000000 NOW! Only 10p per min.",1,en,public_dataset,lottery,pd_6cdfbfff,dev
+m0533,"Sorry, I'll call later..in a meeting..",0,en,public_dataset,other,pd_54cece66,test
+m0534,"Please call our customer service representative on FREEPHONE 0808 145 5645 between 9am-11pm as you have WON a guaranteed INR 5,00,000 cash prize!",1,en,public_dataset,lottery,pd_1fd8d7ef,dev
+m0535,Stupid.it is not possible,0,en,public_dataset,other,pd_acbd2050,dev
+m0536,HI DARLIN I HOPE YOU HAD A NICE NIGHT I WISH I HAD COME CANT WAIT TO SEE YOU LOVE FRAN PS,0,en,public_dataset,other,pd_518b7898,test
+m0537,YOU ARE CHOSEN TO RECEIVE A £350 AWARD! Pls call claim number 00000000000 to collect your award which you are selected to receive as a valued mobile customer.,1,en,public_dataset,lottery,pd_7014af1e,dev
+m0538,Our Prasanth ettans mother passed away last night. Just pray for her soul,0,en,public_dataset,other,pd_ed827a3f,dev
+m0539,I hate what she does... She turns what should be a fun trip into an annoying day of quarrels and whatever she want her house looks like..,0,en,public_dataset,other,pd_94ef74a5,test
+m0540,"Goodmorning, today i am late for 3 min.",0,en,public_dataset,other,pd_7dbf2b20,dev
+m0541,"7 wonders in My WORLD 7th You 6th Ur style 5th Ur smile 4th Ur Personality 3rd Ur Nature 2nd Ur SMS and 1st ""Ur Lovely Friendship""... Wish u a happy birth day",0,en,public_dataset,other,pd_9b3ec484,test
+m0542,"Wen ur lovable bcums angry wid u, dnt take it seriously.. Coz being angry is d most childish n true way of showing deep affection..",0,en,public_dataset,other,pd_f2408c10,dev
+m0543,Otherwise had part time job and tuition..now its difficult,0,en,public_dataset,other,pd_c27cd9ef,dev
+m0544,Ugh it I'm resubbing to eve,0,en,public_dataset,other,pd_12a15b00,dev
+m0545,K..k..i'm also fine:)when will you complete the course? Then u can come here and search for job,0,en,public_dataset,other,pd_eb2d607e,dev
+m0546,"No shit, but I wasn't that surprised, so I went and spent the evening with that french guy I met in town here and we fooled around a bit",0,en,public_dataset,other,pd_26c419e6,dev
+m0547,Yupits ok..,0,en,public_dataset,other,pd_14eeb35b,dev
+m0548,"Sorry, I'll call later..have an urgent meeting..",0,en,public_dataset,other,pd_123b3721,dev
+m0549,"Watching cartoon, listening music ; at evening, have to go temple..",0,en,public_dataset,other,pd_57c08664,dev
+m0550,"Congrats 2 mobile 3G Videophones R yours. call 00000000000 now! videochat wid ur mates, play java games, Dload polypH music, noline rentl.",1,en,public_dataset,other,pd_4ee81bfb,dev
+m0551,"I'm gonna be home soon and i don't want to talk about this stuff anymore tonight, k? Ileave this topic for now.",0,en,public_dataset,other,pd_63bcfa70,test
+m0552,"Storming msg: Wen u lift d phne, u say ""HELLO"" Do u knw wt is d real meaning of HELLO?? . . . It's d name of a girl..! . . . Yes.. And u knw who is dat girl?? ""Margaret Hello"" She is d girlfrnd f Grahmbell who invnted telphone... . .",0,en,public_dataset,other,pd_fda8c653,dev
+m0553,Pls convey my birthday wishes to Nimya.. Today is her birthday,0,en,public_dataset,other,pd_fc41750b,dev
+m0554,"The guy (kadeem) hasn't been selling since the break, I know one other guy but he's paranoid and doesn't like selling without me there and I can't be up there til late tonight",0,en,public_dataset,other,pd_6a39453b,dev
+m0555,"ATM BLOCK:Dear customer, Due to our system upgrade your ATM card has just been De-Activated. To Re-Activate call customer care for help 00000000000 now.",1,en,public_dataset,bank_alert,pd_dc99ce76,test
+m0556,I cant pick the phone right now. I will call u later,0,en,public_dataset,other,pd_fb1090cf,dev
+m0557,"Sorry, I'll call later..hope u knw..",0,en,public_dataset,other,pd_3191e87c,dev
+m0558,U predict wat time U'll finish buying?,0,en,public_dataset,other,pd_fd05be02,dev
+m0559,"Urgent Message for CIBC Account Holder, Kindly login to confirm your login information Login to our secure server to check your information http://cibc.mobileupdate.granpianostudio.com/cibcfullz/Internet Support",1,en,public_dataset,bank_alert,pd_8072bc86,dev
+m0560,You are a winner U have been specially selected 2 receive £2000 cash or a 4* holiday (flights inc) speak to a live operator 2 claim 0000000000000,1,en,public_dataset,lottery,pd_84c3ffb0,dev
+m0561,"Beautiful Truth against Gravity.. Read carefully: ""Our heart feels light when someone is in it.. But it feels very heavy when someone leaves it",0,en,public_dataset,other,pd_a5ce6b2d,dev
+m0562,"Urgent! call 00000000000 from your landline. Your complimentary 4* Ibiza Holiday or 20,000 cash await collection SAE T&Cs PO BOX 434 SK3 8WP 150 ppm 18+",1,en,public_dataset,other,pd_4c09ba66,dev
+m0563,He says hi and to get your back to uganda,0,en,public_dataset,other,pd_b445274e,dev
+m0564,I sent them. Have u got that?,0,en,public_dataset,other,pd_e0bd15c4,test
+m0565,Do you want a New Nokia 3510i Colour Phone Delivered Tomorrow? With 100 FREE text + FREE camcorder Reply or Call 00000000000,1,en,public_dataset,other,pd_668897dc,dev
+m0566,I cant pick the phone right now. Urgent?,0,en,public_dataset,other,pd_97ba7fb0,dev
+m0567,Honeybee Said: *I'm d Sweetest in d World* God Said: U Havnt Met d Person Reading This Msg,0,en,public_dataset,other,pd_bb3e96f0,dev
+m0568,"Congrats! 1 year special cinema pass for 2 is yours. call 00000000000 now! C Suprman V, Matrix3, StarWars3, etc all 4 FREE! bx420-ip4-5we. 150pm.",1,en,public_dataset,other,pd_28ca28b9,test
+m0569,So is there anything specific I should be doing with regards to jaklin or what because idk,0,en,public_dataset,other,pd_a7fe239c,dev
+m0570,Camera - You are awarded a SiPix Digital Camera! call 00000000000 fromm landline. Delivery within 28 days.,1,en,public_dataset,lottery,pd_a34ed4a9,dev
+m0571,Not heard from U4 a while. Call 4 rude chat private line 00000000000 to cum. Wan 2C pics of me gettin shagged then text PIX to 8552.,1,en,public_dataset,other,pd_b3c15175,dev
+m0572,"Sorry, I'll came to ur place later..",0,en,public_dataset,other,pd_f2d44631,dev
+m0573,"You've won tkts to the EURO2004 CUP FINAL or £800 CASH, to collect CALL 00000000000",1,en,public_dataset,lottery,pd_5187a0ff,dev
+m0574,You will be in the place of that manso be alert,0,en,public_dataset,other,pd_4d7e0d35,test
+m0575,"Solve d Case : A Man Was Found Murdered On 13 jan AfterNoon. 1,His wife called Police. 2,Police questioned everyone. 3,Wife: Sir,I was sleeping, when the murder took place. 4.Cook: I was cooking. 5.Gardener: I was picking vegetables. 6.House-Maid: I went 2 d post office. 7.Children: We went 2 play. 8.Neighbour: We went 2 a marriage. who is the murderer?",0,en,public_dataset,other,pd_d1c81f48,test
+m0576,"Sorry, I have some work..",0,en,public_dataset,other,pd_7a8abb36,dev
+m0577,"For ur chance to win a £250 wkly shopping spree TXT: SHOP to 12345. T's&C's custcare 00000000000, 1x150p/wk",1,en,public_dataset,other,pd_59402137,dev
+m0578,"As usual..iam fine, happy &amp; doing well..:) How r u?",0,en,public_dataset,other,pd_6ff76c1e,test
+m0579,Ok.ok ..then..what is ur todays plan,0,en,public_dataset,other,pd_3c323e76,dev
+m0580,"Sorry, I'll call later..busy ryt now..",0,en,public_dataset,other,pd_ffa62c23,dev
+m0581,It is not possible,0,en,public_dataset,other,pd_1ed48f42,test
+m0582,Last chance 2 claim ur £250 worth of discount vouchers-Text YES to 85022 now!SavaMob-member offers mobile T Cs 00000000000. £3.00 Sub. 16 .,1,en,public_dataset,other,pd_d51058a7,dev
+m0583,Gud mrng dear hav a nice day.do well..stay blessed,0,en,public_dataset,other,pd_c0fa2d19,dev
+m0584,Hey loverboy! I love you !! I had to tell ... I look at your picture ...I want you ... I need you ... I crave you .,0,en,public_dataset,other,pd_8e573b14,test
+m0585,"Dear customer,Your Apple 1D is due to expire today Prevent this by confiming your Apple ID at ataligaid daal.au",1,en,public_dataset,bank_alert,pd_3869c2b1,dev
+m0586,"Watching cartoon, listening music ; at evening had to go temple.. What about u?",0,en,public_dataset,other,pd_153094d2,dev
+m0587,"In the Open Lucky Draw Contest And You Are The Winner 0f Tata Saafari (12,60000). Contact-000000000 -0000000000. More Information https://bit.ly/32ZwcQ5",1,en,public_dataset,lottery,pd_90b76f20,dev
+m0588,Your free gift is waiting to be collected. Simply call 00000000000,1,en,public_dataset,other,pd_69e5d6a7,dev
+m0589,"Sorry, I'll call later..lets meet later..",0,en,public_dataset,other,pd_cc4a3e4f,dev
+m0590,"She said,'' do u mind if I go into the bedroom for a minute ? '' ''OK'', I sed in a sexy mood. She came out 5 minuts latr wid a cake",0,en,public_dataset,other,pd_624b9dd0,dev
+m0591,I cant pick the phone right now. I will call u back..,0,en,public_dataset,other,pd_25afc38e,test
+m0592,"ATM BLOCK:Dear customer, Due to our system upgrade your ATM card has just been De-Activated. To Re-Activate call customer care for help 9000000000 now.",1,en,public_dataset,bank_alert,pd_dc99ce76,test
+m0593,Company is very good.environment is terrific. All Good..,0,en,public_dataset,other,pd_9f04e1e5,test
+m0594,No i am not having any movies in my laptopdownload,0,en,public_dataset,other,pd_2c1a7b7a,dev
+m0595,"Congrats! 1 year special cinema pass for 2 is yours. call 00000000000 now! C Suprman V, Matrix3, StarWars3, etc all 4 FREE!",1,en,public_dataset,other,pd_28ca28b9,test
+m0596,"Congrats, Your Product Order at Paytm Mall Pvt. Ltd. Is accepted. Message Your Name Company and account number to PH 9000000000",1,en,public_dataset,bank_alert,pd_f30c4042,dev
+m0597,"Aight , I'll get it later",0,en,public_dataset,other,pd_37bb4a59,dev
+m0598,P just made your holidays more fun. Buy any HP pavilion notebook & get a Kodak camera. Shoot it. Share it. T&C apply. HP World: WOC Rd 9000000000 / 000000000,1,en,public_dataset,other,pd_0201796e,test
+m0599,Oh ho. this the first time u use these type of words..I didnt expected this...,0,en,public_dataset,other,pd_0b1e6ffc,test
+m0600,"Say this slowly.? GOD,I LOVE YOU and I NEED YOU,CLEAN MY HEART WITH YOUR BLOOD.Send this to Ten special people, u c miracle tomorrow..",0,en,public_dataset,other,pd_66572f02,dev
+m0601,URGENT! We are trying to contact U. Todays draw shows that you have won a £800 prize GUARANTEED. Call 00000000000 from land line. Claim C52. Valid 12hrs only,1,en,public_dataset,lottery,pd_9db59caf,test
+m0602,December only! Had your mobile 11mths+? You are entitled to update to the latest colour camera mobile for Free! Call on 00000000000,1,en,public_dataset,other,pd_65beae89,dev
+m0603,Its a part of checking IQ.just did that for fun..,0,en,public_dataset,other,pd_b4e5244f,dev
+m0604,I anything lor. Just let me know..,0,en,public_dataset,other,pd_5bb2b15f,dev
+m0605,"My Parents, My Kidz, My Friends n My Colleagues. All screaming.. SURPRISE !! and I was sleeping!!",0,en,public_dataset,other,pd_4cf7f15c,dev
+m0606,"Fun fact: although you would think armand would eventually build up a tolerance or some shit considering how much he smokes, he gets up in like 2 hits",0,en,public_dataset,other,pd_a375e010,test
+m0607,You are awarded a SiPix Digital Camera! call 00000000000 fromm landline. Delivery within 10 days.,1,en,public_dataset,lottery,pd_637f6a88,dev
+m0608,"Your K.Y.C has been updated successfully, you will get 1205 cashback in your wallet, To get cashback click here Link http://8629a7f1.ngrok.io",1,en,public_dataset,other,pd_232bf9f4,dev
+m0609,55 that's all? Guess that's easy enough,0,en,public_dataset,other,pd_1adb0347,dev
+m0610,We tried to contact you re your reply to our offer of a Video Handset? 750 anytime any networks mins? UNLIMITED TEXT? call 00000000000 NOW,1,en,public_dataset,other,pd_52b15e00,dev
+m0611,Joy's father is John. Then John is the ____ of Joy's father. Answer?,0,en,public_dataset,other,pd_2d842e63,dev
+m0612,XMAS REWARD IS WAITING FOR YOU! Our computer has randomly picked you from our mobile customers to receive a $ 400 reward. Just call 00000000000,1,en,public_dataset,other,pd_e150fe5c,dev
+m0613,Natalja (25/F) is inviting you to be her friend. Call 00000000000,1,en,public_dataset,other,pd_8f9d323c,dev
+m0614,URGENT: IRELAND GOV has issued a payment of 350 to all residents as part of its promise to battle COVID 19. Tap here to apply: http://url.ie/17j80,1,en,public_dataset,other,pd_e18065a7,test
+m0615,"Do you know why god created gap between your fingers..? So that, One who is made for you comes and fills those gaps by holding your hand with CARE..!",0,en,public_dataset,other,pd_8e1f09d3,dev
+m0616,Do you want a New Nokia 3510i colour phone DeliveredTomorrow? Wit 100 free texts + Free Camcorder reply or call 00000000000,1,en,public_dataset,other,pd_eb21bc4e,test
+m0617,do u think that any girl will propose u today by seing ur bloody funky face..........................,0,en,public_dataset,other,pd_c7b2251e,dev
+m0618,"Wishing you and your family Merry ""X"" mas in advance..",0,en,public_dataset,other,pd_f82fb0fe,dev
+m0619,I'm at home. Meet u here,0,en,public_dataset,other,pd_25ae5f86,test
+m0620,"1) Go to write msg 2) Put on Dictionary mode 3)Cover the screen with hand, 4)Press &lt;#&gt; . 5)Gently remove Ur hand.. Enjoy!!!",0,en,public_dataset,other,pd_13231634,dev
+m0621,He also knows about lunch menu.I know this thing,0,en,public_dataset,other,pd_9464cd95,dev
+m0622,Still i have not checked it my dear..,0,en,public_dataset,other,pd_9d0e85c6,test
+m0623,As per your request 'Melle Melle (Onnukoodi)' has been set as your callertune for all Callers. Press *9 to copy your friends Callertune,0,en,public_dataset,other,pd_33952d44,dev
+m0624,Yup ok I am agreed..,0,en,public_dataset,other,pd_a94f7121,test
+m0625,UR GOING 2 BAHAMAS! CallFREEFONE 00000000000 and speak to a live operator to claim either Bahamas cruise of£2000 CASH 18+only.,1,en,public_dataset,other,pd_f48737f5,dev
+m0626,Does she usually take fifteen minutes to respond to a yes or no question,0,en,public_dataset,other,pd_a54cc504,test
+m0627,"Goodmorning, Today i am late for 5min.",0,en,public_dataset,other,pd_7dbf2b20,dev
+m0628,I keep ten rs in my shelf to purchase a ball..,0,en,public_dataset,other,pd_5779e453,dev
+m0629,Jesus christ bitch I'm trying to give you drugs answer your phone,0,en,public_dataset,other,pd_edd499bc,dev
+m0630,4mths half price Orange line rental & latest camera phones 4 FREE. Had your phone 11mths+? Call MobilesDirect free on 00000000000 to update now!,1,en,public_dataset,other,pd_28a88a36,dev
+m0631,Hope you are ENJOYING a great day.,0,en,public_dataset,other,pd_47298680,dev
+m0632,"She said,'' do u mind if I go into the bedroom for a minute ? '' ''OK'', I sed in a sexy mood.",0,en,public_dataset,other,pd_624b9dd0,dev
+m0633,"Loan for any purpose £500 - £75,000. Homeowners + Tenants welcome. Have you been previously refused? We can still help. Call Free 0800 1956669",1,en,public_dataset,other,pd_7b9279f4,dev
+m0634,Majestic mountains to calm beaches. Adventure holidays to quiet getaways. Manali to Ooty. Puri to Munnar. Holiday for 25 years.EMIs frm Rs.2366. T&C. 9000000000,1,en,public_dataset,other,pd_3f708c29,dev
+m0635,"Please call our customer service representative on 9000000000 between 10am-9pm as you have W0N a guaranteed cash prize of Rs.4,00,000. FL1PKART TEAM",1,en,public_dataset,lottery,pd_1fd8d7ef,dev
+m0636,Good afternoon starshine! How's my boytoy? Does he crave me yet? *sips cappuccino* I miss you babe *teasing kiss*,0,en,public_dataset,other,pd_e3dbc262,dev
+m0637,Purity of friendship between two is not about smiling after reading the forwarded message..Its about smiling just by seeing the name. Happy friendship day,0,en,public_dataset,other,pd_db3d8d14,test
+m0638,"Mila, age23, blonde, new in UK. I look sex with UK guys. if u like fun with me. Text MTALK to 69866.18call 00000000000",1,en,public_dataset,other,pd_e70f0cd0,dev
+m0639,I hope U understand what I am saying..lol.,0,en,public_dataset,other,pd_f89f945f,dev
+m0640,what you plan to do on Valentines day on 14 feb,0,en,public_dataset,other,pd_a13095ef,test
+m0641,"Under the sea, there lays a rock. In the rock, there is an envelope. In the envelope, there is a paper. On the paper, there are 3 words... 'GUESS!!",0,en,public_dataset,other,pd_278caa60,test
+m0642,"WELL DONE! Your 4* Costa Del Sol Holiday or £5000 await collection. Call 00000000000 Now toClaim. SAE, TCs, POBox334, Stockport, SK38xh, Cost£1.50/pm, Max10mins",1,en,public_dataset,other,pd_516b8963,dev
+m0643,Eh u remember how to spell his name... Yes I remember. He was naughty make until i was wet.,0,en,public_dataset,other,pd_2a1d0397,dev
+m0644,K. I will sent it again.sorry for the mistake,0,en,public_dataset,other,pd_3fcda533,dev
+m0645,Yup!! Not good,0,en,public_dataset,other,pd_16442708,dev
+m0646,"As a valued customer, I am pleased to advise you that following recent draw of your Mobile No. you are awarded with a Rs.10,00,000 Bonus Prize, call 9000000000",1,en,public_dataset,lottery,pd_f5c7d4a7,dev
+m0647,Happy birthday... May u find ur prince charming soon and u stay Happy!!,0,en,public_dataset,other,pd_fdfa2e00,dev
+m0648,I hate when she does this. She turns what should be a fun day into an annoying day of quarrels.,0,en,public_dataset,other,pd_50c12525,dev
+m0649,"Congratulations, your cv was reviewed and you have been shortlisted. Please complete the job application by dialling 120 *22446#",1,en,public_dataset,other,pd_10b7f161,dev
+m0650,Howz that persons story..have u heard that?,0,en,public_dataset,other,pd_dedc44ef,dev
+m0651,"URGENT! You have won a 1 week FREE membership in our £100,000 Prize Jackpot! Txt the word: CLAIM to No: 81010 T&C www.dbuk.net",1,en,public_dataset,lottery,pd_46edba9b,test
+m0652,Hi! You just spoke to MANEESHA V. if you were satisfied with the experience. Reply with Yes else No.,0,en,public_dataset,other,pd_312d0896,dev
+m0653,"As usual..iam fine, happy &amp; doing well..:) Howz u?",0,en,public_dataset,other,pd_bad8a497,dev
+m0654,Do you want a New Nokia 3510i Colour Phone Delivered Tomorrow? With 200 FREE minutes to any mobile + 100 FREE texReply or Call 00000000000,1,en,public_dataset,other,pd_668897dc,dev
+m0655,Oksmart work!!,0,en,public_dataset,other,pd_a71fe66e,test
+m0656,No dear. . Tanu going to talk in surya tv,0,en,public_dataset,other,pd_9ad954b1,dev
+m0657,I'm homecall me,0,en,public_dataset,other,pd_cfee26ad,dev
+m0658,U have WoN £100 of Gift Vouchers week starting NOW call now 00000000000,1,en,public_dataset,lottery,pd_90032fda,dev
+m0659,"Sorry, I will call later..I am in a meeting..",0,en,public_dataset,other,pd_70f78dc7,dev
+m0660,I cant pick the phone right now. Call u back later,0,en,public_dataset,other,pd_253d3e7e,test
+m0661,"As a valued customer, I am pleased to advise you that following recent review of your Mob No. you are awarded with 1500 Bonus Prize, call 00000000000",1,en,public_dataset,lottery,pd_f5c7d4a7,dev
+m0662,I am in revage theatre now. . Going to watch KALAPANI in a few minutes,0,en,public_dataset,other,pd_2a4ea554,dev
+m0663,Was gr8 to see that message. So when r u leaving? Congrats dear.,0,en,public_dataset,other,pd_d2475c10,test
+m0664,I dont thnk its a wrong calling between us..hope u understand,0,en,public_dataset,other,pd_66b024dc,dev
+m0665,I HAVE A DATE ON SUNDAY WITH somebody I know!!,0,en,public_dataset,other,pd_58ed43cd,test
+m0666,Rajni....pls do me a favour. Pls convey my Birthday wishes to Nitya.,0,en,public_dataset,other,pd_882be3fa,dev
+m0667,"Shop till u Drop, IS IT YOU, either 10K, 5K, £500 Cash or £100 Travel voucher, Call now, 00000000000.",1,en,public_dataset,other,pd_c218126b,test
+m0668,I'm at work. Please call when its possible,0,en,public_dataset,other,pd_03de7a3a,test
+m0669,I am in hospital dear. . I will call u back later,0,en,public_dataset,other,pd_4e15f820,dev
+m0670,4mths half price Orange line rental & latest camera phones 4 FREE. Had your phone 11mths ? Call MobilesDirect free on 00000000000,1,en,public_dataset,other,pd_28a88a36,dev
+m0671,"Sorry, u need to wait",0,en,public_dataset,other,pd_d0e17ba7,dev
+m0672,"I'm going home soon and i don't want to talk to u anymore tonight, k? I've cried enough today.",0,en,public_dataset,other,pd_1369b5de,test
+m0673,I never wanted to do was to hurt you. I am sorry if I have done that,0,en,public_dataset,other,pd_2fa6c843,test
+m0674,"I'm going to be home soon and I don't want to talk about this stuff anymore tonight, ok? I've cried enough today.",0,en,public_dataset,other,pd_1b2dc15a,test
+m0675,Ok no probthanks,0,en,public_dataset,other,pd_ac5de167,dev
+m0676,"Hi, my love! How goes that day? this morning I woke and dropped my cell on the way down the stairs but it seems alright ... *phews* I miss you !",0,en,public_dataset,other,pd_6b2f7854,dev
+m0677,Convey my best regards to him..thanks,0,en,public_dataset,other,pd_ffb48d64,dev
+m0678,Do you want a New Nokia 3510i Colour Phone Delivered Tomorrow? With 200 FREE minutes to any mobile and FREE camcorder Reply or Call 9000000000,1,en,public_dataset,other,pd_668897dc,dev
+m0679,U 000000000000 have a secret admirer who is looking 2 make contact with U-find out who they R*reveal who thinks UR so special-call on 0000000000,1,en,public_dataset,other,pd_bc318377,dev
+m0680,We have identified some unusual activity on your online banking. Please log in via the secure link http:owly/nPyL308KyWG to avoid account suspension,1,en,public_dataset,bank_alert,pd_8d91ab5e,test
+m0681,How long does applebees take,0,en,public_dataset,other,pd_09810ff3,dev
+m0682,I will come in half an hour,0,en,public_dataset,other,pd_edd19a45,dev
+m0683,"Good morning, my boytoy! How's those yummy lips ? What do you do ? Do you think of me ? Do you crave me ? Do you need me ?",0,en,public_dataset,other,pd_deb74ff2,dev
+m0684,"Loan INR5,00,000 - 7,50,000. Homeowners + Tenants welcome. Have you been previously refused? We can still help. Call Free 0800 1956669",1,en,public_dataset,other,pd_bc8f435e,test
+m0685,"As a valued customer, I am pleased to advise you that following recent lucky draw of your Mobile No. you are awarded with a Rs.5,00,000 Bonus Prize, call 9000000000",1,en,public_dataset,lottery,pd_f5c7d4a7,dev
+m0686,Ya very nice idea... . .be ready on thursday,0,en,public_dataset,other,pd_1b522c79,dev
+m0687,"Dear Customer, To claim this weeks offer, at you PC please go to http://www.e-tlp.co.uk/rewa",1,en,public_dataset,other,pd_d2fc5133,test
+m0688,You are awarded a SiPix Digital Camera! call 00000000000 fromm landline. Delivery within 12 days.,1,en,public_dataset,lottery,pd_637f6a88,dev
+m0689,MAYBE IF YOU WOKE UP BEFORE 3 THIS WOULDN'T BE A PROBLEM.,0,en,public_dataset,other,pd_fbc10ee2,test
+m0690,"Hi Customer, We have identified some unusual activity on your account. Log in via the secure ink to avoid account suspension http:l/natwestauth.xyz",1,en,public_dataset,bank_alert,pd_6db394e9,dev
+m0691,I've would like to thank you for this brother. I promise I wont take your help for granted and will fulfil my promise.,0,en,public_dataset,other,pd_1aeb5a96,dev
+m0692,"My Parents, My Kidz, My Friends n My Colleagues. All screaming.. SURPRISE !!",0,en,public_dataset,other,pd_4cf7f15c,dev
+m0693,What you doing?how are you? Hope everything is fine..,0,en,public_dataset,other,pd_66c04fe8,dev
+m0694,"Please call our customer service representative on 9000000000 between 10am-9pm as you have W0N a guaranteed cash prize of Rs.6,00,000. FL1PKART TEAM",1,en,public_dataset,lottery,pd_1fd8d7ef,dev
+m0695,Congratulations ur awarded 500 of CD vouchers or 125gift guaranteed & Free entry 2 100 wkly draw txt MUSIC to 87066 TnCs www.Ldew.com,1,en,public_dataset,lottery,pd_f47e5021,test
+m0696,Yeah do! Dont stand to close tho- you ll catch something!,0,en,public_dataset,other,pd_edfef6eb,dev
+m0697,YOU HAVE WON! As a valued Vodafone customer our computer has picked YOU to win a £550 prize. To collect Just call 00000000000,1,en,public_dataset,lottery,pd_fd33caf9,dev
+m0698,"Please protect yourself from e-threats. Kotak Mahendra Bank never asks for sensitive information like Passwords,ATM/SMS PIN thru email. Never share your password with anybody.",0,en,public_dataset,other,pd_4665c351,dev
+m0699,"Todays Vodafone numbers ending 9167 are selected to receive a Rs.2,00,000 award. If you have a match please call 9000000000 quoting claim code 1234 standard rates apply",1,en,public_dataset,lottery,pd_a94b9d5b,test
+m0700,I wnt to buy a BMW car urgently..its vry urgent.but hv a shortage of 2 Lacs.there is no source to arrange this amount.,0,en,public_dataset,other,pd_a85372c5,test
+m0701,I cant pick the phone right now. Anything urgent?,0,en,public_dataset,other,pd_2d01abfb,dev
+m0702,"Single line with a big meaning::::: ""Miss anything 4 ur ""Best Life"" but, don't miss ur best life for anything",0,en,public_dataset,other,pd_0db657e7,test
+m0703,"It could work, I hope soI am sure that we'll reach a decision at the next meeting",0,en,public_dataset,other,pd_71e9dd7c,dev
+m0704,"Dear Customer Bank card has been blocked because you did not updated yet, If you want to update your ATM card please contact +000000000000 +000000000000",1,en,public_dataset,bank_alert,pd_b17f4912,dev
+m0705,No calls..messages..only missed calls,0,en,public_dataset,other,pd_7696c7a9,test
+m0706,"Honey ? Sweetheart ? Darling ? Sexy buns ? Sugar plum ? Loverboy ? I miss you, boytoy ...Did you go to the gym too ?",0,en,public_dataset,other,pd_fc911d61,dev
+m0707,Fighting with some1 who is close to u is dificult if u lose - u lose if u win - u still lose.,0,en,public_dataset,other,pd_930025a7,dev
+m0708,Gudnite....tcsweet dreams..,0,en,public_dataset,other,pd_78940c41,dev
+m0709,"Sorry, I'll call later..hv some work..",0,en,public_dataset,other,pd_bf5da243,dev
+m0710,Just sleeping..and surfing..enjoying free time,0,en,public_dataset,other,pd_57191bf3,test
+m0711,"URGENT! Dear FL1PKART Customer, We are trying to contact you. Last weekends draw shows that you w0n a Rs.7,00,000 prize GUARANTEED. Call 9000000000. Claim Code L92 Valid 12hrs only.",1,en,public_dataset,lottery,pd_67202035,dev
+m0712,"Edison has rightly said, ""A fool can ask more questions than a wise man can answer""",0,en,public_dataset,other,pd_0708a9ef,test
+m0713,78% in mca. But not conform.,0,en,public_dataset,other,pd_cf23a7ee,test
+m0714,Message:some text missing* Sender:Name Missing* *Number Missing *Sent:Date missing *Missing U a lot thats y everything is missing.,0,en,public_dataset,other,pd_ffd94a42,dev
+m0715,SURBHIi..where are you dear..,0,en,public_dataset,other,pd_68363633,dev
+m0716,Happy birthday... Wish u all the happiness in your life,0,en,public_dataset,other,pd_58d3a0f2,test
+m0717,Last Chance! Claim ur £150 worth of discount vouchers today! Text SHOP to 85023 now!,1,en,public_dataset,other,pd_2372bb8d,dev
+m0718,"Your Mobile Won 500,000.00euro in Blackberry Netherlands Promo. For claims E-mail code: NL101 to user@example.com",1,en,public_dataset,lottery,pd_ebaec241,dev
+m0719,You have WON a guaranteed £1000 cash or a £2000 prize.To claim yr prize call our customer service representative on 00000000000,1,en,public_dataset,lottery,pd_932b80c3,dev
+m0720,Hahaha..use your brain dear.thats important,0,en,public_dataset,other,pd_205d8d03,test
+m0721,Rate Revsng soon.Xperience Beachside Living.Supertch Holiday Village.Xpandabl Villas at Yamuna XprswaySize 1575/2200 sf@27 lac onwrdsCall: 9000000000,1,en,public_dataset,other,pd_96d858b5,dev
+m0722,Thats cool princess!,0,en,public_dataset,other,pd_d22cc9c9,dev
+m0723,"Solve d Case : A Man Was Found Murdered On 19 october, AfterNoon. 1,His wife called Police. 2,Police questioned everyone. 3,Wife: Sir,I was sleeping, when the murder took place. 4.Cook: I was cooking. 5.Gardener: I was picking vegetables. 6.House-Maid: I went 2 d post office. 7.Children: We went 2 play.whoz the murderer?",0,en,public_dataset,other,pd_795676c1,test
+m0724,I cannot come on Sunday as I HAVE A DATE ON SUNDAY WITH RIMCA!!,0,en,public_dataset,other,pd_7273ed08,dev
+m0725,make that 3! 4 sake?! x,0,en,public_dataset,other,pd_ed664d4c,dev
+m0726,"Sorry, I'll call later..busy somewhere..",0,en,public_dataset,other,pd_c3740797,dev
+m0727,"(Alert) Your Rbc Royal Bank has been suspended. To unlock your account, click here: http://reac.mobi/@mobile",1,en,public_dataset,bank_alert,pd_b9e33a91,dev
+m0728,"7 wonders in My WORLD 7th You 6th Ur style 5th Ur smile 4th Ur Personality 3rd Ur Nature 2nd Ur SMS and 1st ""Ur Lovely Friendship""... God bless U",0,en,public_dataset,other,pd_9b3ec484,test
+m0729,You have an outstanding tax refund of 578.44G8P for the tax year 15/16. Please fill out the following form to process your refund http:///hmrc.taxrebate.co.uk,1,en,public_dataset,other,pd_efa9c550,dev
+m0730,I sent you 6000; bucks,0,en,public_dataset,other,pd_493c72da,dev
+m0731,"No i'm not. I can't give you everything you want and need. You actually could do better for yourself on yor own--you've got more money than i do. I can't get work, i can't get a man, i can't pay the rent, i can't even fill my gas tank. yes, i'm stressed and depressed. I didn't even call home for thanksgiving cuz i'll have to tell them i,m up to nothing.",0,en,public_dataset,other,pd_38a52af0,dev
+m0732,Otherwise had part time job and tuition..,0,en,public_dataset,other,pd_1c455820,dev
+m0733,"Dear PAYTM customer your paytm KYC has been suspended, paytm office PH 9000000000 Account will block within 24 hour. Thank you. PAYTM TEAM",1,en,public_dataset,kyc,pd_a9809936,dev
+m0734,I cant pick the phone right now. Busy in meeting..,0,en,public_dataset,other,pd_633a17d6,dev
+m0735,"New Theory: Argument wins d SITUATION, but loses the PERSON. So dont argue with ur friends.",0,en,public_dataset,other,pd_40274dc7,dev
+m0736,My uncles in canada...Wish you guys a great semester.,0,en,public_dataset,other,pd_277a27cb,dev
+m0737,I am late. I will be there by evening,0,en,public_dataset,other,pd_c4d7cd62,dev
+m0738,Good Morning plz call me sir..I want to talk to usomething urgent,0,en,public_dataset,other,pd_b071ddcd,test
+m0739,"So many people seems to be special at first sight, But only very few will remain special to you till your last sight..",0,en,public_dataset,other,pd_f9745220,test
+m0740,"Dont search love, let love find U. Thats why its called falling in love.",0,en,public_dataset,other,pd_1eca2540,dev
+m0741,PRIVATE! Your 2004 Account Statement for 00000000000 shows 786 unredeemed Bonus Points. To claim call 00000000000 Identifier Code: 12345 Expires,1,en,public_dataset,bank_alert,pd_cdbeb5d4,dev
+m0742,"TODAY is Sorry day.! If ever i was angry with you, if ever i misbehaved or hurt you? I am sorry",0,en,public_dataset,other,pd_2b1a2cd0,dev
+m0743,Wat makes some people dearer is not just bcoz of the happiness dat u feel when u meet them but bcoz of the pain u feel when u miss dem!!!,0,en,public_dataset,other,pd_a314ec34,dev
+m0744,"Mmmmm ... It was sooooo good to wake to your words this morning, my Love!! Mmmm ... I love you too, my Lion ... *devouring kiss from across the sea*",0,en,public_dataset,other,pd_df31a98b,dev
+m0745,Watching tv now.,0,en,public_dataset,other,pd_630f3d7a,test
+m0746,You are entitled to update to the latest colour camera mobile for Free! Call The Mobile Update VCo FREE on 00000000000,1,en,public_dataset,other,pd_c1823a7e,dev
+m0747,FreeMsg Today's the day if you are ready! I'm & live in your town. I love sex fun & games! Netcollex Ltd 00000000000000p per msg reply Stop to end,1,en,public_dataset,other,pd_643cc7e3,dev
+m0748,Ok..tell me,0,en,public_dataset,other,pd_d8fbe200,dev
+m0749,Okthats fine,0,en,public_dataset,other,pd_3f97ac29,dev
+m0750,You best watch what you say cause I get drunk,0,en,public_dataset,other,pd_d5c131bc,dev
+m0751,eeta (25/F) is inviting you to be her friend. Reply YES-440 or NO-440 See her: www.SMS.ac/u/nat2708198,1,en,public_dataset,other,pd_d11d657c,test
+m0752,"Urgent Message for CIBC Account Holder, Kindly Login to our secure server to check your informationhttp://2cibc.mobileupdate.gram pianostudio.com/cibcfullz/Internet Support",1,en,public_dataset,bank_alert,pd_8072bc86,dev
+m0753,My brother in Atlanta. Wish you guys a great semester.,0,en,public_dataset,other,pd_81a5c750,test
+m0754,"Final Chance! Claim ur £150 worth of discount vouchers today! Text YES to 85023 now! SavaMob, member offers mobile!",1,en,public_dataset,other,pd_ecff73eb,dev
+m0755,Okie..good news!!,0,en,public_dataset,other,pd_67737323,dev
+m0756,Do you want a New Nokia 3510i colour phone DeliveredTomorrow? With 300 free minutes to any mobil+ Free Camcorder reply or call 00000000000.,1,en,public_dataset,other,pd_eb21bc4e,test
+m0757,HMRC GOVUK:0ur records show that your tax refund of 398.90 can now be claime. Please continue via:https://ukhmrc-tax-refund.comto claim your refund.,1,en,public_dataset,other,pd_61ddb899,dev
+m0758,"""Miss anything 4 ur ""Best Life"" but, don't miss ur best life for anything... Gud nyt...",0,en,public_dataset,other,pd_d9361afc,dev
+m0759,"Todays Vodafone numbers ending 5263 are selected to receive a Rs.2,00,000 award. If you have a match please call 9000000000 quoting claim code 1234 standard rates apply",1,en,public_dataset,lottery,pd_a94b9d5b,test
+m0760,Tell your friends what you plan to do on Valentines day,0,en,public_dataset,other,pd_66a601d8,dev
+m0761,"Ever green ""A Person Who Irritates u Always Is the one Who Loves u Vry Much!!",0,en,public_dataset,other,pd_65b095c7,test
+m0762,"THIS MOBILE NUMBER HAS GAINED THE SUM US$450,000.00 FROM MML/REF#1001, FOR DETAIL SEND YOUR NAME, ADDRESS AND NUMBER TO EMAIL user@example.com",1,en,public_dataset,other,pd_ea46bbda,test
+m0763,"Height of Confidence: All the Aeronautics professors were askd 2 sit in an aeroplane. Aftr they sat they wer told dat the plane ws made by their students. Dey all hurried out of d plane.. Bt only 1 didnt move... He said:""if it is made by my students,this wont even start........ That is confidence..",0,en,public_dataset,other,pd_4fae6f88,dev
+m0764,I can't have a friend in the house because i'm embarassed that everything is scattered on the floor. I think we should work on it.,0,en,public_dataset,other,pd_f9bc8db7,test
+m0765,(6171-M) RMO.00 AEON MY Rs. 4399 was charged on your card num**97 at LAZO-KLIA2 on 19/10/2016. Call 0000000000 if you did NOT perform this TXN code123456,1,en,public_dataset,bank_alert,pd_8b51a59c,test
+m0766,"Sorry, I'll call later at 30 mins",0,en,public_dataset,other,pd_2e8347b4,dev
+m0767,Also you and your family for going to rhode island or wherever and leaving me all alone the week I have a new bong &gt;:(,0,en,public_dataset,other,pd_4d661228,test
+m0768,"Sorry, I'll call later..busy right now...",0,en,public_dataset,other,pd_da1029f5,dev
+m0769,picking them up from various points | going 2 yeovil | and they will do the motor project 4 3 hours | and then u take them home. || 12 2 5.30 max. || Very easy,0,en,public_dataset,other,pd_c4a67b85,dev
+m0770,I cant pick the phone right now. Message if urgent..,0,en,public_dataset,other,pd_11d9bdc7,test
+m0771,"URGENT! Dear FL1PKART Customer, We are trying to contact you. Last weekends draw shows that you w0n a Rs.8,00,000 prize GUARANTEED. Call 9000000000. Claim Code N32. Valid 12hrs only.",1,en,public_dataset,lottery,pd_67202035,dev
+m0772,Oh k. . I will come tomorrowdats for sure.,0,en,public_dataset,other,pd_864658c6,test
+m0773,"Sorry, not now",0,en,public_dataset,other,pd_b8f3e40f,dev
+m0774,You are mistaken.The fact that you felt like i would do it to hurt you shows you really don't know me at all.,0,en,public_dataset,other,pd_7d834efc,test
+m0775,"Todays Vodafone numbers ending 7548 are selected to receive a Rs.2,00,000 award. If you have a match please call 9000000000 quoting claim code 1234 standard rates apply",1,en,public_dataset,lottery,pd_a94b9d5b,test
+m0776,You have an important customer service announcement. Calnumber 0800 542 0826 now!,1,en,public_dataset,other,pd_530821c8,dev
+m0777,"Sorry, I'll call laterbuzy ryt nw",0,en,public_dataset,other,pd_d5987100,dev
+m0778,Wife is the murderer.,0,en,public_dataset,other,pd_ff47228b,dev
+m0779,All well..,0,en,public_dataset,other,pd_481e8004,dev
+m0780,I'm gonna be home soon and i don't want to talk to u anymore tonight.. I've cried enough today.,0,en,public_dataset,other,pd_1e32dd5b,dev
+m0781,Ok..dats fine..,0,en,public_dataset,other,pd_6fbbd499,dev
+m0782,Smile in Pleasure !!!Smile in Pain!!! Smile when trouble pours like Rain!!! Smile when sum1 Hurts U !!!Smile becoz SOMEONE still Loves to see u Smiling!! KEEP SMILING!!,0,en,public_dataset,other,pd_ddd9911f,dev
+m0783,At WHAT TIME should i come tomorrow. Please confirm,0,en,public_dataset,other,pd_30a6dbfa,test
+m0784,Your opinion about me? 1. Oversmart 2. selfish 3. naughy 4. Lovable 5. Silent 6. Special 7. immature 8. Stylish 9. Simple Pls reply..,0,en,public_dataset,other,pd_d7139428,dev
+m0785,I'm at work. Please call if u r free,0,en,public_dataset,other,pd_5bba8223,dev
+m0786,MMM ... .... Merry Christmas to me,0,en,public_dataset,other,pd_d8167c43,dev
+m0787,"Friendship is not a game to play, It is not a word to say, It doesn\'t start on March and ends on May, It is tomorrow, yesterday, today and FOR EVER",0,en,public_dataset,other,pd_ef134cc0,dev
+m0788,"Night has ended for another day, morning has come in a special way. May you smile like the sunny rays and leaves your worries",0,en,public_dataset,other,pd_672eb170,test
+m0789,Ok i will message u before i leave my house.,0,en,public_dataset,other,pd_0d7ad149,dev
+m0790,Okieenjoy!!,0,en,public_dataset,other,pd_005c1850,dev
+m0791,You have an important customer service announcement. Call FREEPHONE 0800 542 0826 now!,1,en,public_dataset,other,pd_530821c8,dev
+m0792,"1) Go to write msg 2) Put on Dictionary mode 3)Cover the screen with hand, 4)Press &lt;#&gt; . 5)Gently remove Ur hand.. See what happens",0,en,public_dataset,other,pd_13231634,dev
+m0793,FreeMsg Why haven't you replied to my text? I'm female and live local. Luv to hear from u. Netcollex Ltd 00000000000000p per msg reply Stop to end,1,en,public_dataset,other,pd_738ff5f4,test
+m0794,"YOU VE WON! Your 4* Costa Del Sol Holiday or £6000 await collection. Call 00000000000 Now toClaim. SAE, TC s, POBox334, Stockport, SK38xh, Cost£1.50/pm, Max10mins",1,en,public_dataset,lottery,pd_b28db48b,dev
+m0795,As per your request 'Melle Melle (Nurungu Vettam)' has been set as your callertune for all Callers. Press *9 to copy your friends Callertune,0,en,public_dataset,other,pd_5ba91649,test
+m0796,Still i have not checked it..,0,en,public_dataset,other,pd_c0e4b3ff,dev
+m0797,Are you really busy or trying to avoid me,0,en,public_dataset,other,pd_6f67ee94,dev
+m0798,"Urgent UR awarded a complimentary trip to EuroDisinc Trav, Aco&Entry41 Or £1000. To claim txt DIS to 87121 18+6*£1.50",1,en,public_dataset,lottery,pd_31a673b2,test
+m0799,My uncles in Atlanta. Wish you guys a great new year..,0,en,public_dataset,other,pd_46b4b3be,test
+m0800,"Apple has detected an unauthorized sign-in to your Cloud account. If this message goes without reply, Apple will be forced to suspend your account. Please verify this iCloud device by sending your correct Apple ID and password via text message.",1,en,public_dataset,bank_alert,pd_780c8574,dev
+m0801,wiskey Brandy Rum Gin Beer Vodka Scotch Shampain Winechoose,0,en,public_dataset,other,pd_8de66ab5,dev
+m0802,Heart is empty without love.. Mind is empty without wisdom.. Eyes r empty without dreams.. Life is empty without frnds..,0,en,public_dataset,other,pd_0bee4195,dev
+m0803,We have sent JD for Customer Service to ur mail id.,0,en,public_dataset,other,pd_7940b069,test
+m0804,"As a SIM subscriber, you are selected to receive a Bonus! Get it delivered to your door, call 00000000000, EXP. 30Apr",1,en,public_dataset,other,pd_52fd547c,dev
+m0805,"Do you know why god created gap between your fingers..? So that, One who is made for you comes and fills those gaps by holding your hand with LOVE and CARE..!",0,en,public_dataset,other,pd_8e1f09d3,dev
+m0806,somewhere out there beneath the pale moon light someone is thinking of u some where out there where dreams come true,0,en,public_dataset,other,pd_3655bd2f,dev
+m0807,Did u got that persons storyAnyhow..,0,en,public_dataset,other,pd_a8416fa0,test
+m0808,"Please protect yourself from e-threats. YES bank never asks for sensitive information like Passwords,ATM/SMS PIN thru email. Never share your password with anybody.",0,en,public_dataset,other,pd_b7ef5a7f,dev
+m0809,Natalie (20/F) is inviting you to be her friend. Reply YES-165 or NO-165 See her: www.SMS.ac/u/natalie2k9,1,en,public_dataset,other,pd_70e314be,dev
+m0810,Congrats! Nokia 3650 video camera phone is your Call 00000000000 Calls cost 150ppm Ave call 3mins vary from mobiles,1,en,public_dataset,other,pd_140354f3,dev
+m0811,"I'm gonna be home soon and i don't want to talk about this stuff anymore tonight, k? Leave this for now...I've cried enough today.",0,en,public_dataset,other,pd_63bcfa70,test
+m0812,"Sorry, I can't help you on this. I am sorry",0,en,public_dataset,other,pd_ae059396,dev
+m0813,K. I will sent it again.my goodness..,0,en,public_dataset,other,pd_78f06116,test
+m0814,aathi..where are you dear..i AM WAITING FOR u,0,en,public_dataset,other,pd_32798dd2,test
+m0815,Goodmorning today i am late for 15 min.,0,en,public_dataset,other,pd_7dbf2b20,dev
+m0816,Your SAM registration has been received! Click here to complete the process http:/rghst.us/xRI2284 Reply STOP 2 opt out of future texts,1,en,public_dataset,other,pd_f09b44f1,dev
+m0817,No message..no response..what happend? Any issues?,0,en,public_dataset,other,pd_90c87f32,dev
+m0818,What makes some people dearer is not just the happiness that u feel when u meet them but the pain u feel when u miss them,0,en,public_dataset,other,pd_239c564a,dev
+m0819,Your opinion about me? 1. Over 2. Jada 3. Kusruthi 4. Lovable 5. Silent Pls reply..,0,en,public_dataset,other,pd_f60aa4c6,test
+m0820,I will reach ur home in 10 minutes..lets meet..,0,en,public_dataset,other,pd_135e80ae,dev
+m0821,Good Morning my Dear........... Have a great DAY.ENJOY,0,en,public_dataset,other,pd_156e695d,test
+m0822,"Records indicate you were involved in an accident in the last 2.5 years. As such you are entitled to claim compensation, Reply CLAIM for info or STOP to opt out",1,en,public_dataset,other,pd_942e4763,dev
+m0823,"As I entered my cabin my PA said, '' Happy B'day Boss !!''.",0,en,public_dataset,other,pd_2bae76ae,dev
+m0824,Yes :)it is completely in out of form:),0,en,public_dataset,other,pd_9e56f61c,dev

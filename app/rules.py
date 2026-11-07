@@ -43,8 +43,9 @@ TEXT_RULES = [
     ("kyc_threat", "Threatens to block your account or asks for a KYC update", 25,
      "Scammers use fake 'KYC pending' or 'account blocked' alerts to push you to a fake link.",
      [r"\bkyc\b.{0,50}\b(update|expire[ds]?|pending|verify|verification|incomplete|suspend|block)",
+      r"\bcomplete\b.{0,20}\bkyc\b",
       r"\b(pan|aadhaar|aadhar)\b.{0,40}\b(update|link|not linked|block|suspend|deactivat|verify)",
-      r"\b(account|a/c|card|sim|wallet)\b.{0,40}\b(blocked|block|suspend\w*|frozen|freez\w*|deactivat\w*|disconnect\w*|closed)\b"], False),
+      r"\b(account|a/c|card|sim|wallet)\b.{0,40}\b(blocked|block|suspend\w*|frozen|freez\w*|de-?activat\w*|disconnect\w*|closed)\b"], False),
     ("urgency", "Creates time pressure", 15,
      "Scams rush you so you act before thinking. Genuine organisations give you time.",
      [r"\b(immediately|urgent(ly)?|right now|asap|tonight|today only|last chance|act now|don'?t ignore)\b",
@@ -55,7 +56,11 @@ TEXT_RULES = [
      "You cannot win a contest you never entered. These messages ask for fees or details to 'claim' it.",
      [r"\b(you\s+(have\s+)?won|you('| a)?re selected|lucky draw|lottery|jackpot)\b",
       r"\bcongratulations\b.{0,80}\b(won|prize|reward|gift|cashback|claim)\b",
-      r"\bclaim\b.{0,30}\b(prize|reward|gift|cashback)\b"], False),
+      r"\bclaim\b.{0,30}\b(prize|reward|gift|cashback)\b",
+      r"\byou\s+(are|were|have been|'ve been)\s+(a\s+)?(randomly\s+)?(selected|chosen|picked|awarded|the\s+winner|a\s+winner)\b.{0,60}\b(prize|award|gift|cash|reward|bonus|lakh|crore|rs\b|inr|\u20b9|\u00a3|\$)",
+      r"\b(mobile\s+)?(number|no\.?)\s+(has|have)\s+won\b",
+      r"\bu\s+(have\s+)?won\b",
+      r"\bwinner\b.{0,40}\b(prize|rs\b|inr|lakh|crore|\u20b9)"], False),
     ("job_scam", "Looks like a fake work-from-home or task job offer", 25,
      "Fake job offers promise easy daily income, then ask you to pay or move to Telegram.",
      [r"\bwork from home\b",
@@ -71,7 +76,10 @@ TEXT_RULES = [
       r"\bcustoms\b.{0,20}\b(duty|fee|clearance|charges)\b"], False),
     ("authority_threat", "Pretends to be police or an agency and threatens arrest", 35,
      "Agencies like CBI, police or customs never arrest people over a call or video call, and never ask for money to close a case.",
-     [r"\b(cbi|ncb|narcotics|enforcement directorate|cyber\s?crime|trai|rbi|income tax|customs|police)\b.{0,80}\b(arrest\w*|warrant|case|fir|illegal|legal action|money laundering|drugs)\b",
+     [r"\b(cbi|ncb|narcotics|enforcement directorate|cyber\s?crime|trai|rbi|income tax)\b.{0,80}\b(arrest\w*|warrant|case|fir|illegal|legal action|money laundering|drugs)\b",
+      # 'police' and 'customs' are everyday words: only count them when the message is about YOU
+      r"\b(you|your)\b.{0,60}\b(police|customs)\b.{0,80}\b(arrest\w*|warrant|case|fir|illegal|legal action|money laundering|drugs)\b",
+      r"\b(police|customs)\b.{0,40}\b(you|your)\b.{0,60}\b(arrest\w*|warrant|case|fir|illegal|legal action|money laundering|drugs)\b",
       r"\bdigital arrest\b"], False),
     ("secrecy_demand", "Tells you to keep it secret or stay on the call", 20,
      "Scammers isolate victims. A genuine officer or bank will not forbid you from telling family.",
@@ -104,7 +112,11 @@ TEXT_RULES = [
     ("callback_number", "Tells you to call a number to cancel or fix something", 15,
      "Scam messages often include a phone number so a fake agent can talk you into paying.",
      [r"\bif (this|it) (was|is) not you\b.{0,40}\bcall\b",
-      r"\b(call|contact|whatsapp)\b.{0,30}\b(\+?91[-\s]?)?[6-9]\d{9}\b"], False),
+      r"\b(call|contact|whatsapp)\b.{0,30}\b(\+?91[-\s]?)?[6-9]\d{9}\b",
+      r"\b(call|contact)\b.{0,25}\bcustomer (care|service)\b"], False),
+    ("send_bank_details", "Asks you to send your account or card details", 30,
+     "No genuine bank, courier or shop asks you to message your account number, card number or bank details.",
+     [r"\b(send|message|share|give|provide|reply with)\b.{0,40}\b(account number|card number|bank details|debit card|atm pin)\b"], True),
     # Hindi, Hinglish, Marathi, Malayalam. Starter lists, extend these yourself.
     ("ml_pressure", "Pressure words in Hindi, Marathi or Malayalam", 15,
      "Words meaning 'immediately' are used to rush you.",
@@ -193,6 +205,7 @@ URL_RE = re.compile(
 SHORTENERS = {"bit.ly", "tinyurl.com", "t.co", "goo.gl", "cutt.ly", "rb.gy", "is.gd", "shorturl.at"}
 SUSPICIOUS_TLDS = {"xyz", "top", "click", "icu", "vip", "club", "online", "site", "link",
                    "cc", "buzz", "live", "shop", "cfd", "sbs"}
+TUNNEL_HOSTS = ("ngrok.io", "ngrok.app", "ngrok-free.app", "trycloudflare.com", "loca.lt", "serveo.net")
 BRANDS = ["sbi", "hdfc", "icici", "axis", "kotak", "pnb", "paytm", "phonepe", "gpay", "googlepay",
           "amazon", "flipkart", "irctc", "uidai", "aadhaar", "incometax", "epfo", "jio", "airtel"]
 # TODO: verify and extend this allow-list. A link that mentions a brand but is not on one of
@@ -241,13 +254,27 @@ def link_signals(urls: list[str]) -> list[Signal]:
                 found["lookalike"] = Signal("lookalike", f"Link imitates a known brand ({b})", 35,
                                             "The link mentions a well-known brand but is not on its real website.")
                 break
+        if host.endswith(TUNNEL_HOSTS):
+            found["tunnel_link"] = Signal("tunnel_link", "Link goes to a temporary tunnel address (ngrok and similar)", 25,
+                                          "Free tunnel addresses are used to host throw-away fake pages. Banks and wallets never use them.")
         if host.count("-") >= 2:
             found["many_hyphens"] = Signal("many_hyphens", "Link has many hyphens", 10,
                                            "Long hyphenated names like 'bank-kyc-update-now' are typical of fake sites.")
     return list(found.values())
 
 
+def normalize(text: str) -> str:
+    """Undo common spelling tricks before the text rules run.
+
+    Scammers write W0N, FL1PKART, V0DAF0NE or K.Y.C to dodge simple filters. We only change a
+    0 or 1 that sits between two letters, so real numbers and links are left alone.
+    """
+    text = re.sub(r"\b([A-Za-z])\.([A-Za-z])\.([A-Za-z])\b", r"\1\2\3", text)  # K.Y.C -> KYC
+    return re.sub(r"(?<=[A-Za-z])[01](?=[A-Za-z])", lambda m: "o" if m.group() == "0" else "i", text)
+
+
 def text_signals(text: str) -> list[Signal]:
+    text = normalize(text)
     sentences = [s for s in _SENT_SPLIT.split(text) if s.strip()]
     found: list[Signal] = []
     for sid, label, weight, why, patterns, sentence_level in _COMPILED:
