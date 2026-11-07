@@ -26,3 +26,29 @@ def test_public_examples_reach_likely_scam():
 def test_genuine_warnings_and_receipts_stay_low():
     for t in GENUINE:
         assert analyze(t)["score"] < 30, t
+
+
+NEW_SCAMS = [
+    "केंद्र सरकार दिवाळीनिमित्त सर्वांना 8 हजारांचं दिवाळी गिफ्ट देणार आहे. ही रक्कम मिळवण्यासाठी मेसेजमध्ये दिलेल्या लिंकवर क्लिक करा.",
+]
+NEW_SUSPICIOUS = [  # reached 55 only: "reply NO" messages are caught but not above the 60 line
+    "ഈ ഇടപാട് നടത്തിയത് നിങ്ങളല്ലെങ്കില്‍ ഉടന്‍ 'NO' എന്ന് മറുപടി അയക്കുക",
+    "Your A/c debited Rs 500. If this was not you, reply NO immediately.",
+]
+
+
+def test_govt_gift_message_is_likely_scam():
+    for t in NEW_SCAMS:
+        assert analyze(t)["score"] >= 60, t
+
+
+def test_reply_no_message_is_at_least_suspicious():
+    for t in NEW_SUSPICIOUS:
+        assert analyze(t)["score"] >= 30, t
+
+
+def test_ordinary_replies_and_scheme_news_stay_low():
+    for t in ["This is a no reply number. Please do not reply to this message.",
+              "Reply STOP to opt out of promotional messages.",
+              "सरकारने नवीन योजना जाहीर केली आहे. अधिक माहितीसाठी वेबसाइटला भेट द्या."]:
+        assert analyze(t)["score"] < 30, t

@@ -48,6 +48,8 @@ def main(path: str) -> int:
     rows = load_rows()
     seen = {" ".join(r["text"].lower().split()) for r in rows}
     start, added, dropped, problems = len(rows), 0, [], []
+    # Keep numbering going from earlier imports so ids and groups never repeat.
+    last = max([int(r["id"][1:]) for r in rows if re.fullmatch(r"w\d{4}", r["id"])] or [0])
     for n, r in enumerate(new, start=2):
         url = r["source"].strip()
         if any(d in url for d in DROP_DOMAINS):
@@ -66,7 +68,7 @@ def main(path: str) -> int:
             continue
         seen.add(key)
         added += 1
-        rid = f"w{added:04d}"
+        rid = f"w{last + added:04d}"
         label = "1" if r["label"].strip().upper() == "S" else "0"
         cat = CATEGORY.get(r["type"].strip().lower(), "other") if label == "1" else "other"
         group = "web_electricity" if cat == "bill" and label == "1" else rid
