@@ -8,7 +8,8 @@ Hindi, Marathi and Malayalam.
 > **Status: early prototype.** The tool runs and has tests, but it has **not yet been measured on real
 > scam messages**. See [What has been measured](#what-has-been-measured). It is a helper, not a guarantee.
 
-<!-- TODO: add a screenshot here: docs/screenshot.png -->
+![ScamShield India screenshot](docs/screenshot.png)
+*Made-up example message.*
 
 ## Why this exists
 
