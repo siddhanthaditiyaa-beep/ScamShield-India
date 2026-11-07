@@ -63,6 +63,7 @@ async function run() {
   $("#go").disabled = true;
   try {
     const res = await fetch("/api/analyze", {method: "POST", headers: {"Content-Type": "application/json"}, body: JSON.stringify({message})});
+    if (res.status === 429) throw new Error("Too many checks too quickly. Please wait a minute and try again.");
     if (!res.ok) throw new Error("Server error " + res.status);
     show(await res.json());
   } catch (e) {
